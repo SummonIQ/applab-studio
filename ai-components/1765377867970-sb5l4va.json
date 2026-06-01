@@ -1,0 +1,660 @@
+{
+  "id": "1765377867970-sb5l4va",
+  "type": "Flex",
+  "name": "ModernLandingPageLazio",
+  "parentId": "1764678963495-7uiuoe1",
+  "props": {},
+  "styles": {
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)"
+  },
+  "children": [
+    {
+      "id": "1765377867970-cj574mo",
+      "type": "Flex",
+      "name": "Header",
+      "parentId": "1765377867970-sb5l4va",
+      "props": {},
+      "styles": {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-card)"
+      },
+      "children": [
+        {
+          "id": "1765377867970-pjx23m2",
+          "type": "Text",
+          "name": "Logo",
+          "parentId": "1765377867970-cj574mo",
+          "props": {
+            "text": "Lazio Logo"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "bold",
+            "color": "var(--color-card-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377867970-eeouw5h",
+          "type": "Menu",
+          "name": "NavigationMenu",
+          "parentId": "1765377867970-cj574mo",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1765377867970-m8qnbpy",
+              "type": "Text",
+              "name": "NavItem1",
+              "parentId": "1765377867970-eeouw5h",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-1hs200j",
+              "type": "Text",
+              "name": "NavItem2",
+              "parentId": "1765377867970-eeouw5h",
+              "props": {
+                "text": "About"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-wrhcz9t",
+              "type": "Text",
+              "name": "NavItem3",
+              "parentId": "1765377867970-eeouw5h",
+              "props": {
+                "text": "Services"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-m6hlvgt",
+              "type": "Text",
+              "name": "NavItem4",
+              "parentId": "1765377867970-eeouw5h",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377867970-62kqdel",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1765377867970-sb5l4va",
+      "props": {},
+      "styles": {
+        "flexDirection": "row",
+        "alignItems": "center",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-accent)"
+      },
+      "children": [
+        {
+          "id": "1765377867970-yr8c0fh",
+          "type": "Text",
+          "name": "HeroText",
+          "parentId": "1765377867970-62kqdel",
+          "props": {
+            "text": "Welcome to Lazio"
+          },
+          "styles": {
+            "fontSize": "2.25rem",
+            "fontWeight": "800",
+            "color": "var(--color-accent-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377867970-dsg0uwm",
+          "type": "Image",
+          "name": "HeroImage",
+          "parentId": "1765377867970-62kqdel",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Lazio Hero Image"
+          },
+          "styles": {
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377867970-75pfsat",
+      "type": "Grid",
+      "name": "ServicesSection",
+      "parentId": "1765377867970-sb5l4va",
+      "props": {},
+      "styles": {
+        "gridTemplateColumns": "repeat(3, 1fr)",
+        "gap": "1.5rem",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-secondary)"
+      },
+      "children": [
+        {
+          "id": "1765377867970-nl8trbk",
+          "type": "Card",
+          "name": "Service1",
+          "parentId": "1765377867970-75pfsat",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377867970-f86swc4",
+              "type": "Icon",
+              "name": "ServiceIcon1",
+              "parentId": "1765377867970-nl8trbk",
+              "props": {},
+              "styles": {
+                "fontSize": "2rem",
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-27udv3a",
+              "type": "Heading",
+              "name": "ServiceTitle1",
+              "parentId": "1765377867970-nl8trbk",
+              "props": {
+                "text": "Quality Design"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-vvkur05",
+              "type": "Text",
+              "name": "ServiceDescription1",
+              "parentId": "1765377867970-nl8trbk",
+              "props": {
+                "text": "Professional designs tailored to your needs."
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377867970-qs9yz4u",
+          "type": "Card",
+          "name": "Service2",
+          "parentId": "1765377867970-75pfsat",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377867970-s4lyodm",
+              "type": "Icon",
+              "name": "ServiceIcon2",
+              "parentId": "1765377867970-qs9yz4u",
+              "props": {},
+              "styles": {
+                "fontSize": "2rem",
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-faq4mrl",
+              "type": "Heading",
+              "name": "ServiceTitle2",
+              "parentId": "1765377867970-qs9yz4u",
+              "props": {
+                "text": "Responsive Layouts"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-uvom2uk",
+              "type": "Text",
+              "name": "ServiceDescription2",
+              "parentId": "1765377867970-qs9yz4u",
+              "props": {
+                "text": "Layouts that look great on any device."
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377867970-xm2ogw2",
+          "type": "Card",
+          "name": "Service3",
+          "parentId": "1765377867970-75pfsat",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377867970-ft3oxdq",
+              "type": "Icon",
+              "name": "ServiceIcon3",
+              "parentId": "1765377867970-xm2ogw2",
+              "props": {},
+              "styles": {
+                "fontSize": "2rem",
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-p0cwwzo",
+              "type": "Heading",
+              "name": "ServiceTitle3",
+              "parentId": "1765377867970-xm2ogw2",
+              "props": {
+                "text": "User-Friendly"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-9jod9i9",
+              "type": "Text",
+              "name": "ServiceDescription3",
+              "parentId": "1765377867970-xm2ogw2",
+              "props": {
+                "text": "Intuitive interfaces that are easy to use."
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377867970-gvwmwha",
+      "type": "Flex",
+      "name": "TestimonialsSection",
+      "parentId": "1765377867970-sb5l4va",
+      "props": {},
+      "styles": {
+        "flexDirection": "column",
+        "gap": "1.5rem",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-muted)"
+      },
+      "children": [
+        {
+          "id": "1765377867970-n4snn9g",
+          "type": "Heading",
+          "name": "TestimonialsTitle",
+          "parentId": "1765377867970-gvwmwha",
+          "props": {
+            "text": "What Our Clients Say"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "600",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377867970-z5f0xbq",
+          "type": "Flex",
+          "name": "TestimonialList",
+          "parentId": "1765377867970-gvwmwha",
+          "props": {},
+          "styles": {
+            "flexDirection": "row",
+            "gap": "1.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377867970-vciqoyo",
+              "type": "Card",
+              "name": "Testimonial1",
+              "parentId": "1765377867970-z5f0xbq",
+              "props": {},
+              "styles": {
+                "padding": "1rem",
+                "backgroundColor": "var(--color-card)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1765377867970-5padacm",
+                  "type": "Text",
+                  "name": "ClientName1",
+                  "parentId": "1765377867970-vciqoyo",
+                  "props": {
+                    "text": "John Doe"
+                  },
+                  "styles": {
+                    "fontSize": "1.125rem",
+                    "fontWeight": "bold",
+                    "color": "var(--color-card-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765377867970-15k3qum",
+                  "type": "Text",
+                  "name": "ClientFeedback1",
+                  "parentId": "1765377867970-vciqoyo",
+                  "props": {
+                    "text": "Amazing service and quality."
+                  },
+                  "styles": {
+                    "fontSize": "0.875rem",
+                    "color": "var(--color-muted-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-m57afwj",
+              "type": "Card",
+              "name": "Testimonial2",
+              "parentId": "1765377867970-z5f0xbq",
+              "props": {},
+              "styles": {
+                "padding": "1rem",
+                "backgroundColor": "var(--color-card)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1765377867970-g1jie1q",
+                  "type": "Text",
+                  "name": "ClientName2",
+                  "parentId": "1765377867970-m57afwj",
+                  "props": {
+                    "text": "Jane Smith"
+                  },
+                  "styles": {
+                    "fontSize": "1.125rem",
+                    "fontWeight": "bold",
+                    "color": "var(--color-card-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765377867970-c3wuqb0",
+                  "type": "Text",
+                  "name": "ClientFeedback2",
+                  "parentId": "1765377867970-m57afwj",
+                  "props": {
+                    "text": "Highly recommend Lazio for any project."
+                  },
+                  "styles": {
+                    "fontSize": "0.875rem",
+                    "color": "var(--color-muted-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377867970-k5ksqby",
+      "type": "Grid",
+      "name": "ContactSection",
+      "parentId": "1765377867970-sb5l4va",
+      "props": {},
+      "styles": {
+        "gridTemplateColumns": "repeat(2, 1fr)",
+        "gap": "1.5rem",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-card)"
+      },
+      "children": [
+        {
+          "id": "1765377867970-8hhoiv5",
+          "type": "Form",
+          "name": "ContactForm",
+          "parentId": "1765377867970-k5ksqby",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem",
+            "width": "100%"
+          },
+          "children": [
+            {
+              "id": "1765377867970-3d1n9j6",
+              "type": "Input",
+              "name": "NameInput",
+              "parentId": "1765377867970-8hhoiv5",
+              "props": {
+                "placeholder": "Your Name",
+                "type": "text"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "0.5rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.25rem",
+                "fontSize": "0.875rem",
+                "backgroundColor": "var(--color-background)",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-q0upqmh",
+              "type": "Input",
+              "name": "EmailInput",
+              "parentId": "1765377867970-8hhoiv5",
+              "props": {
+                "placeholder": "Your Email",
+                "type": "email"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "0.5rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.25rem",
+                "fontSize": "0.875rem",
+                "backgroundColor": "var(--color-background)",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-7qo9nzb",
+              "type": "Textarea",
+              "name": "MessageInput",
+              "parentId": "1765377867970-8hhoiv5",
+              "props": {
+                "placeholder": "Your Message"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "0.5rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.25rem",
+                "height": "8rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377867970-g09q5eu",
+              "type": "Button",
+              "name": "SubmitButton",
+              "parentId": "1765377867970-8hhoiv5",
+              "props": {
+                "text": "Send Message"
+              },
+              "styles": {
+                "padding": "0.75rem",
+                "borderRadius": "0.25rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "bold",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none",
+                "width": "100%"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377867970-9m9ejif",
+          "type": "Map",
+          "name": "LocationMap",
+          "parentId": "1765377867970-k5ksqby",
+          "props": {},
+          "styles": {
+            "width": "100%",
+            "height": "20rem",
+            "borderRadius": "0.5rem",
+            "overflow": "hidden"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377867970-6d7xoe2",
+      "type": "Flex",
+      "name": "Footer",
+      "parentId": "1765377867970-sb5l4va",
+      "props": {},
+      "styles": {
+        "flexDirection": "column",
+        "alignItems": "center",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-muted)"
+      },
+      "children": [
+        {
+          "id": "1765377867970-kqaegtk",
+          "type": "Text",
+          "name": "FooterText",
+          "parentId": "1765377867970-6d7xoe2",
+          "props": {
+            "text": "© 2023 Lazio. All Rights Reserved."
+          },
+          "styles": {
+            "fontSize": "0.875rem",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

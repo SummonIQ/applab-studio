@@ -1,0 +1,222 @@
+{
+  "id": "1764561831222-ruzpgo0",
+  "type": "Flex",
+  "name": "JumpingHatScreen",
+  "parentId": "1764561363352-66d3s6a",
+  "props": {},
+  "styles": {
+    "flexDirection": "column",
+    "gap": "1.5rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "borderRadius": "0.5rem",
+    "width": "100%",
+    "maxWidth": "36rem"
+  },
+  "children": [
+    {
+      "id": "1764561831222-8tquug9",
+      "type": "Heading",
+      "name": "MainTitle",
+      "parentId": "1764561831222-ruzpgo0",
+      "props": {
+        "text": "Jumping Hat Animation"
+      },
+      "styles": {
+        "fontSize": "2.25rem",
+        "fontWeight": "800",
+        "color": "var(--color-foreground)"
+      },
+      "children": [],
+      "events": {}
+    },
+    {
+      "id": "1764561831222-tlmhvy7",
+      "type": "Flex",
+      "name": "IllustrationSection",
+      "parentId": "1764561831222-ruzpgo0",
+      "props": {},
+      "styles": {
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "backgroundColor": "var(--color-card)",
+        "padding": "1rem",
+        "borderRadius": "0.75rem"
+      },
+      "children": [
+        {
+          "id": "1764561831222-18qdrkd",
+          "type": "Icon",
+          "name": "JumpingHatIcon",
+          "parentId": "1764561831222-tlmhvy7",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Animated Hat"
+          },
+          "styles": {
+            "width": "50%",
+            "height": "auto"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561831222-cdjacr9",
+      "type": "Text",
+      "name": "Description",
+      "parentId": "1764561831222-ruzpgo0",
+      "props": {
+        "text": "Experience our unique jumping hat animation created with SVG and CSS."
+      },
+      "styles": {
+        "fontSize": "1rem",
+        "fontWeight": "normal",
+        "color": "var(--color-muted-foreground)"
+      },
+      "children": [],
+      "events": {}
+    },
+    {
+      "id": "1764561831222-0s41cxa",
+      "type": "Divider",
+      "name": "SectionDivider",
+      "parentId": "1764561831222-ruzpgo0",
+      "props": {},
+      "styles": {
+        "height": "1px",
+        "backgroundColor": "var(--color-border)"
+      },
+      "children": [],
+      "events": {}
+    },
+    {
+      "id": "1764561831222-8u4ba5z",
+      "type": "Flex",
+      "name": "ControlSection",
+      "parentId": "1764561831222-ruzpgo0",
+      "props": {},
+      "styles": {
+        "flexDirection": "row",
+        "gap": "1rem",
+        "alignItems": "center",
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "id": "1764561831222-oi86w61",
+          "type": "Button",
+          "name": "StartAnimationButton",
+          "parentId": "1764561831222-8u4ba5z",
+          "props": {
+            "text": "Start Animation"
+          },
+          "styles": {
+            "padding": "0.5rem 1rem",
+            "borderRadius": "0.375rem",
+            "fontSize": "0.875rem",
+            "fontWeight": "600",
+            "backgroundColor": "var(--color-primary)",
+            "color": "var(--color-primary-foreground)",
+            "border": "none"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561831222-f6a9ily",
+          "type": "Button",
+          "name": "StopAnimationButton",
+          "parentId": "1764561831222-8u4ba5z",
+          "props": {
+            "text": "Stop Animation"
+          },
+          "styles": {
+            "padding": "0.5rem 1rem",
+            "borderRadius": "0.375rem",
+            "fontSize": "0.875rem",
+            "fontWeight": "600",
+            "backgroundColor": "var(--color-destructive)",
+            "color": "var(--color-primary-foreground)",
+            "border": "none"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561831222-d36t2ih",
+      "type": "Flex",
+      "name": "SettingsSection",
+      "parentId": "1764561831222-ruzpgo0",
+      "props": {},
+      "styles": {
+        "flexDirection": "column",
+        "gap": "1rem",
+        "backgroundColor": "var(--color-muted)",
+        "padding": "1rem",
+        "borderRadius": "0.5rem"
+      },
+      "children": [
+        {
+          "id": "1764561831222-bc5aa2l",
+          "type": "Flex",
+          "name": "SpeedControl",
+          "parentId": "1764561831222-d36t2ih",
+          "props": {},
+          "styles": {
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561831222-9ui4g2z",
+              "type": "Label",
+              "name": "SpeedLabel",
+              "parentId": "1764561831222-bc5aa2l",
+              "props": {
+                "text": "Speed:"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561831222-t3fm16c",
+              "type": "Select",
+              "name": "SpeedSelect",
+              "parentId": "1764561831222-bc5aa2l",
+              "props": {
+                "placeholder": "Select Speed",
+                "options": [
+                  "Slow",
+                  "Normal",
+                  "Fast"
+                ]
+              },
+              "styles": {
+                "borderColor": "var(--color-input)",
+                "borderRadius": "0.25rem",
+                "padding": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

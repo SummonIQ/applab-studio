@@ -1,0 +1,1043 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// Main configuration template storage
+model ConfigTemplate {
+  id              String          @id @default(cuid())
+  name            String
+  description     String?
+  configType      ConfigType
+  appType         AppType?
+  scope           ConfigScope
+  content         Json
+  rawContent      String?
+  version         Int             @default(1)
+  isActive        Boolean         @default(true)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  createdBy       String?
+  appConfigs      AppConfig[]
+  history         ConfigHistory[]
+  projectConfigs  ProjectConfig[]
+  /// RAG embedding status
+  embeddingStatus EmbeddingStatus @default(PENDING)
+  embeddedAt      DateTime?
+
+  @@unique([configType, appType, scope, version])
+  @@index([configType, appType, scope, isActive])
+  @@index([embeddingStatus])
+  @@map("config_templates")
+}
+
+/// Project-specific configuration overrides
+model ProjectConfig {
+  id           String          @id @default(cuid())
+  projectId    String
+  templateId   String?
+  configType   ConfigType
+  content      Json
+  overrides    Json?
+  isEnabled    Boolean         @default(true)
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+  lastSyncedAt DateTime?
+  syncStatus   SyncStatus      @default(PENDING)
+  template     ConfigTemplate? @relation(fields: [templateId], references: [id])
+
+  @@unique([projectId, configType])
+  @@index([projectId, configType, isEnabled])
+  @@map("project_configs")
+}
+
+/// App-specific configuration overrides
+model AppConfig {
+  id           String          @id @default(cuid())
+  appId        String
+  projectId    String
+  appType      AppType
+  templateId   String?
+  configType   ConfigType
+  content      Json
+  overrides    Json?
+  isEnabled    Boolean         @default(true)
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+  lastSyncedAt DateTime?
+  syncStatus   SyncStatus      @default(PENDING)
+  template     ConfigTemplate? @relation(fields: [templateId], references: [id])
+
+  @@unique([appId, configType])
+  @@index([projectId, appId, configType, isEnabled])
+  @@map("app_configs")
+}
+
+/// Configuration change history for auditing
+model ConfigHistory {
+  id         String         @id @default(cuid())
+  templateId String
+  version    Int
+  content    Json
+  changeLog  String?
+  changedBy  String?
+  createdAt  DateTime       @default(now())
+  template   ConfigTemplate @relation(fields: [templateId], references: [id])
+
+  @@index([templateId, version])
+  @@map("config_history")
+}
+
+/// Shared configuration templates for UI configuration page
+model SharedConfig {
+  id          String     @id @default(cuid())
+  name        String
+  description String?
+  configType  ConfigType
+  appType     AppType?
+  content     Json
+  tags        String[]
+  isDefault   Boolean    @default(false)
+  usageCount  Int        @default(0)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  createdBy   String?
+  locked      Boolean    @default(false)
+
+  @@index([configType, appType])
+  @@index([isDefault])
+  @@map("shared_configs")
+}
+
+/// Best practices, patterns, and rules for different app types and topics
+model BestPractice {
+  id              String          @id @default(cuid())
+  name            String
+  topic           String
+  appType         AppType
+  content         String          @db.Text
+  description     String?
+  tags            String[]
+  priority        Int             @default(0)
+  isDefault       Boolean         @default(false)
+  usageCount      Int             @default(0)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  createdBy       String?
+  /// RAG embedding status
+  embeddingStatus EmbeddingStatus @default(PENDING)
+  embeddedAt      DateTime?
+
+  @@index([topic, appType])
+  @@index([appType])
+  @@index([embeddingStatus])
+  @@map("best_practices")
+}
+
+/// NPM package dependencies
+model Dependency {
+  id           String         @id @default(cuid())
+  packageName  String
+  version      String
+  type         DependencyType
+  scope        ConfigScope
+  appType      AppType?
+  projectId    String?
+  appId        String?
+  description  String?
+  isRequired   Boolean        @default(true)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  lastSyncedAt DateTime?
+  syncStatus   SyncStatus     @default(PENDING)
+
+  @@unique([packageName, scope, appType, projectId, appId, type])
+  @@index([scope, appType, projectId, appId, type])
+  @@map("dependencies")
+}
+
+/// Projects registry
+model Project {
+  id                      String                @id @default(cuid())
+  name                    String                @unique
+  key                     String?               @unique
+  description             String?
+  path                    String                @unique
+  packageManager          String                @default("bun")
+  ipAddress               String?
+  port                    Int?
+  agentWorkTimeoutMinutes Int                   @default(30)
+  rateLimitConfig         Json?
+  starred                 Boolean               @default(false)
+  createdAt               DateTime              @default(now())
+  updatedAt               DateTime              @updatedAt
+  brandColors             Json?
+  apps                    App[]
+  databases               Database[]
+  tickets                 Ticket[]
+  envVars                 EnvironmentVariable[]
+  summary                 ProjectSummary?
+  memories                ProjectMemory[]
+
+  @@map("projects")
+}
+
+/// AI-generated project summaries
+model ProjectSummary {
+  id                String   @id @default(cuid())
+  projectId         String   @unique
+  summary           String   @db.Text
+  technicalOverview String   @db.Text
+  generatedAt       DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  project           Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("project_summaries")
+}
+
+/// AI agent memories - distinct learnings encountered while working on the project
+model ProjectMemory {
+  id              String          @id @default(cuid())
+  projectId       String
+  title           String /// Short descriptive title
+  content         String          @db.Text /// The actual memory content
+  category        MemoryCategory  @default(GENERAL)
+  source          String? /// Where this memory came from (file path, conversation, etc.)
+  importance      Int             @default(5) /// 1-10 scale of importance
+  tags            String[] /// Searchable tags
+  isActive        Boolean         @default(true) /// Whether this memory is still relevant
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  project         Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  /// RAG embedding status
+  embeddingStatus EmbeddingStatus @default(PENDING)
+  embeddedAt      DateTime?
+
+  @@index([projectId, category])
+  @@index([projectId, isActive])
+  @@index([embeddingStatus])
+  @@map("project_memories")
+}
+
+enum MemoryCategory {
+  GENERAL /// General project knowledge
+  ARCHITECTURE /// Architecture decisions and patterns
+  CODEBASE /// Code structure and conventions
+  DEPENDENCIES /// Package and dependency info
+  CONFIGURATION /// Config files and settings
+  DEBUGGING /// Known issues and solutions
+  PREFERENCES /// User/team preferences
+  WORKFLOW /// Development workflow notes
+  API /// API endpoints and contracts
+  DATABASE /// Database schema and queries
+}
+
+/// Applications registry  
+model App {
+  id          String                @id @default(cuid())
+  projectId   String
+  name        String
+  description String?
+  type        AppType
+  path        String
+  devPort     Int?
+  autoOpen    Boolean               @default(false)
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+  project     Project               @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  envVars     EnvironmentVariable[]
+
+  @@unique([projectId, name])
+  @@index([projectId, type])
+  @@map("apps")
+}
+
+/// Database instances for projects
+model Database {
+  id               String   @id @default(cuid())
+  projectId        String
+  name             String
+  type             String   @default("postgresql")
+  host             String   @default("localhost")
+  port             Int
+  username         String
+  password         String
+  database         String
+  status           String   @default("stopped")
+  connectionString String
+  containerName    String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  project          Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+  @@index([projectId, status])
+  @@map("databases")
+}
+
+/// Environment variables for projects and apps
+model EnvironmentVariable {
+  id          String   @id @default(cuid())
+  projectId   String?
+  appId       String?
+  key         String
+  value       String
+  description String?
+  isSecret    Boolean  @default(false)
+  isRequired  Boolean  @default(false)
+  category    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  project     Project? @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  app         App?     @relation(fields: [appId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, appId, key])
+  @@index([projectId, category])
+  @@index([appId, category])
+  @@map("environment_variables")
+}
+
+/// Sync queue for managing filesystem writes
+model SyncQueue {
+  id          String     @id @default(cuid())
+  entityType  String
+  entityId    String
+  operation   String
+  targetPath  String
+  content     Json?
+  status      SyncStatus @default(PENDING)
+  attempts    Int        @default(0)
+  maxAttempts Int        @default(3)
+  error       String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  processedAt DateTime?
+
+  @@index([status, createdAt])
+  @@index([entityType, entityId])
+  @@map("sync_queue")
+}
+
+/// Network sync status for multi-device support
+model NetworkSync {
+  id         String   @id @default(cuid())
+  deviceId   String   @unique
+  deviceName String
+  ipAddress  String
+  port       Int
+  isOnline   Boolean  @default(false)
+  lastSeen   DateTime @default(now())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([isOnline, lastSeen])
+  @@map("network_sync")
+}
+
+/// Feature definitions with integration changes
+model FeatureDefinition {
+  id           String   @id @default(cuid())
+  feature      Feature  @unique
+  name         String
+  description  String?
+  icon         String?
+  color        String?
+  tags         String[]
+  providers    Json // Available providers for this feature
+  changes      Json // File changes/diffs needed to integrate
+  settings     Json? // Settings schema for configuration
+  dependencies String[] // Other features this depends on
+  docsUrl      String?
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("feature_definitions")
+}
+
+model FeatureConfig {
+  id        String   @id @default(cuid())
+  projectId String?
+  appId     String?
+  feature   Feature
+  provider  String
+  config    Json?
+  isEnabled Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([projectId, appId, feature])
+  @@index([feature, isEnabled])
+  @@map("feature_configs")
+}
+
+/// AI Agents that can work on project tickets
+model Agent {
+  id                 String              @id @default(cuid())
+  name               String              @unique
+  role               AgentRole
+  specialization     AgentSpecialization @default(GENERALIST)
+  description        String?
+  systemPrompt       String
+  capabilities       Json?
+  limitations        Json?
+  isDefault          Boolean             @default(false)
+  isActive           Boolean             @default(true)
+  maxConcurrentTasks Int                 @default(3)
+  modelProvider      String              @default("openai")
+  modelName          String              @default("gpt-4")
+  temperature        Float               @default(0.7)
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  createdBy          String?
+  memories           AgentMemory[]
+  knowledgeDocuments KnowledgeDocument[] @relation("DocumentAuthor")
+  teamMembers        TeamMember[]
+  comments           TicketComment[]
+  assignedTickets    Ticket[]
+  handoffsFrom       TicketHandoff[]     @relation("HandoffFrom")
+  handoffsTo         TicketHandoff[]     @relation("HandoffTo")
+
+  @@index([role, isActive])
+  @@index([isDefault, isActive])
+  @@map("agents")
+}
+
+/// Workflow templates that can be used by teams
+model Workflow {
+  id              String   @id @default(cuid())
+  name            String
+  description     String?
+  stages          Json
+  transitions     Json
+  specializations Json?
+  isDefault       Boolean  @default(false)
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  createdBy       String?
+  teams           Team[]
+
+  @@index([isDefault, isActive])
+  @@map("workflows")
+}
+
+/// Teams of AI agents with custom workflows
+model Team {
+  id           String       @id @default(cuid())
+  name         String
+  description  String?
+  projectId    String?
+  workflowId   String?
+  workflowData Json?
+  isActive     Boolean      @default(true)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  createdBy    String?
+  members      TeamMember[]
+  workflow     Workflow?    @relation(fields: [workflowId], references: [id])
+  tickets      Ticket[]
+
+  @@index([projectId, isActive])
+  @@index([workflowId])
+  @@map("teams")
+}
+
+/// Team membership with roles and workflow positions
+model TeamMember {
+  id           String   @id @default(cuid())
+  teamId       String
+  agentId      String
+  workflowRole String?
+  order        Int      @default(0)
+  canAssign    Boolean  @default(false)
+  canReview    Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  agent        Agent    @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  team         Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, agentId])
+  @@index([teamId, order])
+  @@map("team_members")
+}
+
+/// Project tickets/tasks for the kanban board
+model Ticket {
+  id                   String              @id @default(cuid())
+  projectId            String
+  number               Int                 @default(0)
+  teamId               String?
+  title                String
+  description          String?
+  status               TicketStatus        @default(BACKLOG)
+  priority             TicketPriority      @default(MEDIUM)
+  assignedToId         String?
+  labels               String[]
+  tags                 Json?
+  position             Int                 @default(0)
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+  completedAt          DateTime?
+  createdBy            String?
+  acceptanceCriteria   Json?
+  businessRequirements String?
+  checklistItems       Json?
+  estimatedValue       String?
+  isFrontend           Boolean             @default(false)
+  knowledgeDocs        KnowledgeDocument[]
+  comments             TicketComment[]
+  handoffs             TicketHandoff[]
+  project              Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  assignedTo           Agent?              @relation(fields: [assignedToId], references: [id])
+  team                 Team?               @relation(fields: [teamId], references: [id])
+  /// RAG embedding status
+  embeddingStatus      EmbeddingStatus     @default(PENDING)
+  embeddedAt           DateTime?
+
+  @@unique([projectId, number])
+  @@index([projectId, status, position])
+  @@index([teamId, status])
+  @@index([assignedToId, status])
+  @@index([embeddingStatus])
+  @@map("tickets")
+}
+
+/// Comments on tickets for agent-human and agent-agent communication
+model TicketComment {
+  id             String   @id @default(cuid())
+  ticketId       String
+  authorId       String?
+  authorType     String
+  authorName     String
+  content        String
+  isInternal     Boolean  @default(false)
+  requestsAction Boolean  @default(false)
+  actionType     String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  authorAgent    Agent?   @relation(fields: [authorId], references: [id])
+  ticket         Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+
+  @@index([ticketId, createdAt])
+  @@index([authorId])
+  @@map("ticket_comments")
+}
+
+/// Ticket handoff records for tracking agent transfers
+model TicketHandoff {
+  id              String   @id @default(cuid())
+  ticketId        String
+  fromAgentId     String
+  toAgentId       String
+  reason          String
+  instructions    String?
+  requestedAction String?
+  createdAt       DateTime @default(now())
+  ticket          Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  fromAgent       Agent    @relation("HandoffFrom", fields: [fromAgentId], references: [id])
+  toAgent         Agent    @relation("HandoffTo", fields: [toAgentId], references: [id])
+
+  @@index([ticketId, createdAt])
+  @@index([fromAgentId])
+  @@index([toAgentId])
+  @@map("ticket_handoffs")
+}
+
+/// Knowledge base documents (Confluence-like system)
+model KnowledgeDocument {
+  id              String          @id @default(cuid())
+  title           String
+  content         String
+  type            String          @default("article")
+  category        String?
+  tags            String[]
+  ticketId        String?
+  projectId       String?
+  createdById     String?
+  version         Int             @default(1)
+  parentId        String?
+  status          String          @default("draft")
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  publishedAt     DateTime?
+  createdByAgent  Agent?          @relation("DocumentAuthor", fields: [createdById], references: [id])
+  ticket          Ticket?         @relation(fields: [ticketId], references: [id])
+  /// RAG embedding status
+  embeddingStatus EmbeddingStatus @default(PENDING)
+  embeddedAt      DateTime?
+
+  @@index([projectId, status])
+  @@index([ticketId])
+  @@index([category, status])
+  @@index([embeddingStatus])
+  @@map("knowledge_documents")
+}
+
+/// Agent memory storage for persistent learning and context
+model AgentMemory {
+  id              String          @id @default(cuid())
+  agentId         String
+  key             String
+  value           String
+  context         String?
+  type            String          @default("preference")
+  scope           String          @default("global")
+  scopeId         String?
+  confidence      Float           @default(1.0)
+  priority        Int             @default(1)
+  accessCount     Int             @default(0)
+  lastAccessed    DateTime?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  agent           Agent           @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  /// RAG embedding status
+  embeddingStatus EmbeddingStatus @default(PENDING)
+  embeddedAt      DateTime?
+
+  @@unique([agentId, key, scope, scopeId])
+  @@index([agentId, scope, priority])
+  @@index([type, scope])
+  @@index([embeddingStatus])
+  @@map("agent_memories")
+}
+
+/// Project templates for different app types
+model Template {
+  id          String         @id @default(cuid())
+  name        String
+  type        String
+  description String?
+  framework   String
+  version     String         @default("1.0.0")
+  isDefault   Boolean        @default(false)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  files       TemplateFile[]
+
+  @@unique([name, type])
+  @@map("templates")
+}
+
+/// Files within a template
+model TemplateFile {
+  id          String   @id @default(cuid())
+  templateId  String
+  path        String
+  content     String
+  isDirectory Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  template    Template @relation(fields: [templateId], references: [id], onDelete: Cascade)
+
+  @@unique([templateId, path])
+  @@index([templateId])
+  @@map("template_files")
+}
+
+/// Enum for configuration file types
+enum ConfigType {
+  ESLINT
+  PRETTIER
+  TYPESCRIPT
+  TAILWIND
+  NEXTJS
+  BABEL
+  EXPO
+  POSTCSS
+  VITE
+  JEST
+  PLAYWRIGHT
+  VITEST
+  TURBO
+  SENTRY
+  VERCEL
+  BIOME
+  STYLELINT
+  TSUP
+  BUNFIG
+  GITIGNORE
+  PACKAGE_JSON
+  TSCONFIG
+  WINDSURF_RULES
+  AGENTS_MD
+  CLAUDE_MD
+  CURSOR_RULES
+  VSCODE
+  APPLAB_CONFIG
+  COMPONENTS_JSON
+}
+
+/// Enum for application types
+enum AppType {
+  WEB_APP
+  DESKTOP_APP
+  MOBILE_APP
+  API
+  MARKETING_SITE
+  LIBRARY
+  MONOREPO
+  CLI
+  EXTENSION
+  CUSTOM
+}
+
+/// Enum for configuration scope/level
+enum ConfigScope {
+  GLOBAL
+  TEMPLATE
+  PROJECT
+  APP
+}
+
+/// Enum for dependency types
+enum DependencyType {
+  REGULAR
+  DEV
+  PEER
+  OPTIONAL
+}
+
+enum SyncStatus {
+  PENDING
+  SYNCING
+  SYNCED
+  ERROR
+  CONFLICT
+}
+
+enum Feature {
+  AI
+  ANALYTICS
+  API_DOCS
+  BACKGROUND_JOBS
+  BLOB_STORAGE
+  CACHING
+  CMS
+  DATABASE
+  DEV_CONTAINERS
+  EMAIL
+  ERROR_REPORTING
+  FEATURE_FLAGS
+  FINANCIAL_ACCOUNTS
+  I18N
+  LOGGING
+  NOTIFICATIONS
+  PAYMENTS
+  RATE_LIMITING
+  REALTIME
+  SCRAPING
+  SEARCH
+  SEO
+  SPEED_INSIGHTS
+  SSO
+  TESTING
+  USER_AUTH
+}
+
+enum AgentRole {
+  DESIGNER
+  FRONTEND_ENGINEER
+  BACKEND_ENGINEER
+  FULLSTACK_ENGINEER
+  QA_ENGINEER
+  DEVOPS_ENGINEER
+  PRODUCT_OWNER
+  SCRUM_MASTER
+  TECH_LEAD
+  CUSTOM
+}
+
+enum AgentSpecialization {
+  GENERALIST
+  REACT
+  VUE
+  ANGULAR
+  NODEJS
+  PYTHON
+  GOLANG
+  RUST
+  DATABASE
+  CLOUD_AWS
+  CLOUD_GCP
+  CLOUD_AZURE
+  KUBERNETES
+  TESTING
+  UI_UX
+  ACCESSIBILITY
+  PERFORMANCE
+  SECURITY
+  MOBILE
+  CUSTOM
+}
+
+enum TicketStatus {
+  BACKLOG
+  TODO
+  IN_PROGRESS
+  IN_REVIEW
+  QA
+  BLOCKED
+  DONE
+  DESIGN
+  UNREFINED
+  READY
+}
+
+enum TicketPriority {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+/// Component library items
+model Component {
+  id              String              @id @default(cuid())
+  slug            String              @unique
+  name            String
+  description     String
+  category        String
+  type            ComponentType       @default(COMPONENT)
+  code            String              @db.Text
+  demoCode        String?             @db.Text
+  documentation   String?             @db.Text
+  props           Json?
+  tags            String[]
+  isPublished     Boolean             @default(true)
+  order           Int                 @default(0)
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+  revisions       ComponentRevision[]
+  /// RAG embedding status
+  embeddingStatus EmbeddingStatus     @default(PENDING)
+  embeddedAt      DateTime?
+
+  @@index([category, isPublished])
+  @@index([type, isPublished])
+  @@index([embeddingStatus])
+  @@map("components")
+}
+
+/// Component revision history with AI modifications
+model ComponentRevision {
+  id          String         @id @default(cuid())
+  componentId String
+  code        String         @db.Text
+  description String
+  prompt      String         @db.Text
+  explanation String?        @db.Text
+  status      RevisionStatus @default(PENDING)
+  isCurrent   Boolean        @default(false)
+  userId      String?
+  metadata    Json?
+  createdAt   DateTime       @default(now())
+  component   Component      @relation(fields: [componentId], references: [id], onDelete: Cascade)
+
+  @@index([componentId, status])
+  @@index([componentId, isCurrent])
+  @@index([userId])
+  @@map("component_revisions")
+}
+
+enum ComponentType {
+  COMPONENT
+  BACKGROUND
+  LAYOUT
+  HOOK
+  UTILITY
+}
+
+enum RevisionStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+}
+
+// ==========================================
+// RAG (Retrieval-Augmented Generation) Models
+// ==========================================
+
+/// Embedding storage for semantic search across all content types
+model Embedding {
+  id String @id @default(cuid())
+
+  /// Source reference (polymorphic)
+  sourceType EmbeddingSourceType
+  sourceId   String
+  chunkIndex Int                 @default(0)
+
+  /// Content
+  contentText String @db.Text
+  contentHash String /// SHA-256 hash for deduplication
+
+  /// Vector stored via raw SQL (not in Prisma) - 1536 dimensions for text-embedding-3-small
+  /// embedding vector(1536)
+
+  /// Metadata for filtering and reranking
+  projectId  String?
+  category   String?
+  importance Int     @default(5) /// 1-10 scale
+  metadata   Json    @default("{}")
+
+  /// Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([sourceType, sourceId, chunkIndex])
+  @@index([sourceType, sourceId])
+  @@index([projectId])
+  @@index([category])
+  @@index([contentHash])
+  @@map("embeddings")
+}
+
+/// Track embedding job status for background processing
+model EmbeddingJob {
+  id String @id @default(cuid())
+
+  /// Job details
+  sourceType EmbeddingSourceType
+  sourceId   String
+  status     EmbeddingJobStatus  @default(PENDING)
+
+  /// Progress tracking
+  totalChunks     Int @default(0)
+  processedChunks Int @default(0)
+
+  /// Error handling
+  errorMessage String?
+  retryCount   Int     @default(0)
+
+  /// Timestamps
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  completedAt DateTime?
+
+  @@index([status])
+  @@index([sourceType, sourceId])
+  @@map("embedding_jobs")
+}
+
+/// Cache for query embeddings to avoid re-embedding repeated queries
+model QueryEmbeddingCache {
+  id        String @id @default(cuid())
+  queryHash String @unique
+  queryText String
+  /// embedding vector stored via raw SQL
+
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+
+  @@index([expiresAt])
+  @@map("query_embedding_cache")
+}
+
+/// Source types that can be embedded for RAG
+enum EmbeddingSourceType {
+  PROJECT_MEMORY
+  KNOWLEDGE_DOCUMENT
+  AGENT_MEMORY
+  BEST_PRACTICE
+  COMPONENT
+  CONFIG_TEMPLATE
+  TICKET
+  CODEBASE_FILE
+}
+
+/// Status of embedding jobs
+enum EmbeddingJobStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+/// Status of embedding for individual records
+enum EmbeddingStatus {
+  PENDING /// Not yet embedded
+  PROCESSING /// Currently being embedded
+  COMPLETED /// Successfully embedded
+  FAILED /// Embedding failed
+  STALE /// Content changed, needs re-embedding
+}
+
+enum NotificationKind {
+  INFO
+  SUCCESS
+  WARNING
+  ERROR
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  kind      NotificationKind @default(INFO)
+  title     String
+  message   String?
+  href      String?
+  readAt    DateTime?
+  createdAt DateTime         @default(now())
+
+  @@index([createdAt])
+  @@index([readAt])
+  @@index([kind])
+  @@map("notifications")
+}
+
+// ===========================================
+// AI Agent Skills
+// ===========================================
+
+/// AI Agent Skill - follows Agent Skills spec
+model Skill {
+  id            String        @id @default(cuid())
+  name          String        @unique // kebab-case, 1-64 chars
+  displayName   String // Human-readable name
+  description   String        @db.Text // 1-1024 chars, describes what + when
+  category      SkillCategory
+  content       String        @db.Text // SKILL.md body content
+  license       String? // e.g., "MIT", "Apache-2.0"
+  compatibility String? // Environment requirements
+  author        String?
+  version       String?
+  allowedTools  String[] // Pre-approved tools
+  tags          String[] // Search/filter tags
+  isOfficial    Boolean       @default(false)
+  isEnabled     Boolean       @default(true)
+  usageCount    Int           @default(0)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@index([category])
+  @@index([isEnabled])
+  @@index([tags])
+  @@map("skills")
+}
+
+enum SkillCategory {
+  FRONTEND
+  BACKEND
+  FULLSTACK
+  DATABASE
+  DEVOPS
+  TESTING
+  SECURITY
+  PERFORMANCE
+  ACCESSIBILITY
+  DOCUMENTATION
+  ARCHITECTURE
+  TOOLING
+  AI_ML
+  MOBILE
+  API
+  STYLING
+  STATE_MANAGEMENT
+  BUILD_TOOLS
+  VERSION_CONTROL
+  DEBUGGING
+  DEPLOYMENT
+  MONITORING
+  OTHER
+}

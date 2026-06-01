@@ -1,0 +1,337 @@
+{
+  "id": "1764527733164-01y4m2m",
+  "type": "Flex",
+  "name": "EnhancedFooterScreen",
+  "parentId": "1763740744744-mj3fp8s",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "borderRadius": "0.5rem",
+    "width": "100%"
+  },
+  "children": [
+    {
+      "id": "1764527733164-qmt7kts",
+      "type": "Flex",
+      "name": "FooterContainer",
+      "parentId": "1764527733164-01y4m2m",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "gap": "2rem",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-primary)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764527733164-hfyt2fw",
+          "type": "Flex",
+          "name": "CompanyInfo",
+          "parentId": "1764527733164-qmt7kts",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764527733164-a8lv40a",
+              "type": "Heading",
+              "name": "CompanyName",
+              "parentId": "1764527733164-hfyt2fw",
+              "props": {
+                "text": "Awesome Company"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "fontWeight": "600",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-2kp6bxf",
+              "type": "Text",
+              "name": "CompanyTagline",
+              "parentId": "1764527733164-hfyt2fw",
+              "props": {
+                "text": "Innovating the Future"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-se2kwmm",
+              "type": "Text",
+              "name": "Copyright",
+              "parentId": "1764527733164-hfyt2fw",
+              "props": {
+                "text": "© 2023 Awesome Company"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527733164-jqn1fj2",
+          "type": "Flex",
+          "name": "NavigationLinks",
+          "parentId": "1764527733164-qmt7kts",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764527733164-ngqtkcu",
+              "type": "Text",
+              "name": "NavLinkHome",
+              "parentId": "1764527733164-jqn1fj2",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-za1gtfd",
+              "type": "Text",
+              "name": "NavLinkAbout",
+              "parentId": "1764527733164-jqn1fj2",
+              "props": {
+                "text": "About Us"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-dxleuen",
+              "type": "Text",
+              "name": "NavLinkServices",
+              "parentId": "1764527733164-jqn1fj2",
+              "props": {
+                "text": "Services"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-8voy8ge",
+              "type": "Text",
+              "name": "NavLinkContact",
+              "parentId": "1764527733164-jqn1fj2",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527733164-2fjdm8k",
+          "type": "Flex",
+          "name": "SocialMediaLinks",
+          "parentId": "1764527733164-qmt7kts",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764527733164-3qv066l",
+              "type": "Icon",
+              "name": "FacebookIcon",
+              "parentId": "1764527733164-2fjdm8k",
+              "props": {
+                "icon": "facebook"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-d14c70o",
+              "type": "Icon",
+              "name": "TwitterIcon",
+              "parentId": "1764527733164-2fjdm8k",
+              "props": {
+                "icon": "twitter"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-ohrsais",
+              "type": "Icon",
+              "name": "LinkedInIcon",
+              "parentId": "1764527733164-2fjdm8k",
+              "props": {
+                "icon": "linkedin"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-faqpyj7",
+              "type": "Icon",
+              "name": "InstagramIcon",
+              "parentId": "1764527733164-2fjdm8k",
+              "props": {
+                "icon": "instagram"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527733164-7k46r46",
+          "type": "Flex",
+          "name": "NewsletterSignup",
+          "parentId": "1764527733164-qmt7kts",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764527733164-5iv5zi9",
+              "type": "Text",
+              "name": "NewsletterTitle",
+              "parentId": "1764527733164-7k46r46",
+              "props": {
+                "text": "Subscribe to our newsletter"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527733164-6xlu322",
+              "type": "Flex",
+              "name": "SignupForm",
+              "parentId": "1764527733164-7k46r46",
+              "props": {},
+              "styles": {
+                "display": "flex",
+                "flexDirection": "row",
+                "gap": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764527733164-d7vkgix",
+                  "type": "Input",
+                  "name": "EmailInput",
+                  "parentId": "1764527733164-6xlu322",
+                  "props": {
+                    "placeholder": "Enter your email",
+                    "type": "email"
+                  },
+                  "styles": {
+                    "width": "100%",
+                    "padding": "0.5rem",
+                    "border": "1px solid var(--color-border)",
+                    "borderRadius": "0.375rem",
+                    "fontSize": "0.875rem",
+                    "backgroundColor": "var(--color-background)",
+                    "color": "var(--color-foreground)",
+                    "borderColor": "var(--color-input)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764527733164-5mytqlo",
+                  "type": "Button",
+                  "name": "SubscribeButton",
+                  "parentId": "1764527733164-6xlu322",
+                  "props": {
+                    "text": "Subscribe"
+                  },
+                  "styles": {
+                    "padding": "0.5rem 1rem",
+                    "borderRadius": "0.375rem",
+                    "fontSize": "1rem",
+                    "fontWeight": "500",
+                    "backgroundColor": "var(--color-accent)",
+                    "color": "var(--color-accent-foreground)",
+                    "border": "none"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

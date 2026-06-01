@@ -1,0 +1,908 @@
+{
+  "id": "1766568919528-ek18lij",
+  "type": "Page",
+  "name": "CatioDesignLanding",
+  "parentId": "1766448152985-1w4tnxw",
+  "props": {},
+  "styles": {},
+  "className": "min-h-screen bg-background text-foreground",
+  "children": [
+    {
+      "id": "1766568919528-e10ivnm",
+      "type": "Flex",
+      "name": "NavBar",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex justify-between items-center p-4 bg-card shadow-sm",
+      "children": [
+        {
+          "id": "1766568919528-3u9ebod",
+          "type": "Image",
+          "name": "Logo",
+          "parentId": "1766568919528-e10ivnm",
+          "props": {
+            "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+            "alt": "Company Logo"
+          },
+          "styles": {},
+          "className": "w-auto h-auto",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-nswyji0",
+          "type": "Flex",
+          "name": "NavLinks",
+          "parentId": "1766568919528-e10ivnm",
+          "props": {},
+          "styles": {},
+          "className": "flex gap-4",
+          "children": [
+            {
+              "id": "1766568919528-zvfkdt5",
+              "type": "Text",
+              "name": "Link1",
+              "parentId": "1766568919528-nswyji0",
+              "props": {
+                "text": "About"
+              },
+              "styles": {},
+              "className": "text-lg font-medium",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-ndhe7h5",
+              "type": "Text",
+              "name": "Link2",
+              "parentId": "1766568919528-nswyji0",
+              "props": {
+                "text": "Features"
+              },
+              "styles": {},
+              "className": "text-lg font-medium",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-nqhm7xl",
+              "type": "Text",
+              "name": "Link3",
+              "parentId": "1766568919528-nswyji0",
+              "props": {
+                "text": "Pricing"
+              },
+              "styles": {},
+              "className": "text-lg font-medium",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-tkjen0o",
+          "type": "Button",
+          "name": "NavCTA",
+          "parentId": "1766568919528-e10ivnm",
+          "props": {
+            "text": "Get Started"
+          },
+          "styles": {},
+          "className": "bg-primary text-primary-foreground rounded-md py-2 px-4 font-bold",
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-pcbbbf3",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center p-8 bg-muted",
+      "children": [
+        {
+          "id": "1766568919528-surr4un",
+          "type": "Heading",
+          "name": "HeroHeadline",
+          "parentId": "1766568919528-pcbbbf3",
+          "props": {
+            "text": "Create the Perfect Catio Space"
+          },
+          "styles": {},
+          "className": "text-4xl font-extrabold text-center",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-35v1q12",
+          "type": "Text",
+          "name": "HeroSubheadline",
+          "parentId": "1766568919528-pcbbbf3",
+          "props": {
+            "text": "Design an outdoor haven for your cat with ease."
+          },
+          "styles": {},
+          "className": "text-xl text-center mt-2",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-9cb3ie8",
+          "type": "Flex",
+          "name": "HeroCTAs",
+          "parentId": "1766568919528-pcbbbf3",
+          "props": {},
+          "styles": {},
+          "className": "flex gap-4 mt-6",
+          "children": [
+            {
+              "id": "1766568919528-qur7x27",
+              "type": "Button",
+              "name": "StartButton",
+              "parentId": "1766568919528-9cb3ie8",
+              "props": {
+                "text": "Design Now"
+              },
+              "styles": {},
+              "className": "bg-primary text-primary-foreground rounded-md py-2 px-4 font-bold",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-l37uupr",
+              "type": "Button",
+              "name": "DemoButton",
+              "parentId": "1766568919528-9cb3ie8",
+              "props": {
+                "text": "Watch Demo"
+              },
+              "styles": {},
+              "className": "bg-secondary text-secondary-foreground rounded-md py-2 px-4 font-bold",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-spb903k",
+          "type": "Image",
+          "name": "HeroImage",
+          "parentId": "1766568919528-pcbbbf3",
+          "props": {
+            "src": "https://placehold.co/800x500/1a1a2e/eaeaea?text=Product+Preview",
+            "alt": "Catio Design Preview"
+          },
+          "styles": {},
+          "className": "mt-8",
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-jxc6ipl",
+      "type": "Flex",
+      "name": "LogosSection",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center py-8 bg-card",
+      "children": [
+        {
+          "id": "1766568919528-dk3vpgs",
+          "type": "Text",
+          "name": "TrustedBy",
+          "parentId": "1766568919528-jxc6ipl",
+          "props": {
+            "text": "Trusted by leading brands"
+          },
+          "styles": {},
+          "className": "text-lg font-semibold",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-q10f4f6",
+          "type": "Flex",
+          "name": "LogoRow",
+          "parentId": "1766568919528-jxc6ipl",
+          "props": {},
+          "styles": {},
+          "className": "flex gap-4 mt-4",
+          "children": [
+            {
+              "id": "1766568919528-ga1t6gy",
+              "type": "Image",
+              "name": "BrandLogo1",
+              "parentId": "1766568919528-q10f4f6",
+              "props": {
+                "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+                "alt": "Brand Logo"
+              },
+              "styles": {},
+              "className": "w-auto h-auto",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-spim4k6",
+              "type": "Image",
+              "name": "BrandLogo2",
+              "parentId": "1766568919528-q10f4f6",
+              "props": {
+                "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+                "alt": "Brand Logo"
+              },
+              "styles": {},
+              "className": "w-auto h-auto",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-nv64394",
+              "type": "Image",
+              "name": "BrandLogo3",
+              "parentId": "1766568919528-q10f4f6",
+              "props": {
+                "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+                "alt": "Brand Logo"
+              },
+              "styles": {},
+              "className": "w-auto h-auto",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-tpewxp0",
+              "type": "Image",
+              "name": "BrandLogo4",
+              "parentId": "1766568919528-q10f4f6",
+              "props": {
+                "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+                "alt": "Brand Logo"
+              },
+              "styles": {},
+              "className": "w-auto h-auto",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-cq0k4bk",
+      "type": "Flex",
+      "name": "FeaturesSection",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center py-12 bg-muted",
+      "children": [
+        {
+          "id": "1766568919528-mj1oynv",
+          "type": "Heading",
+          "name": "FeaturesTitle",
+          "parentId": "1766568919528-cq0k4bk",
+          "props": {
+            "text": "Key Features"
+          },
+          "styles": {},
+          "className": "text-3xl font-bold text-center mb-8",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-64cduhp",
+          "type": "Grid",
+          "name": "FeatureGrid",
+          "parentId": "1766568919528-cq0k4bk",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6",
+          "children": [
+            {
+              "id": "1766568919528-5el2keg",
+              "type": "Card",
+              "name": "Feature1",
+              "parentId": "1766568919528-64cduhp",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-card",
+              "children": [
+                {
+                  "id": "1766568919528-37fecfd",
+                  "type": "Icon",
+                  "name": "FeatureIcon1",
+                  "parentId": "1766568919528-5el2keg",
+                  "props": {
+                    "icon": "settings"
+                  },
+                  "styles": {},
+                  "className": "text-primary text-3xl mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-6urlwmj",
+                  "type": "Heading",
+                  "name": "FeatureTitle1",
+                  "parentId": "1766568919528-5el2keg",
+                  "props": {
+                    "text": "Customizable Layouts"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-semibold mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-i32a0ag",
+                  "type": "Text",
+                  "name": "FeatureDesc1",
+                  "parentId": "1766568919528-5el2keg",
+                  "props": {
+                    "text": "Easily adjust the size and shape of your catio to match your space."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-7gocu3r",
+              "type": "Card",
+              "name": "Feature2",
+              "parentId": "1766568919528-64cduhp",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-card",
+              "children": [
+                {
+                  "id": "1766568919528-oeiprxz",
+                  "type": "Icon",
+                  "name": "FeatureIcon2",
+                  "parentId": "1766568919528-7gocu3r",
+                  "props": {
+                    "icon": "shield"
+                  },
+                  "styles": {},
+                  "className": "text-primary text-3xl mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-d3rtrau",
+                  "type": "Heading",
+                  "name": "FeatureTitle2",
+                  "parentId": "1766568919528-7gocu3r",
+                  "props": {
+                    "text": "Secure Construction"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-semibold mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-5lnyqyf",
+                  "type": "Text",
+                  "name": "FeatureDesc2",
+                  "parentId": "1766568919528-7gocu3r",
+                  "props": {
+                    "text": "Built with durable materials to keep your cat safe and comfortable."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-p5thm8q",
+              "type": "Card",
+              "name": "Feature3",
+              "parentId": "1766568919528-64cduhp",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-card",
+              "children": [
+                {
+                  "id": "1766568919528-mkn4pd7",
+                  "type": "Icon",
+                  "name": "FeatureIcon3",
+                  "parentId": "1766568919528-p5thm8q",
+                  "props": {
+                    "icon": "trending-up"
+                  },
+                  "styles": {},
+                  "className": "text-primary text-3xl mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-kw0hceq",
+                  "type": "Heading",
+                  "name": "FeatureTitle3",
+                  "parentId": "1766568919528-p5thm8q",
+                  "props": {
+                    "text": "Expandable Designs"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-semibold mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-bnwh29x",
+                  "type": "Text",
+                  "name": "FeatureDesc3",
+                  "parentId": "1766568919528-p5thm8q",
+                  "props": {
+                    "text": "Start small and expand your catio as needed with modular components."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-qfcnpro",
+      "type": "Flex",
+      "name": "TestimonialsSection",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center py-12 bg-card",
+      "children": [
+        {
+          "id": "1766568919528-eh624a4",
+          "type": "Heading",
+          "name": "TestimonialsTitle",
+          "parentId": "1766568919528-qfcnpro",
+          "props": {
+            "text": "What Our Customers Say"
+          },
+          "styles": {},
+          "className": "text-3xl font-bold text-center mb-8",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-o9ordsb",
+          "type": "Grid",
+          "name": "TestimonialGrid",
+          "parentId": "1766568919528-qfcnpro",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+          "children": [
+            {
+              "id": "1766568919528-t58u467",
+              "type": "Card",
+              "name": "Testimonial1",
+              "parentId": "1766568919528-o9ordsb",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-muted",
+              "children": [
+                {
+                  "id": "1766568919528-8hqarpm",
+                  "type": "Avatar",
+                  "name": "CustomerAvatar1",
+                  "parentId": "1766568919528-t58u467",
+                  "props": {
+                    "src": "https://placehold.co/100x100/6366f1/ffffff?text=JD",
+                    "alt": "Customer Name"
+                  },
+                  "styles": {},
+                  "className": "mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-m4uuvht",
+                  "type": "Text",
+                  "name": "CustomerQuote1",
+                  "parentId": "1766568919528-t58u467",
+                  "props": {
+                    "text": "The catio has changed our life! Our cat loves it and so do we."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-center mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-2zkkzc0",
+                  "type": "Text",
+                  "name": "CustomerName1",
+                  "parentId": "1766568919528-t58u467",
+                  "props": {
+                    "text": "John Doe, Designer"
+                  },
+                  "styles": {},
+                  "className": "font-medium text-center",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-0aaq5si",
+              "type": "Card",
+              "name": "Testimonial2",
+              "parentId": "1766568919528-o9ordsb",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-muted",
+              "children": [
+                {
+                  "id": "1766568919528-3b1ttap",
+                  "type": "Avatar",
+                  "name": "CustomerAvatar2",
+                  "parentId": "1766568919528-0aaq5si",
+                  "props": {
+                    "src": "https://placehold.co/100x100/6366f1/ffffff?text=AP",
+                    "alt": "Customer Name"
+                  },
+                  "styles": {},
+                  "className": "mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-3elknnb",
+                  "type": "Text",
+                  "name": "CustomerQuote2",
+                  "parentId": "1766568919528-0aaq5si",
+                  "props": {
+                    "text": "The quality and build are impressive. My cat feels secure and happy."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-center mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-tyopptv",
+                  "type": "Text",
+                  "name": "CustomerName2",
+                  "parentId": "1766568919528-0aaq5si",
+                  "props": {
+                    "text": "Alice Parker, Engineer"
+                  },
+                  "styles": {},
+                  "className": "font-medium text-center",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-8zs0gr5",
+      "type": "Flex",
+      "name": "PricingSection",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center py-12 bg-muted",
+      "children": [
+        {
+          "id": "1766568919528-73lvljd",
+          "type": "Heading",
+          "name": "PricingTitle",
+          "parentId": "1766568919528-8zs0gr5",
+          "props": {
+            "text": "Choose Your Plan"
+          },
+          "styles": {},
+          "className": "text-3xl font-bold text-center mb-8",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-3dv7ybz",
+          "type": "Flex",
+          "name": "PricingGrid",
+          "parentId": "1766568919528-8zs0gr5",
+          "props": {},
+          "styles": {},
+          "className": "flex gap-6",
+          "children": [
+            {
+              "id": "1766568919528-7vso1pl",
+              "type": "Card",
+              "name": "BasicPlan",
+              "parentId": "1766568919528-3dv7ybz",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-card",
+              "children": [
+                {
+                  "id": "1766568919528-03wgbtu",
+                  "type": "Heading",
+                  "name": "PlanName1",
+                  "parentId": "1766568919528-7vso1pl",
+                  "props": {
+                    "text": "Basic"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-semibold mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-xklw82x",
+                  "type": "Text",
+                  "name": "PlanPrice1",
+                  "parentId": "1766568919528-7vso1pl",
+                  "props": {
+                    "text": "$29/month"
+                  },
+                  "styles": {},
+                  "className": "font-medium text-lg mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-bg8qqic",
+                  "type": "Button",
+                  "name": "ChoosePlan1",
+                  "parentId": "1766568919528-7vso1pl",
+                  "props": {
+                    "text": "Select Plan"
+                  },
+                  "styles": {},
+                  "className": "bg-primary text-primary-foreground rounded-md py-2 px-4 font-bold",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-v3trrd5",
+              "type": "Card",
+              "name": "PremiumPlan",
+              "parentId": "1766568919528-3dv7ybz",
+              "props": {},
+              "styles": {},
+              "className": "p-6 shadow-md rounded-lg bg-card",
+              "children": [
+                {
+                  "id": "1766568919528-xk2xkbc",
+                  "type": "Heading",
+                  "name": "PlanName2",
+                  "parentId": "1766568919528-v3trrd5",
+                  "props": {
+                    "text": "Premium"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-semibold mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-n7mls18",
+                  "type": "Text",
+                  "name": "PlanPrice2",
+                  "parentId": "1766568919528-v3trrd5",
+                  "props": {
+                    "text": "$59/month"
+                  },
+                  "styles": {},
+                  "className": "font-medium text-lg mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1766568919528-95fiqwf",
+                  "type": "Button",
+                  "name": "ChoosePlan2",
+                  "parentId": "1766568919528-v3trrd5",
+                  "props": {
+                    "text": "Select Plan"
+                  },
+                  "styles": {},
+                  "className": "bg-primary text-primary-foreground rounded-md py-2 px-4 font-bold",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-jiav26u",
+      "type": "Flex",
+      "name": "CTASection",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center py-12 bg-accent",
+      "children": [
+        {
+          "id": "1766568919528-ioyyyoi",
+          "type": "Heading",
+          "name": "CTAHeadline",
+          "parentId": "1766568919528-jiav26u",
+          "props": {
+            "text": "Ready to Build Your Catio?"
+          },
+          "styles": {},
+          "className": "text-4xl font-extrabold text-center mb-4",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-n0mmys7",
+          "type": "Text",
+          "name": "CTAText",
+          "parentId": "1766568919528-jiav26u",
+          "props": {
+            "text": "Start designing today and give your cat the outdoor experience they deserve."
+          },
+          "styles": {},
+          "className": "text-lg text-center mb-6",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-74hpxt3",
+          "type": "Flex",
+          "name": "CTAFlex",
+          "parentId": "1766568919528-jiav26u",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-row gap-4",
+          "children": [
+            {
+              "id": "1766568919528-wkpxow4",
+              "type": "Input",
+              "name": "EmailInput",
+              "parentId": "1766568919528-74hpxt3",
+              "props": {
+                "placeholder": "Enter your email"
+              },
+              "styles": {},
+              "className": "w-full max-w-xs bg-white border border-gray-300 rounded-md py-2 px-4",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-bb6lp1p",
+              "type": "Button",
+              "name": "SubscribeButton",
+              "parentId": "1766568919528-74hpxt3",
+              "props": {
+                "text": "Subscribe"
+              },
+              "styles": {},
+              "className": "bg-primary text-primary-foreground rounded-md py-2 px-6 font-bold",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1766568919528-xbnj1ej",
+      "type": "Flex",
+      "name": "Footer",
+      "parentId": "1766568919528-ek18lij",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center p-8 bg-card",
+      "children": [
+        {
+          "id": "1766568919528-ptplsl6",
+          "type": "Image",
+          "name": "FooterLogo",
+          "parentId": "1766568919528-xbnj1ej",
+          "props": {
+            "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+            "alt": "Footer Logo"
+          },
+          "styles": {},
+          "className": "w-auto h-auto mb-4",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1766568919528-6jxrrp6",
+          "type": "Flex",
+          "name": "FooterLinks",
+          "parentId": "1766568919528-xbnj1ej",
+          "props": {},
+          "styles": {},
+          "className": "flex gap-4",
+          "children": [
+            {
+              "id": "1766568919528-tikafph",
+              "type": "Text",
+              "name": "FooterLink1",
+              "parentId": "1766568919528-6jxrrp6",
+              "props": {
+                "text": "Privacy Policy"
+              },
+              "styles": {},
+              "className": "text-sm text-muted-foreground",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-23nyzp8",
+              "type": "Text",
+              "name": "FooterLink2",
+              "parentId": "1766568919528-6jxrrp6",
+              "props": {
+                "text": "Terms of Service"
+              },
+              "styles": {},
+              "className": "text-sm text-muted-foreground",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1766568919528-tbcvnpc",
+              "type": "Text",
+              "name": "FooterLink3",
+              "parentId": "1766568919528-6jxrrp6",
+              "props": {
+                "text": "Contact Us"
+              },
+              "styles": {},
+              "className": "text-sm text-muted-foreground",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

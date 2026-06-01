@@ -1,0 +1,440 @@
+{
+  "id": "1765377132942-fvhz5vo",
+  "type": "Flex",
+  "name": "LandingPageForLazioPartners",
+  "parentId": "1764678963495-7uiuoe1",
+  "props": {},
+  "styles": {
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "width": "100%",
+    "alignItems": "center"
+  },
+  "children": [
+    {
+      "id": "1765377132942-i0ym8wa",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1765377132942-fvhz5vo",
+      "props": {},
+      "styles": {
+        "width": "100%",
+        "maxWidth": "48rem",
+        "height": "40rem",
+        "backgroundColor": "var(--color-primary)",
+        "borderRadius": "1rem",
+        "position": "relative",
+        "overflow": "hidden",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "id": "1765377132942-2v5ay9q",
+          "type": "Text",
+          "name": "HeroTitle",
+          "parentId": "1765377132942-i0ym8wa",
+          "props": {
+            "text": "Welcome to Lazio Partners"
+          },
+          "styles": {
+            "fontSize": "2.25rem",
+            "fontWeight": "bold",
+            "color": "var(--color-primary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377132942-w8rbehm",
+          "type": "Text",
+          "name": "HeroSubtitle",
+          "parentId": "1765377132942-i0ym8wa",
+          "props": {
+            "text": "Innovating the Future of Finance"
+          },
+          "styles": {
+            "fontSize": "1.25rem",
+            "fontWeight": "500",
+            "color": "var(--color-primary-foreground)",
+            "marginTop": "1rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377132942-lwr1f8o",
+          "type": "Button",
+          "name": "HeroCTAButton",
+          "parentId": "1765377132942-i0ym8wa",
+          "props": {
+            "text": "Get Started"
+          },
+          "styles": {
+            "padding": "0.5rem 1rem",
+            "borderRadius": "0.375rem",
+            "fontSize": "0.875rem",
+            "fontWeight": "500",
+            "backgroundColor": "var(--color-secondary)",
+            "color": "var(--color-secondary-foreground)",
+            "border": "none",
+            "marginTop": "2rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377132942-dwzycgs",
+          "type": "Icon",
+          "name": "Hero3DElement",
+          "parentId": "1765377132942-i0ym8wa",
+          "props": {
+            "icon": "3d-model",
+            "size": "5rem"
+          },
+          "styles": {
+            "position": "absolute",
+            "bottom": "1rem",
+            "right": "1rem",
+            "color": "var(--color-accent-foreground)"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377132942-lb38ri0",
+      "type": "Grid",
+      "name": "FeaturesSection",
+      "parentId": "1765377132942-fvhz5vo",
+      "props": {},
+      "styles": {
+        "gridTemplateColumns": "repeat(3, 1fr)",
+        "gap": "1.5rem",
+        "width": "100%",
+        "maxWidth": "48rem"
+      },
+      "children": [
+        {
+          "id": "1765377132942-0yevoym",
+          "type": "Card",
+          "name": "FeatureCard1",
+          "parentId": "1765377132942-lb38ri0",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "padding": "1rem"
+          },
+          "children": [
+            {
+              "id": "1765377132942-9xo66ql",
+              "type": "Icon",
+              "name": "FeatureIcon1",
+              "parentId": "1765377132942-0yevoym",
+              "props": {
+                "icon": "globe"
+              },
+              "styles": {
+                "color": "var(--color-accent)",
+                "fontSize": "2rem",
+                "marginBottom": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-6vfdk4v",
+              "type": "Text",
+              "name": "FeatureTitle1",
+              "parentId": "1765377132942-0yevoym",
+              "props": {
+                "text": "Global Reach"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-8iwanpq",
+              "type": "Text",
+              "name": "FeatureDescription1",
+              "parentId": "1765377132942-0yevoym",
+              "props": {
+                "text": "Expand your business horizons with our global solutions."
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377132942-54jy76i",
+          "type": "Card",
+          "name": "FeatureCard2",
+          "parentId": "1765377132942-lb38ri0",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "padding": "1rem"
+          },
+          "children": [
+            {
+              "id": "1765377132942-d0jt5a2",
+              "type": "Icon",
+              "name": "FeatureIcon2",
+              "parentId": "1765377132942-54jy76i",
+              "props": {
+                "icon": "shield"
+              },
+              "styles": {
+                "color": "var(--color-accent)",
+                "fontSize": "2rem",
+                "marginBottom": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-ymcciyc",
+              "type": "Text",
+              "name": "FeatureTitle2",
+              "parentId": "1765377132942-54jy76i",
+              "props": {
+                "text": "Security"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-weaj9h0",
+              "type": "Text",
+              "name": "FeatureDescription2",
+              "parentId": "1765377132942-54jy76i",
+              "props": {
+                "text": "Your data and transactions are always secure with us."
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377132942-0s6lm2y",
+          "type": "Card",
+          "name": "FeatureCard3",
+          "parentId": "1765377132942-lb38ri0",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "padding": "1rem"
+          },
+          "children": [
+            {
+              "id": "1765377132942-45kwg0q",
+              "type": "Icon",
+              "name": "FeatureIcon3",
+              "parentId": "1765377132942-0s6lm2y",
+              "props": {
+                "icon": "chart-line"
+              },
+              "styles": {
+                "color": "var(--color-accent)",
+                "fontSize": "2rem",
+                "marginBottom": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-9eat69l",
+              "type": "Text",
+              "name": "FeatureTitle3",
+              "parentId": "1765377132942-0s6lm2y",
+              "props": {
+                "text": "Analytics"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-btxrm4i",
+              "type": "Text",
+              "name": "FeatureDescription3",
+              "parentId": "1765377132942-0s6lm2y",
+              "props": {
+                "text": "Gain insights with our comprehensive analytics tools."
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377132942-9yii420",
+      "type": "Flex",
+      "name": "ContactSection",
+      "parentId": "1765377132942-fvhz5vo",
+      "props": {},
+      "styles": {
+        "width": "100%",
+        "maxWidth": "48rem",
+        "flexDirection": "column",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-muted)",
+        "borderRadius": "0.5rem"
+      },
+      "children": [
+        {
+          "id": "1765377132942-5u7nbin",
+          "type": "Heading",
+          "name": "ContactHeading",
+          "parentId": "1765377132942-9yii420",
+          "props": {
+            "text": "Get in Touch"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "bold",
+            "color": "var(--color-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377132942-d8ww5nb",
+          "type": "Form",
+          "name": "ContactForm",
+          "parentId": "1765377132942-9yii420",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem",
+            "marginTop": "1.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377132942-zotck4l",
+              "type": "Input",
+              "name": "NameInput",
+              "parentId": "1765377132942-d8ww5nb",
+              "props": {
+                "placeholder": "Your Name",
+                "type": "text"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "1rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "backgroundColor": "var(--color-background)",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-9zsd39y",
+              "type": "Input",
+              "name": "EmailInput",
+              "parentId": "1765377132942-d8ww5nb",
+              "props": {
+                "placeholder": "Email Address",
+                "type": "email"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "1rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "backgroundColor": "var(--color-background)",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-x40r9w6",
+              "type": "Textarea",
+              "name": "MessageInput",
+              "parentId": "1765377132942-d8ww5nb",
+              "props": {
+                "placeholder": "Your Message"
+              },
+              "styles": {
+                "padding": "1rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.375rem",
+                "height": "10rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377132942-czi5cnv",
+              "type": "Button",
+              "name": "SubmitButton",
+              "parentId": "1765377132942-d8ww5nb",
+              "props": {
+                "text": "Send Message"
+              },
+              "styles": {
+                "padding": "1rem",
+                "borderRadius": "0.5rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none",
+                "textAlign": "center"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

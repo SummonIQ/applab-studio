@@ -1,0 +1,3725 @@
+{
+  "id": "1765782660284-y6voe3x",
+  "type": "Page",
+  "name": "LazioGroupLandingPage",
+  "parentId": "1765782386328-cmieqpg",
+  "props": {},
+  "styles": {},
+  "className": "min-h-screen bg-background text-foreground flex flex-col",
+  "children": [
+    {
+      "id": "1765782660284-9kmt5b1",
+      "type": "Alert",
+      "name": "TopAnnouncementBar",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {
+        "alertVariant": "default",
+        "title": "Now hiring in Europe",
+        "description": "Join Lazio Group to build transformative digital experiences across industries."
+      },
+      "styles": {},
+      "className": "border-b border-border",
+      "children": [],
+      "events": {}
+    },
+    {
+      "id": "1765782660284-aain70o",
+      "type": "Card",
+      "name": "NavbarCard",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "w-full border-b border-border bg-background",
+      "children": [
+        {
+          "id": "1765782660284-mqf0mzd",
+          "type": "Container",
+          "name": "NavbarContainer",
+          "parentId": "1765782660284-aain70o",
+          "props": {},
+          "styles": {},
+          "className": "max-w-7xl mx-auto px-4 py-3",
+          "children": [
+            {
+              "id": "1765782660284-9lzx389",
+              "type": "Flex",
+              "name": "NavbarContent",
+              "parentId": "1765782660284-mqf0mzd",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-center justify-between gap-4",
+              "children": [
+                {
+                  "id": "1765782660284-m9q77di",
+                  "type": "Flex",
+                  "name": "LogoArea",
+                  "parentId": "1765782660284-9lzx389",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765782660284-4s0gfkr",
+                      "type": "Image",
+                      "name": "BrandLogo",
+                      "parentId": "1765782660284-m9q77di",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=LG",
+                        "alt": "Lazio Group logo"
+                      },
+                      "styles": {},
+                      "className": "w-auto h-auto",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660284-413z8mg",
+                      "type": "Text",
+                      "name": "BrandName",
+                      "parentId": "1765782660284-m9q77di",
+                      "props": {
+                        "text": "Lazio Group"
+                      },
+                      "styles": {},
+                      "className": "text-lg font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660284-bz1cca1",
+                      "type": "Badge",
+                      "name": "BrandCertification",
+                      "parentId": "1765782660284-m9q77di",
+                      "props": {
+                        "badgeVariant": "secondary",
+                        "text": "ISO 9001"
+                      },
+                      "styles": {},
+                      "className": "text-xs",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660284-k34wzgj",
+                  "type": "Flex",
+                  "name": "NavLinks",
+                  "parentId": "1765782660284-9lzx389",
+                  "props": {},
+                  "styles": {},
+                  "className": "hidden md:flex flex-row items-center gap-6",
+                  "children": [
+                    {
+                      "id": "1765782660284-wa8dx19",
+                      "type": "Text",
+                      "name": "LinkSolutions",
+                      "parentId": "1765782660284-k34wzgj",
+                      "props": {
+                        "text": "Solutions"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-jxq7wji",
+                      "type": "Text",
+                      "name": "LinkWork",
+                      "parentId": "1765782660284-k34wzgj",
+                      "props": {
+                        "text": "Work"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-5w2lfya",
+                      "type": "Text",
+                      "name": "LinkIndustries",
+                      "parentId": "1765782660284-k34wzgj",
+                      "props": {
+                        "text": "Industries"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-b6dhcgj",
+                      "type": "Text",
+                      "name": "LinkPricing",
+                      "parentId": "1765782660284-k34wzgj",
+                      "props": {
+                        "text": "Pricing"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-74too8w",
+                      "type": "Text",
+                      "name": "LinkResources",
+                      "parentId": "1765782660284-k34wzgj",
+                      "props": {
+                        "text": "Resources"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-n6h357r",
+                  "type": "Flex",
+                  "name": "NavActions",
+                  "parentId": "1765782660284-9lzx389",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-ahvwxu6",
+                      "type": "Icon",
+                      "name": "SearchIcon",
+                      "parentId": "1765782660285-n6h357r",
+                      "props": {
+                        "icon": "search"
+                      },
+                      "styles": {},
+                      "className": "hidden md:block text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-cr7kky9",
+                      "type": "Button",
+                      "name": "SignInButton",
+                      "parentId": "1765782660285-n6h357r",
+                      "props": {
+                        "text": "Sign In",
+                        "variant": "ghost",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-lcrq1er",
+                      "type": "Button",
+                      "name": "ContactSalesButton",
+                      "parentId": "1765782660285-n6h357r",
+                      "props": {
+                        "text": "Contact Sales",
+                        "variant": "secondary",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-m6bqecx",
+                      "type": "Button",
+                      "name": "GetStartedButton",
+                      "parentId": "1765782660285-n6h357r",
+                      "props": {
+                        "text": "Get Started",
+                        "variant": "default",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-sm bg-primary text-primary-foreground rounded-md",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-pslwx66",
+                      "type": "Icon",
+                      "name": "MobileMenuIcon",
+                      "parentId": "1765782660285-n6h357r",
+                      "props": {
+                        "icon": "menu"
+                      },
+                      "styles": {},
+                      "className": "md:hidden text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-2nnkgqr",
+      "type": "Container",
+      "name": "HeroSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-12",
+      "children": [
+        {
+          "id": "1765782660285-dn5uhzi",
+          "type": "Grid",
+          "name": "HeroGrid",
+          "parentId": "1765782660285-2nnkgqr",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 lg:grid-cols-2 gap-8 items-center",
+          "children": [
+            {
+              "id": "1765782660285-tbkjoo8",
+              "type": "Flex",
+              "name": "HeroCopy",
+              "parentId": "1765782660285-dn5uhzi",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col gap-4",
+              "children": [
+                {
+                  "id": "1765782660285-wfxno6m",
+                  "type": "Badge",
+                  "name": "HeroBadge",
+                  "parentId": "1765782660285-tbkjoo8",
+                  "props": {
+                    "badgeVariant": "secondary",
+                    "text": "New: 2025 Digital Maturity Report"
+                  },
+                  "styles": {},
+                  "className": "w-fit",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-iybbwal",
+                  "type": "Heading",
+                  "name": "HeroHeading",
+                  "parentId": "1765782660285-tbkjoo8",
+                  "props": {
+                    "level": 1,
+                    "text": "Design, build and scale digital products with confidence"
+                  },
+                  "styles": {},
+                  "className": "text-4xl font-bold leading-tight",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-gh2rqfd",
+                  "type": "Text",
+                  "name": "HeroSubheading",
+                  "parentId": "1765782660285-tbkjoo8",
+                  "props": {
+                    "text": "Lazio Group partners with ambitious teams to ship modern apps, streamline operations and drive measurable growth."
+                  },
+                  "styles": {},
+                  "className": "text-base text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ucmfjo9",
+                  "type": "Flex",
+                  "name": "HeroCTARow",
+                  "parentId": "1765782660285-tbkjoo8",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-jjwyrl9",
+                      "type": "Button",
+                      "name": "PrimaryCTA",
+                      "parentId": "1765782660285-ucmfjo9",
+                      "props": {
+                        "text": "Start Your Project",
+                        "variant": "default",
+                        "size": "lg"
+                      },
+                      "styles": {},
+                      "className": "bg-primary text-primary-foreground rounded-md px-5",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-otqdz9h",
+                      "type": "Button",
+                      "name": "SecondaryCTA",
+                      "parentId": "1765782660285-ucmfjo9",
+                      "props": {
+                        "text": "Book a Demo",
+                        "variant": "secondary",
+                        "size": "lg"
+                      },
+                      "styles": {},
+                      "className": "rounded-md px-5",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-q1pszma",
+                      "type": "Button",
+                      "name": "TertiaryCTA",
+                      "parentId": "1765782660285-ucmfjo9",
+                      "props": {
+                        "text": "See Case Studies",
+                        "variant": "ghost",
+                        "size": "lg"
+                      },
+                      "styles": {},
+                      "className": "rounded-md px-5",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-xjfn4e0",
+                  "type": "Flex",
+                  "name": "HeroBullets",
+                  "parentId": "1765782660285-tbkjoo8",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-2 mt-2",
+                  "children": [
+                    {
+                      "id": "1765782660285-z2q13es",
+                      "type": "Flex",
+                      "name": "Bullet1",
+                      "parentId": "1765782660285-xjfn4e0",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-2",
+                      "children": [
+                        {
+                          "id": "1765782660285-317dmoe",
+                          "type": "Icon",
+                          "name": "Bullet1Icon",
+                          "parentId": "1765782660285-z2q13es",
+                          "props": {
+                            "icon": "check"
+                          },
+                          "styles": {},
+                          "className": "text-primary",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-utmet68",
+                          "type": "Text",
+                          "name": "Bullet1Text",
+                          "parentId": "1765782660285-z2q13es",
+                          "props": {
+                            "text": "Strategy to launch in 6–12 weeks"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-n2wx962",
+                      "type": "Flex",
+                      "name": "Bullet2",
+                      "parentId": "1765782660285-xjfn4e0",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-2",
+                      "children": [
+                        {
+                          "id": "1765782660285-jdw1492",
+                          "type": "Icon",
+                          "name": "Bullet2Icon",
+                          "parentId": "1765782660285-n2wx962",
+                          "props": {
+                            "icon": "check"
+                          },
+                          "styles": {},
+                          "className": "text-primary",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-qqa8ii1",
+                          "type": "Text",
+                          "name": "Bullet2Text",
+                          "parentId": "1765782660285-n2wx962",
+                          "props": {
+                            "text": "Battle-tested design systems and components"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-r9zosox",
+                      "type": "Flex",
+                      "name": "Bullet3",
+                      "parentId": "1765782660285-xjfn4e0",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-2",
+                      "children": [
+                        {
+                          "id": "1765782660285-kkk42xf",
+                          "type": "Icon",
+                          "name": "Bullet3Icon",
+                          "parentId": "1765782660285-r9zosox",
+                          "props": {
+                            "icon": "check"
+                          },
+                          "styles": {},
+                          "className": "text-primary",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-7tqpwps",
+                          "type": "Text",
+                          "name": "Bullet3Text",
+                          "parentId": "1765782660285-r9zosox",
+                          "props": {
+                            "text": "Enterprise-grade security and uptime"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-c1bbz5f",
+                  "type": "Flex",
+                  "name": "HeroSocialProofInline",
+                  "parentId": "1765782660285-tbkjoo8",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-4 mt-4",
+                  "children": [
+                    {
+                      "id": "1765782660285-bq41uoq",
+                      "type": "Avatar",
+                      "name": "Avatar1",
+                      "parentId": "1765782660285-c1bbz5f",
+                      "props": {
+                        "src": "https://placehold.co/100x100/6366f1/ffffff?text=JD",
+                        "alt": "Client avatar"
+                      },
+                      "styles": {},
+                      "className": "w-8 h-8 rounded-full",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-epc2fi2",
+                      "type": "Avatar",
+                      "name": "Avatar2",
+                      "parentId": "1765782660285-c1bbz5f",
+                      "props": {
+                        "src": "https://placehold.co/100x100/14b8a6/ffffff?text=AR",
+                        "alt": "Client avatar"
+                      },
+                      "styles": {},
+                      "className": "w-8 h-8 rounded-full -ml-3 border-2 border-background",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-63m1fcj",
+                      "type": "Avatar",
+                      "name": "Avatar3",
+                      "parentId": "1765782660285-c1bbz5f",
+                      "props": {
+                        "src": "https://placehold.co/100x100/f59e0b/ffffff?text=KM",
+                        "alt": "Client avatar"
+                      },
+                      "styles": {},
+                      "className": "w-8 h-8 rounded-full -ml-3 border-2 border-background",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-543te6m",
+                      "type": "Text",
+                      "name": "HeroHappyClients",
+                      "parentId": "1765782660285-c1bbz5f",
+                      "props": {
+                        "text": "10,000+ users onboarded across 120 organizations"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-e5b7yjh",
+              "type": "Card",
+              "name": "HeroVisualCard",
+              "parentId": "1765782660285-dn5uhzi",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg shadow-lg p-4",
+              "children": [
+                {
+                  "id": "1765782660285-8wmmdd5",
+                  "type": "Image",
+                  "name": "HeroImage",
+                  "parentId": "1765782660285-e5b7yjh",
+                  "props": {
+                    "src": "https://placehold.co/800x500/1a1a2e/eaeaea?text=Product+Preview",
+                    "alt": "Lazio Group product preview"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto rounded-md",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-6fju5nt",
+                  "type": "Flex",
+                  "name": "HeroVisualStats",
+                  "parentId": "1765782660285-e5b7yjh",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center justify-between gap-4 mt-4",
+                  "children": [
+                    {
+                      "id": "1765782660285-6o958fm",
+                      "type": "Flex",
+                      "name": "VisualStat1",
+                      "parentId": "1765782660285-6fju5nt",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-2",
+                      "children": [
+                        {
+                          "id": "1765782660285-nd80yux",
+                          "type": "Icon",
+                          "name": "VisualStat1Icon",
+                          "parentId": "1765782660285-6o958fm",
+                          "props": {
+                            "icon": "zap"
+                          },
+                          "styles": {},
+                          "className": "text-primary",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-0aecwq8",
+                          "type": "Text",
+                          "name": "VisualStat1Text",
+                          "parentId": "1765782660285-6o958fm",
+                          "props": {
+                            "text": "50% faster sprints"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-kb2za9s",
+                      "type": "Flex",
+                      "name": "VisualStat2",
+                      "parentId": "1765782660285-6fju5nt",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-2",
+                      "children": [
+                        {
+                          "id": "1765782660285-snwm8if",
+                          "type": "Icon",
+                          "name": "VisualStat2Icon",
+                          "parentId": "1765782660285-kb2za9s",
+                          "props": {
+                            "icon": "shield"
+                          },
+                          "styles": {},
+                          "className": "text-primary",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-gsdsh8q",
+                          "type": "Text",
+                          "name": "VisualStat2Text",
+                          "parentId": "1765782660285-kb2za9s",
+                          "props": {
+                            "text": "99.9% uptime"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-t5o40i9",
+                      "type": "Flex",
+                      "name": "VisualStat3",
+                      "parentId": "1765782660285-6fju5nt",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-2",
+                      "children": [
+                        {
+                          "id": "1765782660285-8q95cin",
+                          "type": "Icon",
+                          "name": "VisualStat3Icon",
+                          "parentId": "1765782660285-t5o40i9",
+                          "props": {
+                            "icon": "trending-up"
+                          },
+                          "styles": {},
+                          "className": "text-primary",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-zodn81j",
+                          "type": "Text",
+                          "name": "VisualStat3Text",
+                          "parentId": "1765782660285-t5o40i9",
+                          "props": {
+                            "text": "3x feature velocity"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-g09taka",
+      "type": "Container",
+      "name": "TrustedBySection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-6",
+      "children": [
+        {
+          "id": "1765782660285-5stvdqb",
+          "type": "Card",
+          "name": "TrustedByCard",
+          "parentId": "1765782660285-g09taka",
+          "props": {},
+          "styles": {},
+          "className": "bg-card border border-border rounded-lg p-4",
+          "children": [
+            {
+              "id": "1765782660285-cqhg6jh",
+              "type": "Flex",
+              "name": "TrustedByRow",
+              "parentId": "1765782660285-5stvdqb",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-center justify-between gap-4",
+              "children": [
+                {
+                  "id": "1765782660285-rrvd2z0",
+                  "type": "Text",
+                  "name": "TrustedByLabel",
+                  "parentId": "1765782660285-cqhg6jh",
+                  "props": {
+                    "text": "Trusted by teams at"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-7xskhef",
+                  "type": "Flex",
+                  "name": "LogoRow",
+                  "parentId": "1765782660285-cqhg6jh",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-6",
+                  "children": [
+                    {
+                      "id": "1765782660285-mzdqoiv",
+                      "type": "Image",
+                      "name": "Logo1",
+                      "parentId": "1765782660285-7xskhef",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=ACME",
+                        "alt": "ACME logo"
+                      },
+                      "styles": {},
+                      "className": "opacity-80",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-ox84bzl",
+                      "type": "Image",
+                      "name": "Logo2",
+                      "parentId": "1765782660285-7xskhef",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=NOVA",
+                        "alt": "NOVA logo"
+                      },
+                      "styles": {},
+                      "className": "opacity-80",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-6yzgwep",
+                      "type": "Image",
+                      "name": "Logo3",
+                      "parentId": "1765782660285-7xskhef",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=ORBIT",
+                        "alt": "ORBIT logo"
+                      },
+                      "styles": {},
+                      "className": "opacity-80",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-twjd9sb",
+                      "type": "Image",
+                      "name": "Logo4",
+                      "parentId": "1765782660285-7xskhef",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=PRIMA",
+                        "alt": "PRIMA logo"
+                      },
+                      "styles": {},
+                      "className": "opacity-80",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-4wn8ypq",
+                      "type": "Image",
+                      "name": "Logo5",
+                      "parentId": "1765782660285-7xskhef",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=VENTO",
+                        "alt": "VENTO logo"
+                      },
+                      "styles": {},
+                      "className": "opacity-80",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-2yn7nvo",
+      "type": "Container",
+      "name": "FeaturesSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-12",
+      "children": [
+        {
+          "id": "1765782660285-zyllb5f",
+          "type": "Flex",
+          "name": "FeaturesHeader",
+          "parentId": "1765782660285-2yn7nvo",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-col items-start gap-2 mb-6",
+          "children": [
+            {
+              "id": "1765782660285-7z245z9",
+              "type": "Heading",
+              "name": "FeaturesTitle",
+              "parentId": "1765782660285-zyllb5f",
+              "props": {
+                "level": 2,
+                "text": "What we deliver"
+              },
+              "styles": {},
+              "className": "text-3xl font-semibold",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-wjjd3fq",
+              "type": "Text",
+              "name": "FeaturesSubtitle",
+              "parentId": "1765782660285-zyllb5f",
+              "props": {
+                "text": "From strategy to deployment, we craft cohesive experiences that scale."
+              },
+              "styles": {},
+              "className": "text-base text-muted-foreground",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-6mfei6a",
+          "type": "Grid",
+          "name": "FeaturesGrid",
+          "parentId": "1765782660285-2yn7nvo",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+          "children": [
+            {
+              "id": "1765782660285-tek3jlr",
+              "type": "Card",
+              "name": "FeatureCard01",
+              "parentId": "1765782660285-6mfei6a",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-fiudsh0",
+                  "type": "Icon",
+                  "name": "Feature01Icon",
+                  "parentId": "1765782660285-tek3jlr",
+                  "props": {
+                    "icon": "settings"
+                  },
+                  "styles": {},
+                  "className": "text-primary mb-3",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ch0pxcl",
+                  "type": "Text",
+                  "name": "Feature01Title",
+                  "parentId": "1765782660285-tek3jlr",
+                  "props": {
+                    "text": "Product Strategy"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-bwfs4y5",
+                  "type": "Text",
+                  "name": "Feature01Desc",
+                  "parentId": "1765782660285-tek3jlr",
+                  "props": {
+                    "text": "Align stakeholders, define customer journeys, and prioritize a roadmap that delivers ROI."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-zdehyn9",
+                  "type": "List",
+                  "name": "Feature01List",
+                  "parentId": "1765782660285-tek3jlr",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-rhdphns",
+                      "type": "Text",
+                      "name": "Feature01Point1",
+                      "parentId": "1765782660285-zdehyn9",
+                      "props": {
+                        "text": "Discovery workshops"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-s64jyre",
+                      "type": "Text",
+                      "name": "Feature01Point2",
+                      "parentId": "1765782660285-zdehyn9",
+                      "props": {
+                        "text": "Roadmap & KPIs"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-f04bs9o",
+                  "type": "Button",
+                  "name": "Feature01CTA",
+                  "parentId": "1765782660285-tek3jlr",
+                  "props": {
+                    "text": "Learn more",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "mt-3 text-primary",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-8mmqs85",
+              "type": "Card",
+              "name": "FeatureCard02",
+              "parentId": "1765782660285-6mfei6a",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-we1pzfd",
+                  "type": "Icon",
+                  "name": "Feature02Icon",
+                  "parentId": "1765782660285-8mmqs85",
+                  "props": {
+                    "icon": "zap"
+                  },
+                  "styles": {},
+                  "className": "text-primary mb-3",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-37uqphe",
+                  "type": "Text",
+                  "name": "Feature02Title",
+                  "parentId": "1765782660285-8mmqs85",
+                  "props": {
+                    "text": "Design Systems"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-8t3bnwd",
+                  "type": "Text",
+                  "name": "Feature02Desc",
+                  "parentId": "1765782660285-8mmqs85",
+                  "props": {
+                    "text": "Consistent components, accessible patterns, and lightning-fast iteration cycles."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-icsc83e",
+                  "type": "List",
+                  "name": "Feature02List",
+                  "parentId": "1765782660285-8mmqs85",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-fu8doo2",
+                      "type": "Text",
+                      "name": "Feature02Point1",
+                      "parentId": "1765782660285-icsc83e",
+                      "props": {
+                        "text": "Atomic components"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-seg4sdi",
+                      "type": "Text",
+                      "name": "Feature02Point2",
+                      "parentId": "1765782660285-icsc83e",
+                      "props": {
+                        "text": "Themeable tokens"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-c7sau27",
+                  "type": "Button",
+                  "name": "Feature02CTA",
+                  "parentId": "1765782660285-8mmqs85",
+                  "props": {
+                    "text": "View patterns",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "mt-3 text-primary",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-uyt4stt",
+              "type": "Card",
+              "name": "FeatureCard03",
+              "parentId": "1765782660285-6mfei6a",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-wc9n4on",
+                  "type": "Icon",
+                  "name": "Feature03Icon",
+                  "parentId": "1765782660285-uyt4stt",
+                  "props": {
+                    "icon": "shield"
+                  },
+                  "styles": {},
+                  "className": "text-primary mb-3",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ver2158",
+                  "type": "Text",
+                  "name": "Feature03Title",
+                  "parentId": "1765782660285-uyt4stt",
+                  "props": {
+                    "text": "Secure Engineering"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ya4xbvx",
+                  "type": "Text",
+                  "name": "Feature03Desc",
+                  "parentId": "1765782660285-uyt4stt",
+                  "props": {
+                    "text": "Robust cloud architecture, CI/CD pipelines, and continuous monitoring baked in."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-l6ug0o7",
+                  "type": "List",
+                  "name": "Feature03List",
+                  "parentId": "1765782660285-uyt4stt",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-ylk1zbr",
+                      "type": "Text",
+                      "name": "Feature03Point1",
+                      "parentId": "1765782660285-l6ug0o7",
+                      "props": {
+                        "text": "SOC2-aligned controls"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-n2ejdmi",
+                      "type": "Text",
+                      "name": "Feature03Point2",
+                      "parentId": "1765782660285-l6ug0o7",
+                      "props": {
+                        "text": "Automated testing"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-n9y2udj",
+                  "type": "Button",
+                  "name": "Feature03CTA",
+                  "parentId": "1765782660285-uyt4stt",
+                  "props": {
+                    "text": "See stack",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "mt-3 text-primary",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-czzp5eg",
+              "type": "Card",
+              "name": "FeatureCard04",
+              "parentId": "1765782660285-6mfei6a",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-mh28wqh",
+                  "type": "Icon",
+                  "name": "Feature04Icon",
+                  "parentId": "1765782660285-czzp5eg",
+                  "props": {
+                    "icon": "trending-up"
+                  },
+                  "styles": {},
+                  "className": "text-primary mb-3",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-vbi9xkr",
+                  "type": "Text",
+                  "name": "Feature04Title",
+                  "parentId": "1765782660285-czzp5eg",
+                  "props": {
+                    "text": "Growth & Analytics"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ghh7qtb",
+                  "type": "Text",
+                  "name": "Feature04Desc",
+                  "parentId": "1765782660285-czzp5eg",
+                  "props": {
+                    "text": "Measure impact with funnels, experiments, and customer health metrics."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-pazkfp9",
+                  "type": "List",
+                  "name": "Feature04List",
+                  "parentId": "1765782660285-czzp5eg",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-jzswtae",
+                      "type": "Text",
+                      "name": "Feature04Point1",
+                      "parentId": "1765782660285-pazkfp9",
+                      "props": {
+                        "text": "A/B testing"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-f0hxq9p",
+                      "type": "Text",
+                      "name": "Feature04Point2",
+                      "parentId": "1765782660285-pazkfp9",
+                      "props": {
+                        "text": "Churn prevention"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-up8iek7",
+                  "type": "Button",
+                  "name": "Feature04CTA",
+                  "parentId": "1765782660285-czzp5eg",
+                  "props": {
+                    "text": "Explore insights",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "mt-3 text-primary",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-reo6qhh",
+      "type": "Container",
+      "name": "StatsSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-8",
+      "children": [
+        {
+          "id": "1765782660285-xr9kyya",
+          "type": "Grid",
+          "name": "StatsGrid",
+          "parentId": "1765782660285-reo6qhh",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-2 md:grid-cols-4 gap-4",
+          "children": [
+            {
+              "id": "1765782660285-dhkjuvu",
+              "type": "Card",
+              "name": "StatCard1",
+              "parentId": "1765782660285-xr9kyya",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-4 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-6si34cm",
+                  "type": "Text",
+                  "name": "Stat1Value",
+                  "parentId": "1765782660285-dhkjuvu",
+                  "props": {
+                    "text": "120+"
+                  },
+                  "styles": {},
+                  "className": "text-2xl font-bold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ezwlzzj",
+                  "type": "Text",
+                  "name": "Stat1Label",
+                  "parentId": "1765782660285-dhkjuvu",
+                  "props": {
+                    "text": "Projects delivered"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-3t7wtv4",
+              "type": "Card",
+              "name": "StatCard2",
+              "parentId": "1765782660285-xr9kyya",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-4 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-kn1bp1n",
+                  "type": "Text",
+                  "name": "Stat2Value",
+                  "parentId": "1765782660285-3t7wtv4",
+                  "props": {
+                    "text": "4.9/5"
+                  },
+                  "styles": {},
+                  "className": "text-2xl font-bold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ubm2wz8",
+                  "type": "Text",
+                  "name": "Stat2Label",
+                  "parentId": "1765782660285-3t7wtv4",
+                  "props": {
+                    "text": "Client satisfaction"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-sazqsta",
+              "type": "Card",
+              "name": "StatCard3",
+              "parentId": "1765782660285-xr9kyya",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-4 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-izorhi4",
+                  "type": "Text",
+                  "name": "Stat3Value",
+                  "parentId": "1765782660285-sazqsta",
+                  "props": {
+                    "text": "99.9%"
+                  },
+                  "styles": {},
+                  "className": "text-2xl font-bold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-txazg4w",
+                  "type": "Text",
+                  "name": "Stat3Label",
+                  "parentId": "1765782660285-sazqsta",
+                  "props": {
+                    "text": "Uptime on managed apps"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-siium9a",
+              "type": "Card",
+              "name": "StatCard4",
+              "parentId": "1765782660285-xr9kyya",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-4 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-m1ys2ca",
+                  "type": "Text",
+                  "name": "Stat4Value",
+                  "parentId": "1765782660285-siium9a",
+                  "props": {
+                    "text": "2x–3x"
+                  },
+                  "styles": {},
+                  "className": "text-2xl font-bold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-kqre469",
+                  "type": "Text",
+                  "name": "Stat4Label",
+                  "parentId": "1765782660285-siium9a",
+                  "props": {
+                    "text": "Release frequency lift"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-705vs9x",
+      "type": "Container",
+      "name": "CaseStudiesSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-12",
+      "children": [
+        {
+          "id": "1765782660285-1cslhvk",
+          "type": "Flex",
+          "name": "CaseStudiesHeader",
+          "parentId": "1765782660285-705vs9x",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-row items-center justify-between mb-6",
+          "children": [
+            {
+              "id": "1765782660285-r7v9aoa",
+              "type": "Heading",
+              "name": "CaseStudiesTitle",
+              "parentId": "1765782660285-1cslhvk",
+              "props": {
+                "level": 2,
+                "text": "Proven outcomes"
+              },
+              "styles": {},
+              "className": "text-3xl font-semibold",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-rmt9k0u",
+              "type": "Button",
+              "name": "ViewAllCaseStudies",
+              "parentId": "1765782660285-1cslhvk",
+              "props": {
+                "text": "View all",
+                "variant": "link",
+                "size": "sm"
+              },
+              "styles": {},
+              "className": "text-primary",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-aok5dt2",
+          "type": "Grid",
+          "name": "CaseStudiesGrid",
+          "parentId": "1765782660285-705vs9x",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-3 gap-6",
+          "children": [
+            {
+              "id": "1765782660285-hcv3z08",
+              "type": "Card",
+              "name": "CaseStudyCard1",
+              "parentId": "1765782660285-aok5dt2",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg overflow-hidden shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-upo2kjt",
+                  "type": "Image",
+                  "name": "CaseStudyImage1",
+                  "parentId": "1765782660285-hcv3z08",
+                  "props": {
+                    "src": "https://placehold.co/400x300/0f172a/94a3b8?text=Feature",
+                    "alt": "Case study app interface"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-hfmes8z",
+                  "type": "Stack",
+                  "name": "CaseStudyBody1",
+                  "parentId": "1765782660285-hcv3z08",
+                  "props": {},
+                  "styles": {},
+                  "className": "p-4 gap-2",
+                  "children": [
+                    {
+                      "id": "1765782660285-y5qc75p",
+                      "type": "Badge",
+                      "name": "CaseStudyIndustry1",
+                      "parentId": "1765782660285-hfmes8z",
+                      "props": {
+                        "badgeVariant": "secondary",
+                        "text": "Fintech"
+                      },
+                      "styles": {},
+                      "className": "w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-0flnigs",
+                      "type": "Text",
+                      "name": "CaseStudyTitle1",
+                      "parentId": "1765782660285-hfmes8z",
+                      "props": {
+                        "text": "Launching a secure payments dashboard"
+                      },
+                      "styles": {},
+                      "className": "text-lg font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-goe344r",
+                      "type": "Text",
+                      "name": "CaseStudyDesc1",
+                      "parentId": "1765782660285-hfmes8z",
+                      "props": {
+                        "text": "Reduced onboarding time by 43% with a cohesive design system and guided flows."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-7eek9ff",
+                      "type": "Button",
+                      "name": "CaseStudyCTA1",
+                      "parentId": "1765782660285-hfmes8z",
+                      "props": {
+                        "text": "Read story",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-03zna92",
+              "type": "Card",
+              "name": "CaseStudyCard2",
+              "parentId": "1765782660285-aok5dt2",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg overflow-hidden shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-zihbck4",
+                  "type": "Image",
+                  "name": "CaseStudyImage2",
+                  "parentId": "1765782660285-03zna92",
+                  "props": {
+                    "src": "https://placehold.co/400x300/0f172a/94a3b8?text=Feature",
+                    "alt": "Retail analytics preview"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-el1ie27",
+                  "type": "Stack",
+                  "name": "CaseStudyBody2",
+                  "parentId": "1765782660285-03zna92",
+                  "props": {},
+                  "styles": {},
+                  "className": "p-4 gap-2",
+                  "children": [
+                    {
+                      "id": "1765782660285-oi5qpwb",
+                      "type": "Badge",
+                      "name": "CaseStudyIndustry2",
+                      "parentId": "1765782660285-el1ie27",
+                      "props": {
+                        "badgeVariant": "secondary",
+                        "text": "Retail"
+                      },
+                      "styles": {},
+                      "className": "w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-b6p6cbe",
+                      "type": "Text",
+                      "name": "CaseStudyTitle2",
+                      "parentId": "1765782660285-el1ie27",
+                      "props": {
+                        "text": "Real-time inventory intelligence"
+                      },
+                      "styles": {},
+                      "className": "text-lg font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-bny4sg0",
+                      "type": "Text",
+                      "name": "CaseStudyDesc2",
+                      "parentId": "1765782660285-el1ie27",
+                      "props": {
+                        "text": "Delivered a data platform that cut stockouts by 28% in the first quarter."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-bpgniwc",
+                      "type": "Button",
+                      "name": "CaseStudyCTA2",
+                      "parentId": "1765782660285-el1ie27",
+                      "props": {
+                        "text": "Read story",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-ike3wtt",
+              "type": "Card",
+              "name": "CaseStudyCard3",
+              "parentId": "1765782660285-aok5dt2",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg overflow-hidden shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-jt6vyou",
+                  "type": "Image",
+                  "name": "CaseStudyImage3",
+                  "parentId": "1765782660285-ike3wtt",
+                  "props": {
+                    "src": "https://placehold.co/400x300/0f172a/94a3b8?text=Feature",
+                    "alt": "Healthcare app snapshot"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-9czeu4g",
+                  "type": "Stack",
+                  "name": "CaseStudyBody3",
+                  "parentId": "1765782660285-ike3wtt",
+                  "props": {},
+                  "styles": {},
+                  "className": "p-4 gap-2",
+                  "children": [
+                    {
+                      "id": "1765782660285-5p38kdt",
+                      "type": "Badge",
+                      "name": "CaseStudyIndustry3",
+                      "parentId": "1765782660285-9czeu4g",
+                      "props": {
+                        "badgeVariant": "secondary",
+                        "text": "Healthcare"
+                      },
+                      "styles": {},
+                      "className": "w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-n7lqsd4",
+                      "type": "Text",
+                      "name": "CaseStudyTitle3",
+                      "parentId": "1765782660285-9czeu4g",
+                      "props": {
+                        "text": "Patient portal with accessibility at core"
+                      },
+                      "styles": {},
+                      "className": "text-lg font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-3fuecdv",
+                      "type": "Text",
+                      "name": "CaseStudyDesc3",
+                      "parentId": "1765782660285-9czeu4g",
+                      "props": {
+                        "text": "AA-compliant experiences increased portal usage by 64% in 90 days."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-qmelbtn",
+                      "type": "Button",
+                      "name": "CaseStudyCTA3",
+                      "parentId": "1765782660285-9czeu4g",
+                      "props": {
+                        "text": "Read story",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-ll8wkl6",
+      "type": "Container",
+      "name": "TestimonialsSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-12",
+      "children": [
+        {
+          "id": "1765782660285-2ljs6pz",
+          "type": "Heading",
+          "name": "TestimonialsTitle",
+          "parentId": "1765782660285-ll8wkl6",
+          "props": {
+            "level": 2,
+            "text": "What clients say"
+          },
+          "styles": {},
+          "className": "text-3xl font-semibold mb-6",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-r4dm23l",
+          "type": "Grid",
+          "name": "TestimonialsGrid",
+          "parentId": "1765782660285-ll8wkl6",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-3 gap-6",
+          "children": [
+            {
+              "id": "1765782660285-uw21qcx",
+              "type": "Card",
+              "name": "TestimonialCard1",
+              "parentId": "1765782660285-r4dm23l",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-vnhyflm",
+                  "type": "Flex",
+                  "name": "RatingRow1",
+                  "parentId": "1765782660285-uw21qcx",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row gap-1 mb-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-5zut4v6",
+                      "type": "Icon",
+                      "name": "Star1",
+                      "parentId": "1765782660285-vnhyflm",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-hwnan1t",
+                      "type": "Icon",
+                      "name": "Star2",
+                      "parentId": "1765782660285-vnhyflm",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-rt6xl17",
+                      "type": "Icon",
+                      "name": "Star3",
+                      "parentId": "1765782660285-vnhyflm",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-qdna4jr",
+                      "type": "Icon",
+                      "name": "Star4",
+                      "parentId": "1765782660285-vnhyflm",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-gwqxtvc",
+                      "type": "Icon",
+                      "name": "Star5",
+                      "parentId": "1765782660285-vnhyflm",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-3nd8zti",
+                  "type": "Text",
+                  "name": "QuoteText1",
+                  "parentId": "1765782660285-uw21qcx",
+                  "props": {
+                    "text": "Lazio moved our monolith to a modular architecture without downtime. Our team ships weekly now."
+                  },
+                  "styles": {},
+                  "className": "text-sm",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-z0x3n31",
+                  "type": "Flex",
+                  "name": "AuthorRow1",
+                  "parentId": "1765782660285-uw21qcx",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3 mt-4",
+                  "children": [
+                    {
+                      "id": "1765782660285-57b85hb",
+                      "type": "Avatar",
+                      "name": "AuthorAvatar1",
+                      "parentId": "1765782660285-z0x3n31",
+                      "props": {
+                        "src": "https://placehold.co/100x100/6366f1/ffffff?text=AP",
+                        "alt": "Alex Parker"
+                      },
+                      "styles": {},
+                      "className": "w-8 h-8 rounded-full",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-v7tnxbh",
+                      "type": "Stack",
+                      "name": "AuthorInfo1",
+                      "parentId": "1765782660285-z0x3n31",
+                      "props": {},
+                      "styles": {},
+                      "className": "gap-0",
+                      "children": [
+                        {
+                          "id": "1765782660285-wg7rfsm",
+                          "type": "Text",
+                          "name": "AuthorName1",
+                          "parentId": "1765782660285-v7tnxbh",
+                          "props": {
+                            "text": "Alex Parker"
+                          },
+                          "styles": {},
+                          "className": "text-sm font-medium",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-087b1b1",
+                          "type": "Text",
+                          "name": "AuthorTitle1",
+                          "parentId": "1765782660285-v7tnxbh",
+                          "props": {
+                            "text": "VP Engineering, Orbit"
+                          },
+                          "styles": {},
+                          "className": "text-xs text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-3hqhshp",
+              "type": "Card",
+              "name": "TestimonialCard2",
+              "parentId": "1765782660285-r4dm23l",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-age91x9",
+                  "type": "Flex",
+                  "name": "RatingRow2",
+                  "parentId": "1765782660285-3hqhshp",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row gap-1 mb-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-ukitkow",
+                      "type": "Icon",
+                      "name": "T2Star1",
+                      "parentId": "1765782660285-age91x9",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-mgr06le",
+                      "type": "Icon",
+                      "name": "T2Star2",
+                      "parentId": "1765782660285-age91x9",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-6rvx6sn",
+                      "type": "Icon",
+                      "name": "T2Star3",
+                      "parentId": "1765782660285-age91x9",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-u1kgnkl",
+                      "type": "Icon",
+                      "name": "T2Star4",
+                      "parentId": "1765782660285-age91x9",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-gkobafy",
+                      "type": "Icon",
+                      "name": "T2Star5",
+                      "parentId": "1765782660285-age91x9",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-4aibss8",
+                  "type": "Text",
+                  "name": "QuoteText2",
+                  "parentId": "1765782660285-3hqhshp",
+                  "props": {
+                    "text": "The design system Lazio delivered saved us months. Our NPS jumped from 38 to 62."
+                  },
+                  "styles": {},
+                  "className": "text-sm",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-r14y72s",
+                  "type": "Flex",
+                  "name": "AuthorRow2",
+                  "parentId": "1765782660285-3hqhshp",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3 mt-4",
+                  "children": [
+                    {
+                      "id": "1765782660285-l4uvton",
+                      "type": "Avatar",
+                      "name": "AuthorAvatar2",
+                      "parentId": "1765782660285-r14y72s",
+                      "props": {
+                        "src": "https://placehold.co/100x100/14b8a6/ffffff?text=JG",
+                        "alt": "Jenna Garcia"
+                      },
+                      "styles": {},
+                      "className": "w-8 h-8 rounded-full",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-5xpualn",
+                      "type": "Stack",
+                      "name": "AuthorInfo2",
+                      "parentId": "1765782660285-r14y72s",
+                      "props": {},
+                      "styles": {},
+                      "className": "gap-0",
+                      "children": [
+                        {
+                          "id": "1765782660285-wbpy43d",
+                          "type": "Text",
+                          "name": "AuthorName2",
+                          "parentId": "1765782660285-5xpualn",
+                          "props": {
+                            "text": "Jenna Garcia"
+                          },
+                          "styles": {},
+                          "className": "text-sm font-medium",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-1iyiw0f",
+                          "type": "Text",
+                          "name": "AuthorTitle2",
+                          "parentId": "1765782660285-5xpualn",
+                          "props": {
+                            "text": "Head of Product, Nova"
+                          },
+                          "styles": {},
+                          "className": "text-xs text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-galwzgw",
+              "type": "Card",
+              "name": "TestimonialCard3",
+              "parentId": "1765782660285-r4dm23l",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-7pva14g",
+                  "type": "Flex",
+                  "name": "RatingRow3",
+                  "parentId": "1765782660285-galwzgw",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row gap-1 mb-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-4g95pw3",
+                      "type": "Icon",
+                      "name": "T3Star1",
+                      "parentId": "1765782660285-7pva14g",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-ptmxefe",
+                      "type": "Icon",
+                      "name": "T3Star2",
+                      "parentId": "1765782660285-7pva14g",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-6wtdmcz",
+                      "type": "Icon",
+                      "name": "T3Star3",
+                      "parentId": "1765782660285-7pva14g",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-12y1mn5",
+                      "type": "Icon",
+                      "name": "T3Star4",
+                      "parentId": "1765782660285-7pva14g",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-vc3xrr6",
+                      "type": "Icon",
+                      "name": "T3Star5",
+                      "parentId": "1765782660285-7pva14g",
+                      "props": {
+                        "icon": "star"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-moucwag",
+                  "type": "Text",
+                  "name": "QuoteText3",
+                  "parentId": "1765782660285-galwzgw",
+                  "props": {
+                    "text": "A rare partner who understands both UX nuance and engineering detail."
+                  },
+                  "styles": {},
+                  "className": "text-sm",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-0zei1l9",
+                  "type": "Flex",
+                  "name": "AuthorRow3",
+                  "parentId": "1765782660285-galwzgw",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3 mt-4",
+                  "children": [
+                    {
+                      "id": "1765782660285-bx32waa",
+                      "type": "Avatar",
+                      "name": "AuthorAvatar3",
+                      "parentId": "1765782660285-0zei1l9",
+                      "props": {
+                        "src": "https://placehold.co/100x100/f59e0b/ffffff?text=TC",
+                        "alt": "Tom Carter"
+                      },
+                      "styles": {},
+                      "className": "w-8 h-8 rounded-full",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-y5dp3k0",
+                      "type": "Stack",
+                      "name": "AuthorInfo3",
+                      "parentId": "1765782660285-0zei1l9",
+                      "props": {},
+                      "styles": {},
+                      "className": "gap-0",
+                      "children": [
+                        {
+                          "id": "1765782660285-51u03g2",
+                          "type": "Text",
+                          "name": "AuthorName3",
+                          "parentId": "1765782660285-y5dp3k0",
+                          "props": {
+                            "text": "Tom Carter"
+                          },
+                          "styles": {},
+                          "className": "text-sm font-medium",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-h4drwz6",
+                          "type": "Text",
+                          "name": "AuthorTitle3",
+                          "parentId": "1765782660285-y5dp3k0",
+                          "props": {
+                            "text": "CTO, Prima Health"
+                          },
+                          "styles": {},
+                          "className": "text-xs text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-415sn2s",
+      "type": "Container",
+      "name": "PricingSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-12",
+      "children": [
+        {
+          "id": "1765782660285-cr1au3e",
+          "type": "Flex",
+          "name": "PricingHeader",
+          "parentId": "1765782660285-415sn2s",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-col items-start gap-2 mb-6",
+          "children": [
+            {
+              "id": "1765782660285-p1ew7np",
+              "type": "Heading",
+              "name": "PricingTitle",
+              "parentId": "1765782660285-cr1au3e",
+              "props": {
+                "level": 2,
+                "text": "Flexible pricing"
+              },
+              "styles": {},
+              "className": "text-3xl font-semibold",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-9yc5btg",
+              "type": "Text",
+              "name": "PricingSubtitle",
+              "parentId": "1765782660285-cr1au3e",
+              "props": {
+                "text": "Choose a plan that matches your pace and scale."
+              },
+              "styles": {},
+              "className": "text-base text-muted-foreground",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-zf402t3",
+          "type": "Grid",
+          "name": "PricingGrid",
+          "parentId": "1765782660285-415sn2s",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-3 gap-6",
+          "children": [
+            {
+              "id": "1765782660285-ntn5uvm",
+              "type": "Card",
+              "name": "PlanStarter",
+              "parentId": "1765782660285-zf402t3",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-6 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-5rdpmoj",
+                  "type": "Text",
+                  "name": "StarterName",
+                  "parentId": "1765782660285-ntn5uvm",
+                  "props": {
+                    "text": "Starter"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-ix5qobo",
+                  "type": "Text",
+                  "name": "StarterPrice",
+                  "parentId": "1765782660285-ntn5uvm",
+                  "props": {
+                    "text": "$4,900 / month"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-bold mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-o5s3scq",
+                  "type": "List",
+                  "name": "StarterFeatures",
+                  "parentId": "1765782660285-ntn5uvm",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-iajnjvs",
+                      "type": "Text",
+                      "name": "StarterFeat1",
+                      "parentId": "1765782660285-o5s3scq",
+                      "props": {
+                        "text": "Design sprints (1x/month)"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-hisfict",
+                      "type": "Text",
+                      "name": "StarterFeat2",
+                      "parentId": "1765782660285-o5s3scq",
+                      "props": {
+                        "text": "Component library setup"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-3ny01n3",
+                      "type": "Text",
+                      "name": "StarterFeat3",
+                      "parentId": "1765782660285-o5s3scq",
+                      "props": {
+                        "text": "Email support"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-41vp4sp",
+                  "type": "Button",
+                  "name": "StarterCTA",
+                  "parentId": "1765782660285-ntn5uvm",
+                  "props": {
+                    "text": "Choose Starter",
+                    "variant": "default",
+                    "size": "lg"
+                  },
+                  "styles": {},
+                  "className": "mt-4 bg-primary text-primary-foreground rounded-md",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-9l1yfeo",
+              "type": "Card",
+              "name": "PlanGrowth",
+              "parentId": "1765782660285-zf402t3",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-primary rounded-lg p-6 shadow-md",
+              "children": [
+                {
+                  "id": "1765782660285-2ppbh3d",
+                  "type": "Flex",
+                  "name": "GrowthHeaderRow",
+                  "parentId": "1765782660285-9l1yfeo",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center justify-between",
+                  "children": [
+                    {
+                      "id": "1765782660285-abkgyet",
+                      "type": "Text",
+                      "name": "GrowthName",
+                      "parentId": "1765782660285-2ppbh3d",
+                      "props": {
+                        "text": "Growth"
+                      },
+                      "styles": {},
+                      "className": "text-lg font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-mffp083",
+                      "type": "Badge",
+                      "name": "GrowthBadge",
+                      "parentId": "1765782660285-2ppbh3d",
+                      "props": {
+                        "badgeVariant": "default",
+                        "text": "Most Popular"
+                      },
+                      "styles": {},
+                      "className": "text-xs",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-nc4v51d",
+                  "type": "Text",
+                  "name": "GrowthPrice",
+                  "parentId": "1765782660285-9l1yfeo",
+                  "props": {
+                    "text": "$9,900 / month"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-bold mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-mvr07ug",
+                  "type": "List",
+                  "name": "GrowthFeatures",
+                  "parentId": "1765782660285-9l1yfeo",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-7ulvxmj",
+                      "type": "Text",
+                      "name": "GrowthFeat1",
+                      "parentId": "1765782660285-mvr07ug",
+                      "props": {
+                        "text": "Dedicated squad (PM, UX, Eng)"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-etusy5t",
+                      "type": "Text",
+                      "name": "GrowthFeat2",
+                      "parentId": "1765782660285-mvr07ug",
+                      "props": {
+                        "text": "Weekly releases"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-0sluhil",
+                      "type": "Text",
+                      "name": "GrowthFeat3",
+                      "parentId": "1765782660285-mvr07ug",
+                      "props": {
+                        "text": "Analytics & A/B testing"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-2bwljl8",
+                      "type": "Text",
+                      "name": "GrowthFeat4",
+                      "parentId": "1765782660285-mvr07ug",
+                      "props": {
+                        "text": "Priority support SLA"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-hm0vni0",
+                  "type": "Button",
+                  "name": "GrowthCTA",
+                  "parentId": "1765782660285-9l1yfeo",
+                  "props": {
+                    "text": "Choose Growth",
+                    "variant": "default",
+                    "size": "lg"
+                  },
+                  "styles": {},
+                  "className": "mt-4 bg-primary text-primary-foreground rounded-md",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-hlwy0w1",
+              "type": "Card",
+              "name": "PlanEnterprise",
+              "parentId": "1765782660285-zf402t3",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-6 shadow-sm",
+              "children": [
+                {
+                  "id": "1765782660285-bjj6nrw",
+                  "type": "Text",
+                  "name": "EnterpriseName",
+                  "parentId": "1765782660285-hlwy0w1",
+                  "props": {
+                    "text": "Enterprise"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-w2hsprv",
+                  "type": "Text",
+                  "name": "EnterprisePrice",
+                  "parentId": "1765782660285-hlwy0w1",
+                  "props": {
+                    "text": "Custom pricing"
+                  },
+                  "styles": {},
+                  "className": "text-xl font-bold mt-1",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-iwtq7xd",
+                  "type": "List",
+                  "name": "EnterpriseFeatures",
+                  "parentId": "1765782660285-hlwy0w1",
+                  "props": {},
+                  "styles": {},
+                  "className": "mt-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-2kysz9v",
+                      "type": "Text",
+                      "name": "EnterpriseFeat1",
+                      "parentId": "1765782660285-iwtq7xd",
+                      "props": {
+                        "text": "Multi-team engagement"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-6aq85rc",
+                      "type": "Text",
+                      "name": "EnterpriseFeat2",
+                      "parentId": "1765782660285-iwtq7xd",
+                      "props": {
+                        "text": "Security review & audits"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-9ewths6",
+                      "type": "Text",
+                      "name": "EnterpriseFeat3",
+                      "parentId": "1765782660285-iwtq7xd",
+                      "props": {
+                        "text": "24/7 support"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-i1xs0p7",
+                  "type": "Button",
+                  "name": "EnterpriseCTA",
+                  "parentId": "1765782660285-hlwy0w1",
+                  "props": {
+                    "text": "Talk to Sales",
+                    "variant": "secondary",
+                    "size": "lg"
+                  },
+                  "styles": {},
+                  "className": "mt-4 rounded-md",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-x2n8tzr",
+      "type": "Container",
+      "name": "EmailCTASection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-10",
+      "children": [
+        {
+          "id": "1765782660285-01hy2o0",
+          "type": "Card",
+          "name": "EmailCTACard",
+          "parentId": "1765782660285-x2n8tzr",
+          "props": {},
+          "styles": {},
+          "className": "bg-card border border-border rounded-lg p-6 shadow-sm",
+          "children": [
+            {
+              "id": "1765782660285-dksie20",
+              "type": "Flex",
+              "name": "EmailCTARow",
+              "parentId": "1765782660285-01hy2o0",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col md:flex-row items-start md:items-center justify-between gap-4",
+              "children": [
+                {
+                  "id": "1765782660285-f94yi07",
+                  "type": "Stack",
+                  "name": "EmailCTAText",
+                  "parentId": "1765782660285-dksie20",
+                  "props": {},
+                  "styles": {},
+                  "className": "gap-1",
+                  "children": [
+                    {
+                      "id": "1765782660285-gblp0ct",
+                      "type": "Heading",
+                      "name": "EmailCTATitle",
+                      "parentId": "1765782660285-f94yi07",
+                      "props": {
+                        "level": 3,
+                        "text": "Get a roadmap in 48 hours"
+                      },
+                      "styles": {},
+                      "className": "text-2xl font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-1ahqdff",
+                      "type": "Text",
+                      "name": "EmailCTASubtitle",
+                      "parentId": "1765782660285-f94yi07",
+                      "props": {
+                        "text": "Share your goals and constraints—we'll send a plan with timelines and budget ranges."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-nu30g8m",
+                  "type": "Form",
+                  "name": "EmailCTAForm",
+                  "parentId": "1765782660285-dksie20",
+                  "props": {},
+                  "styles": {},
+                  "className": "w-full md:w-1/2",
+                  "children": [
+                    {
+                      "id": "1765782660285-7bvbf6y",
+                      "type": "Flex",
+                      "name": "EmailFormRow",
+                      "parentId": "1765782660285-nu30g8m",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765782660285-3b9og3l",
+                          "type": "Input",
+                          "name": "EmailInput",
+                          "parentId": "1765782660285-7bvbf6y",
+                          "props": {
+                            "placeholder": "Enter your work email",
+                            "type": "email",
+                            "required": true
+                          },
+                          "styles": {},
+                          "className": "w-full border border-input rounded-md px-3 py-2",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765782660285-v1gbt9k",
+                          "type": "Button",
+                          "name": "EmailSubmit",
+                          "parentId": "1765782660285-7bvbf6y",
+                          "props": {
+                            "text": "Request Plan",
+                            "variant": "default",
+                            "size": "lg"
+                          },
+                          "styles": {},
+                          "className": "bg-primary text-primary-foreground rounded-md",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-bcfqy29",
+                      "type": "Text",
+                      "name": "EmailPrivacyNote",
+                      "parentId": "1765782660285-nu30g8m",
+                      "props": {
+                        "text": "We’ll never share your email. Unsubscribe anytime."
+                      },
+                      "styles": {},
+                      "className": "text-xs text-muted-foreground mt-2",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-6ml5vm3",
+      "type": "Container",
+      "name": "FAQSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-12",
+      "children": [
+        {
+          "id": "1765782660285-whlukek",
+          "type": "Heading",
+          "name": "FAQTitle",
+          "parentId": "1765782660285-6ml5vm3",
+          "props": {
+            "level": 2,
+            "text": "Frequently asked questions"
+          },
+          "styles": {},
+          "className": "text-3xl font-semibold mb-6",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-6c2od0v",
+          "type": "Grid",
+          "name": "FAQGrid",
+          "parentId": "1765782660285-6ml5vm3",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-2 gap-6",
+          "children": [
+            {
+              "id": "1765782660285-8pohpj2",
+              "type": "Card",
+              "name": "FAQItem1",
+              "parentId": "1765782660285-6c2od0v",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5",
+              "children": [
+                {
+                  "id": "1765782660285-eozwcea",
+                  "type": "Text",
+                  "name": "FAQQ1",
+                  "parentId": "1765782660285-8pohpj2",
+                  "props": {
+                    "text": "How fast can we start?"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-m6i1qy2",
+                  "type": "Text",
+                  "name": "FAQA1",
+                  "parentId": "1765782660285-8pohpj2",
+                  "props": {
+                    "text": "We typically kick off within 2 weeks after scoping. For urgent engagements, we can mobilize a sprint team in 5 business days."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-b3pgly5",
+              "type": "Card",
+              "name": "FAQItem2",
+              "parentId": "1765782660285-6c2od0v",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5",
+              "children": [
+                {
+                  "id": "1765782660285-tbkkk7y",
+                  "type": "Text",
+                  "name": "FAQQ2",
+                  "parentId": "1765782660285-b3pgly5",
+                  "props": {
+                    "text": "Do you work with in-house teams?"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-7vnlr9u",
+                  "type": "Text",
+                  "name": "FAQA2",
+                  "parentId": "1765782660285-b3pgly5",
+                  "props": {
+                    "text": "Yes. We integrate with your product, design, and engineering org to augment capabilities and accelerate delivery."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-ckmkygh",
+              "type": "Card",
+              "name": "FAQItem3",
+              "parentId": "1765782660285-6c2od0v",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5",
+              "children": [
+                {
+                  "id": "1765782660285-t449008",
+                  "type": "Text",
+                  "name": "FAQQ3",
+                  "parentId": "1765782660285-ckmkygh",
+                  "props": {
+                    "text": "What tech stacks do you support?"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-apjo4ui",
+                  "type": "Text",
+                  "name": "FAQA3",
+                  "parentId": "1765782660285-ckmkygh",
+                  "props": {
+                    "text": "We build with modern web and cloud stacks: React, TypeScript, Node, Go, serverless, and major clouds (AWS, Azure, GCP)."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-pwi0iay",
+              "type": "Card",
+              "name": "FAQItem4",
+              "parentId": "1765782660285-6c2od0v",
+              "props": {},
+              "styles": {},
+              "className": "bg-card border border-border rounded-lg p-5",
+              "children": [
+                {
+                  "id": "1765782660285-kwm6e8x",
+                  "type": "Text",
+                  "name": "FAQQ4",
+                  "parentId": "1765782660285-pwi0iay",
+                  "props": {
+                    "text": "How do you measure success?"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-yumz40n",
+                  "type": "Text",
+                  "name": "FAQA4",
+                  "parentId": "1765782660285-pwi0iay",
+                  "props": {
+                    "text": "Clear KPIs for activation, retention, and velocity are set at kick-off. We report progress in weekly readouts."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mt-1",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-4rnbjym",
+      "type": "Divider",
+      "name": "FooterDivider",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "w-full h-px bg-border",
+      "children": [],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-w5mdyux",
+      "type": "Container",
+      "name": "FooterSection",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "max-w-7xl mx-auto px-4 py-10",
+      "children": [
+        {
+          "id": "1765782660285-jt1l4rc",
+          "type": "Grid",
+          "name": "FooterGrid",
+          "parentId": "1765782660285-w5mdyux",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-1 md:grid-cols-5 gap-8",
+          "children": [
+            {
+              "id": "1765782660285-ssgfq2v",
+              "type": "Stack",
+              "name": "FooterBrand",
+              "parentId": "1765782660285-jt1l4rc",
+              "props": {},
+              "styles": {},
+              "className": "gap-3 md:col-span-2",
+              "children": [
+                {
+                  "id": "1765782660285-88ecy83",
+                  "type": "Flex",
+                  "name": "FooterBrandRow",
+                  "parentId": "1765782660285-ssgfq2v",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-kz8ef8s",
+                      "type": "Image",
+                      "name": "FooterLogo",
+                      "parentId": "1765782660285-88ecy83",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=LG",
+                        "alt": "Lazio Group logo"
+                      },
+                      "styles": {},
+                      "className": "w-auto h-auto",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-2nlywjp",
+                      "type": "Text",
+                      "name": "FooterBrandName",
+                      "parentId": "1765782660285-88ecy83",
+                      "props": {
+                        "text": "Lazio Group"
+                      },
+                      "styles": {},
+                      "className": "text-lg font-semibold",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-uojotjy",
+                  "type": "Text",
+                  "name": "FooterTagline",
+                  "parentId": "1765782660285-ssgfq2v",
+                  "props": {
+                    "text": "We design and build digital products that move businesses forward."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-zmiv567",
+                  "type": "Flex",
+                  "name": "FooterSocialRow",
+                  "parentId": "1765782660285-ssgfq2v",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765782660285-p6yifyc",
+                      "type": "Icon",
+                      "name": "TwitterIcon",
+                      "parentId": "1765782660285-zmiv567",
+                      "props": {
+                        "icon": "globe"
+                      },
+                      "styles": {},
+                      "className": "text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-q9rw998",
+                      "type": "Icon",
+                      "name": "LinkedinIcon",
+                      "parentId": "1765782660285-zmiv567",
+                      "props": {
+                        "icon": "user"
+                      },
+                      "styles": {},
+                      "className": "text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-w6sp158",
+                      "type": "Icon",
+                      "name": "MailIcon",
+                      "parentId": "1765782660285-zmiv567",
+                      "props": {
+                        "icon": "mail"
+                      },
+                      "styles": {},
+                      "className": "text-muted-foreground hover:text-foreground cursor-pointer",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-3m941tk",
+              "type": "Stack",
+              "name": "FooterColProducts",
+              "parentId": "1765782660285-jt1l4rc",
+              "props": {},
+              "styles": {},
+              "className": "gap-2",
+              "children": [
+                {
+                  "id": "1765782660285-q9jrlb1",
+                  "type": "Text",
+                  "name": "FooterProductsTitle",
+                  "parentId": "1765782660285-3m941tk",
+                  "props": {
+                    "text": "Products"
+                  },
+                  "styles": {},
+                  "className": "text-sm font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-xoqj5h9",
+                  "type": "Text",
+                  "name": "FooterProductsLink1",
+                  "parentId": "1765782660285-3m941tk",
+                  "props": {
+                    "text": "Design System"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-8ulizk7",
+                  "type": "Text",
+                  "name": "FooterProductsLink2",
+                  "parentId": "1765782660285-3m941tk",
+                  "props": {
+                    "text": "Component Library"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-dgpqmsq",
+                  "type": "Text",
+                  "name": "FooterProductsLink3",
+                  "parentId": "1765782660285-3m941tk",
+                  "props": {
+                    "text": "Analytics Suite"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-xjp9uet",
+              "type": "Stack",
+              "name": "FooterColCompany",
+              "parentId": "1765782660285-jt1l4rc",
+              "props": {},
+              "styles": {},
+              "className": "gap-2",
+              "children": [
+                {
+                  "id": "1765782660285-d7p6xft",
+                  "type": "Text",
+                  "name": "FooterCompanyTitle",
+                  "parentId": "1765782660285-xjp9uet",
+                  "props": {
+                    "text": "Company"
+                  },
+                  "styles": {},
+                  "className": "text-sm font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-01s7chj",
+                  "type": "Text",
+                  "name": "FooterCompanyLink1",
+                  "parentId": "1765782660285-xjp9uet",
+                  "props": {
+                    "text": "About"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-25fqnnf",
+                  "type": "Text",
+                  "name": "FooterCompanyLink2",
+                  "parentId": "1765782660285-xjp9uet",
+                  "props": {
+                    "text": "Careers"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-7n3358g",
+                  "type": "Text",
+                  "name": "FooterCompanyLink3",
+                  "parentId": "1765782660285-xjp9uet",
+                  "props": {
+                    "text": "Press"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-r5a9x3w",
+              "type": "Stack",
+              "name": "FooterColResources",
+              "parentId": "1765782660285-jt1l4rc",
+              "props": {},
+              "styles": {},
+              "className": "gap-2",
+              "children": [
+                {
+                  "id": "1765782660285-xklm2d4",
+                  "type": "Text",
+                  "name": "FooterResourcesTitle",
+                  "parentId": "1765782660285-r5a9x3w",
+                  "props": {
+                    "text": "Resources"
+                  },
+                  "styles": {},
+                  "className": "text-sm font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-n0ewfbj",
+                  "type": "Text",
+                  "name": "FooterResourcesLink1",
+                  "parentId": "1765782660285-r5a9x3w",
+                  "props": {
+                    "text": "Blog"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-wf97jmb",
+                  "type": "Text",
+                  "name": "FooterResourcesLink2",
+                  "parentId": "1765782660285-r5a9x3w",
+                  "props": {
+                    "text": "Guides"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-xn4a9cu",
+                  "type": "Text",
+                  "name": "FooterResourcesLink3",
+                  "parentId": "1765782660285-r5a9x3w",
+                  "props": {
+                    "text": "Help Center"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-ihjh5co",
+          "type": "Divider",
+          "name": "FooterInnerDivider",
+          "parentId": "1765782660285-w5mdyux",
+          "props": {},
+          "styles": {},
+          "className": "w-full h-px bg-border my-6",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765782660285-q1u5fhi",
+          "type": "Flex",
+          "name": "FooterBottomRow",
+          "parentId": "1765782660285-w5mdyux",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-col md:flex-row items-start md:items-center justify-between gap-4",
+          "children": [
+            {
+              "id": "1765782660285-5hxbc3g",
+              "type": "Text",
+              "name": "CopyrightText",
+              "parentId": "1765782660285-q1u5fhi",
+              "props": {
+                "text": "© 2025 Lazio Group. All rights reserved."
+              },
+              "styles": {},
+              "className": "text-xs text-muted-foreground",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-k9n7jxl",
+              "type": "Flex",
+              "name": "FooterPolicyLinks",
+              "parentId": "1765782660285-q1u5fhi",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-center gap-4",
+              "children": [
+                {
+                  "id": "1765782660285-izgovj5",
+                  "type": "Text",
+                  "name": "PrivacyLink",
+                  "parentId": "1765782660285-k9n7jxl",
+                  "props": {
+                    "text": "Privacy"
+                  },
+                  "styles": {},
+                  "className": "text-xs text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-s6filhr",
+                  "type": "Text",
+                  "name": "TermsLink",
+                  "parentId": "1765782660285-k9n7jxl",
+                  "props": {
+                    "text": "Terms"
+                  },
+                  "styles": {},
+                  "className": "text-xs text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-f93u2lc",
+                  "type": "Text",
+                  "name": "SecurityLink",
+                  "parentId": "1765782660285-k9n7jxl",
+                  "props": {
+                    "text": "Security"
+                  },
+                  "styles": {},
+                  "className": "text-xs text-muted-foreground hover:text-foreground cursor-pointer",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765782660285-uujkt9j",
+      "type": "Toast",
+      "name": "CookieToast",
+      "parentId": "1765782660284-y6voe3x",
+      "props": {},
+      "styles": {},
+      "className": "fixed bottom-4 right-4",
+      "children": [
+        {
+          "id": "1765782660285-7biwpde",
+          "type": "Card",
+          "name": "CookieCard",
+          "parentId": "1765782660285-uujkt9j",
+          "props": {},
+          "styles": {},
+          "className": "bg-card border border-border rounded-lg p-4 shadow-lg w-full max-w-md",
+          "children": [
+            {
+              "id": "1765782660285-ajxlorg",
+              "type": "Flex",
+              "name": "CookieRow",
+              "parentId": "1765782660285-7biwpde",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-start justify-between gap-4",
+              "children": [
+                {
+                  "id": "1765782660285-hk6rafj",
+                  "type": "Stack",
+                  "name": "CookieTextStack",
+                  "parentId": "1765782660285-ajxlorg",
+                  "props": {},
+                  "styles": {},
+                  "className": "gap-1",
+                  "children": [
+                    {
+                      "id": "1765782660285-afo2mgl",
+                      "type": "Text",
+                      "name": "CookieTitle",
+                      "parentId": "1765782660285-hk6rafj",
+                      "props": {
+                        "text": "We use cookies"
+                      },
+                      "styles": {},
+                      "className": "text-sm font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-stdykos",
+                      "type": "Text",
+                      "name": "CookieDesc",
+                      "parentId": "1765782660285-hk6rafj",
+                      "props": {
+                        "text": "To improve your experience and analyze traffic. You can opt out at any time."
+                      },
+                      "styles": {},
+                      "className": "text-xs text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765782660285-le1cly7",
+                  "type": "Flex",
+                  "name": "CookieActions",
+                  "parentId": "1765782660285-ajxlorg",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-2",
+                  "children": [
+                    {
+                      "id": "1765782660285-l2u6rln",
+                      "type": "Button",
+                      "name": "CookieDecline",
+                      "parentId": "1765782660285-le1cly7",
+                      "props": {
+                        "text": "Decline",
+                        "variant": "ghost",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-xs",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765782660285-vbey51c",
+                      "type": "Button",
+                      "name": "CookieAccept",
+                      "parentId": "1765782660285-le1cly7",
+                      "props": {
+                        "text": "Accept",
+                        "variant": "default",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "text-xs bg-primary text-primary-foreground rounded-md",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765782660285-q62f8gl",
+              "type": "Progress",
+              "name": "CookieProgress",
+              "parentId": "1765782660285-7biwpde",
+              "props": {
+                "progressValue": 75
+              },
+              "styles": {},
+              "className": "mt-3",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

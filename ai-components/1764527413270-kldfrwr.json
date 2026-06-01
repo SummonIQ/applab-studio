@@ -1,0 +1,567 @@
+{
+  "id": "1764527413270-kldfrwr",
+  "type": "Flex",
+  "name": "LandingPageScreen",
+  "parentId": "1763740744744-mj3fp8s",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "width": "100%",
+    "height": "auto"
+  },
+  "children": [
+    {
+      "id": "1764527413270-pc65ncs",
+      "type": "Flex",
+      "name": "Header",
+      "parentId": "1764527413270-kldfrwr",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.5rem"
+      },
+      "children": [
+        {
+          "id": "1764527413270-719imb0",
+          "type": "Text",
+          "name": "Logo",
+          "parentId": "1764527413270-pc65ncs",
+          "props": {
+            "text": "BrandLogo"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "bold",
+            "color": "var(--color-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-dc6q2li",
+          "type": "Flex",
+          "name": "NavLinks",
+          "parentId": "1764527413270-pc65ncs",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527413270-oa6frg0",
+              "type": "Text",
+              "name": "HomeLink",
+              "parentId": "1764527413270-dc6q2li",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-m7g5nwu",
+              "type": "Text",
+              "name": "FeaturesLink",
+              "parentId": "1764527413270-dc6q2li",
+              "props": {
+                "text": "Features"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-cqxkioj",
+              "type": "Text",
+              "name": "PricingLink",
+              "parentId": "1764527413270-dc6q2li",
+              "props": {
+                "text": "Pricing"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-frj1il9",
+              "type": "Text",
+              "name": "ContactLink",
+              "parentId": "1764527413270-dc6q2li",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527413270-8wkrevi",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1764527413270-kldfrwr",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "2rem",
+        "backgroundColor": "var(--color-secondary)",
+        "padding": "2rem",
+        "borderRadius": "0.75rem"
+      },
+      "children": [
+        {
+          "id": "1764527413270-o0spa0g",
+          "type": "Image",
+          "name": "HeroImage",
+          "parentId": "1764527413270-8wkrevi",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Hero Image"
+          },
+          "styles": {
+            "width": "50%",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-3falxmp",
+          "type": "Flex",
+          "name": "HeroTextContent",
+          "parentId": "1764527413270-8wkrevi",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527413270-n5z1uyz",
+              "type": "Heading",
+              "name": "HeroTitle",
+              "parentId": "1764527413270-3falxmp",
+              "props": {
+                "text": "Welcome to Our Platform"
+              },
+              "styles": {
+                "fontSize": "2.25rem",
+                "fontWeight": "bold",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-o72qaf8",
+              "type": "Text",
+              "name": "HeroSubtitle",
+              "parentId": "1764527413270-3falxmp",
+              "props": {
+                "text": "Discover our features and benefits."
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "normal",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527413270-yyt6fcv",
+      "type": "Flex",
+      "name": "FeaturesSection",
+      "parentId": "1764527413270-kldfrwr",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": "2rem",
+        "padding": "2rem"
+      },
+      "children": [
+        {
+          "id": "1764527413270-4h2eht6",
+          "type": "Card",
+          "name": "FeatureCard1",
+          "parentId": "1764527413270-yyt6fcv",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "padding": "1rem",
+            "borderRadius": "0.5rem",
+            "width": "33.333333%"
+          },
+          "children": [
+            {
+              "id": "1764527413270-dummyp5",
+              "type": "Icon",
+              "name": "FeatureIcon1",
+              "parentId": "1764527413270-4h2eht6",
+              "props": {},
+              "styles": {
+                "fontSize": "2rem",
+                "color": "var(--color-accent)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-2oj36r0",
+              "type": "Text",
+              "name": "FeatureTitle1",
+              "parentId": "1764527413270-4h2eht6",
+              "props": {
+                "text": "Feature One"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "bold",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-528gfxe",
+              "type": "Text",
+              "name": "FeatureDescription1",
+              "parentId": "1764527413270-4h2eht6",
+              "props": {
+                "text": "An amazing feature that solves many problems."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-6fsfu4h",
+          "type": "Card",
+          "name": "FeatureCard2",
+          "parentId": "1764527413270-yyt6fcv",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "padding": "1rem",
+            "borderRadius": "0.5rem",
+            "width": "33.333333%"
+          },
+          "children": [
+            {
+              "id": "1764527413270-ynw9vo5",
+              "type": "Icon",
+              "name": "FeatureIcon2",
+              "parentId": "1764527413270-6fsfu4h",
+              "props": {},
+              "styles": {
+                "fontSize": "2rem",
+                "color": "var(--color-accent)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-grajdux",
+              "type": "Text",
+              "name": "FeatureTitle2",
+              "parentId": "1764527413270-6fsfu4h",
+              "props": {
+                "text": "Feature Two"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "bold",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-8lk3my5",
+              "type": "Text",
+              "name": "FeatureDescription2",
+              "parentId": "1764527413270-6fsfu4h",
+              "props": {
+                "text": "An amazing feature that makes life easier."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-leta30w",
+          "type": "Card",
+          "name": "FeatureCard3",
+          "parentId": "1764527413270-yyt6fcv",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "padding": "1rem",
+            "borderRadius": "0.5rem",
+            "width": "33.333333%"
+          },
+          "children": [
+            {
+              "id": "1764527413270-uvrw7mu",
+              "type": "Icon",
+              "name": "FeatureIcon3",
+              "parentId": "1764527413270-leta30w",
+              "props": {},
+              "styles": {
+                "fontSize": "2rem",
+                "color": "var(--color-accent)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-w53fou7",
+              "type": "Text",
+              "name": "FeatureTitle3",
+              "parentId": "1764527413270-leta30w",
+              "props": {
+                "text": "Feature Three"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "bold",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-s39uegd",
+              "type": "Text",
+              "name": "FeatureDescription3",
+              "parentId": "1764527413270-leta30w",
+              "props": {
+                "text": "An amazing feature that enhances productivity."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "fontWeight": "normal",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527413270-194t7gk",
+      "type": "Flex",
+      "name": "CallToActionSection",
+      "parentId": "1764527413270-kldfrwr",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "gap": "1.5rem",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-primary)",
+        "borderRadius": "0.75rem"
+      },
+      "children": [
+        {
+          "id": "1764527413270-p4hjt9t",
+          "type": "Heading",
+          "name": "CTATitle",
+          "parentId": "1764527413270-194t7gk",
+          "props": {
+            "text": "Ready to Get Started?"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "bold",
+            "color": "var(--color-primary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-50j0sxm",
+          "type": "Text",
+          "name": "CTASubtitle",
+          "parentId": "1764527413270-194t7gk",
+          "props": {
+            "text": "Join us today and make progress faster."
+          },
+          "styles": {
+            "fontSize": "1.125rem",
+            "fontWeight": "normal",
+            "color": "var(--color-primary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-4sggmir",
+          "type": "Button",
+          "name": "CTAButton",
+          "parentId": "1764527413270-194t7gk",
+          "props": {
+            "text": "Get Started"
+          },
+          "styles": {
+            "padding": "1rem",
+            "borderRadius": "0.5rem",
+            "fontSize": "1rem",
+            "fontWeight": "bold",
+            "backgroundColor": "var(--color-secondary)",
+            "color": "var(--color-secondary-foreground)",
+            "border": "none"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527413270-vlozkpy",
+      "type": "Flex",
+      "name": "Footer",
+      "parentId": "1764527413270-kldfrwr",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-muted)",
+        "borderRadius": "0.5rem"
+      },
+      "children": [
+        {
+          "id": "1764527413270-fql8xpj",
+          "type": "Text",
+          "name": "FooterCopyright",
+          "parentId": "1764527413270-vlozkpy",
+          "props": {
+            "text": "© 2023 Company Name"
+          },
+          "styles": {
+            "fontSize": "0.875rem",
+            "fontWeight": "normal",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527413270-ybxpwel",
+          "type": "Flex",
+          "name": "FooterLinks",
+          "parentId": "1764527413270-vlozkpy",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527413270-8ymzxsq",
+              "type": "Text",
+              "name": "PrivacyPolicy",
+              "parentId": "1764527413270-ybxpwel",
+              "props": {
+                "text": "Privacy Policy"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "fontWeight": "normal",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527413270-kprfrre",
+              "type": "Text",
+              "name": "TermsService",
+              "parentId": "1764527413270-ybxpwel",
+              "props": {
+                "text": "Terms of Service"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "fontWeight": "normal",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

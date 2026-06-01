@@ -1,0 +1,621 @@
+{
+  "id": "1764527519685-pac9g7e",
+  "type": "Container",
+  "name": "DentalClinicLandingPage",
+  "parentId": "1763740744744-mj3fp8s",
+  "props": {},
+  "styles": {
+    "backgroundColor": "var(--color-background)",
+    "padding": "2rem",
+    "width": "100%"
+  },
+  "children": [
+    {
+      "id": "1764527519685-0apphoa",
+      "type": "Flex",
+      "name": "HeaderSection",
+      "parentId": "1764527519685-pac9g7e",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "1rem 2rem"
+      },
+      "children": [
+        {
+          "id": "1764527519685-2tl50t5",
+          "type": "Text",
+          "name": "ClinicName",
+          "parentId": "1764527519685-0apphoa",
+          "props": {
+            "text": "Bright Smile Dental"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "bold",
+            "color": "var(--color-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527519685-uu5niaw",
+          "type": "Menu",
+          "name": "NavigationMenu",
+          "parentId": "1764527519685-0apphoa",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527519685-10fsmbo",
+              "type": "Text",
+              "name": "NavItem1",
+              "parentId": "1764527519685-uu5niaw",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-iwz79xb",
+              "type": "Text",
+              "name": "NavItem2",
+              "parentId": "1764527519685-uu5niaw",
+              "props": {
+                "text": "Services"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-6qtv34q",
+              "type": "Text",
+              "name": "NavItem3",
+              "parentId": "1764527519685-uu5niaw",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527519685-1nunm3g",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1764527519685-pac9g7e",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-accent)",
+        "borderRadius": "0.5rem",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "id": "1764527519685-9dtihbd",
+          "type": "Stack",
+          "name": "HeroTextContainer",
+          "parentId": "1764527519685-1nunm3g",
+          "props": {},
+          "styles": {
+            "flexDirection": "column",
+            "gap": "1rem",
+            "width": "50%"
+          },
+          "children": [
+            {
+              "id": "1764527519685-9eefuy4",
+              "type": "Heading",
+              "name": "HeroTitle",
+              "parentId": "1764527519685-9dtihbd",
+              "props": {
+                "text": "Your Smile, Our Mission"
+              },
+              "styles": {
+                "fontSize": "2.25rem",
+                "fontWeight": "bold",
+                "color": "var(--color-accent-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-6v85ez0",
+              "type": "Text",
+              "name": "HeroSubtitle",
+              "parentId": "1764527519685-9dtihbd",
+              "props": {
+                "text": "Comprehensive dental care for you and your family."
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "color": "var(--color-accent-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-0wky47c",
+              "type": "Button",
+              "name": "AppointmentButton",
+              "parentId": "1764527519685-9dtihbd",
+              "props": {
+                "text": "Book an Appointment"
+              },
+              "styles": {
+                "padding": "1rem",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527519685-fsojiho",
+          "type": "Image",
+          "name": "HeroImage",
+          "parentId": "1764527519685-1nunm3g",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Dental Clinic Hero Image"
+          },
+          "styles": {
+            "width": "50%",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527519685-i9c1frr",
+      "type": "Grid",
+      "name": "ServicesSection",
+      "parentId": "1764527519685-pac9g7e",
+      "props": {},
+      "styles": {
+        "gridTemplateColumns": "repeat(3, 1fr)",
+        "gap": "2rem",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.5rem",
+        "margin": "2rem 0"
+      },
+      "children": [
+        {
+          "id": "1764527519685-4a5kx4o",
+          "type": "Card",
+          "name": "ServiceCard1",
+          "parentId": "1764527519685-i9c1frr",
+          "props": {},
+          "styles": {
+            "padding": "1.5rem",
+            "backgroundColor": "var(--color-secondary)",
+            "borderRadius": "0.5rem",
+            "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)"
+          },
+          "children": [
+            {
+              "id": "1764527519685-zynlb55",
+              "type": "Icon",
+              "name": "ServiceIcon1",
+              "parentId": "1764527519685-4a5kx4o",
+              "props": {
+                "name": "tooth"
+              },
+              "styles": {
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-9xibb7j",
+              "type": "Heading",
+              "name": "ServiceTitle1",
+              "parentId": "1764527519685-4a5kx4o",
+              "props": {
+                "text": "Teeth Cleaning"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-secondary-foreground)",
+                "marginTop": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-cg3wzmj",
+              "type": "Text",
+              "name": "ServiceDescription1",
+              "parentId": "1764527519685-4a5kx4o",
+              "props": {
+                "text": "Regular cleanings to maintain oral health."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527519685-x4o9r9t",
+          "type": "Card",
+          "name": "ServiceCard2",
+          "parentId": "1764527519685-i9c1frr",
+          "props": {},
+          "styles": {
+            "padding": "1.5rem",
+            "backgroundColor": "var(--color-secondary)",
+            "borderRadius": "0.5rem",
+            "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)"
+          },
+          "children": [
+            {
+              "id": "1764527519685-9r089nt",
+              "type": "Icon",
+              "name": "ServiceIcon2",
+              "parentId": "1764527519685-x4o9r9t",
+              "props": {
+                "name": "implant"
+              },
+              "styles": {
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-lmt0ugn",
+              "type": "Heading",
+              "name": "ServiceTitle2",
+              "parentId": "1764527519685-x4o9r9t",
+              "props": {
+                "text": "Dental Implants"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-secondary-foreground)",
+                "marginTop": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-ov5vkix",
+              "type": "Text",
+              "name": "ServiceDescription2",
+              "parentId": "1764527519685-x4o9r9t",
+              "props": {
+                "text": "Long-lasting solution for missing teeth."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527519685-ax6k05b",
+          "type": "Card",
+          "name": "ServiceCard3",
+          "parentId": "1764527519685-i9c1frr",
+          "props": {},
+          "styles": {
+            "padding": "1.5rem",
+            "backgroundColor": "var(--color-secondary)",
+            "borderRadius": "0.5rem",
+            "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)"
+          },
+          "children": [
+            {
+              "id": "1764527519685-rjwwyhv",
+              "type": "Icon",
+              "name": "ServiceIcon3",
+              "parentId": "1764527519685-ax6k05b",
+              "props": {
+                "name": "orthodontics"
+              },
+              "styles": {
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-xv1nm2g",
+              "type": "Heading",
+              "name": "ServiceTitle3",
+              "parentId": "1764527519685-ax6k05b",
+              "props": {
+                "text": "Orthodontics"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-secondary-foreground)",
+                "marginTop": "0.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-dhsol5y",
+              "type": "Text",
+              "name": "ServiceDescription3",
+              "parentId": "1764527519685-ax6k05b",
+              "props": {
+                "text": "Braces and aligners for a perfect smile."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527519685-d765ylk",
+      "type": "Flex",
+      "name": "TestimonialsSection",
+      "parentId": "1764527519685-pac9g7e",
+      "props": {},
+      "styles": {
+        "flexDirection": "column",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.75rem"
+      },
+      "children": [
+        {
+          "id": "1764527519685-mzw2h76",
+          "type": "Heading",
+          "name": "TestimonialsTitle",
+          "parentId": "1764527519685-d765ylk",
+          "props": {
+            "text": "What Our Patients Say"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "bold",
+            "color": "var(--color-card-foreground)",
+            "marginBottom": "1rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527519685-0lcz7vp",
+          "type": "Flex",
+          "name": "TestimonialCard",
+          "parentId": "1764527519685-d765ylk",
+          "props": {},
+          "styles": {
+            "flexDirection": "row",
+            "alignItems": "center",
+            "backgroundColor": "var(--color-muted)",
+            "padding": "1rem",
+            "borderRadius": "0.5rem",
+            "gap": "1rem",
+            "marginBottom": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527519685-5jfgeu5",
+              "type": "Avatar",
+              "name": "PatientAvatar",
+              "parentId": "1764527519685-0lcz7vp",
+              "props": {
+                "src": "https://placehold.co/100x100",
+                "alt": "Patient Image"
+              },
+              "styles": {
+                "borderRadius": "9999px"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-cdj7cfg",
+              "type": "Text",
+              "name": "PatientTestimonial",
+              "parentId": "1764527519685-0lcz7vp",
+              "props": {
+                "text": "Excellent care and friendly staff. Highly recommended!"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527519685-sw67dzm",
+      "type": "Flex",
+      "name": "ContactSection",
+      "parentId": "1764527519685-pac9g7e",
+      "props": {},
+      "styles": {
+        "flexDirection": "column",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.75rem",
+        "marginTop": "2rem"
+      },
+      "children": [
+        {
+          "id": "1764527519685-byx1u2t",
+          "type": "Heading",
+          "name": "ContactTitle",
+          "parentId": "1764527519685-sw67dzm",
+          "props": {
+            "text": "Get in Touch"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "bold",
+            "color": "var(--color-card-foreground)",
+            "marginBottom": "1rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527519685-h6ca81x",
+          "type": "Flex",
+          "name": "ContactForm",
+          "parentId": "1764527519685-sw67dzm",
+          "props": {},
+          "styles": {
+            "flexDirection": "column",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527519685-k34xyg2",
+              "type": "Input",
+              "name": "NameInput",
+              "parentId": "1764527519685-h6ca81x",
+              "props": {
+                "placeholder": "Your Name",
+                "type": "text"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "0.5rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "backgroundColor": "var(--color-background)",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-fi77noz",
+              "type": "Input",
+              "name": "EmailInput",
+              "parentId": "1764527519685-h6ca81x",
+              "props": {
+                "placeholder": "Your Email",
+                "type": "email"
+              },
+              "styles": {
+                "width": "100%",
+                "padding": "0.5rem",
+                "border": "1px solid var(--color-input)",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "backgroundColor": "var(--color-background)",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-zk0igdz",
+              "type": "Textarea",
+              "name": "MessageTextarea",
+              "parentId": "1764527519685-h6ca81x",
+              "props": {
+                "placeholder": "Your Message"
+              },
+              "styles": {
+                "width": "100%",
+                "border": "1px solid var(--color-input)",
+                "padding": "0.5rem",
+                "borderRadius": "0.375rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527519685-dss8ya8",
+              "type": "Button",
+              "name": "SubmitButton",
+              "parentId": "1764527519685-h6ca81x",
+              "props": {
+                "text": "Send Message"
+              },
+              "styles": {
+                "padding": "1rem",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none",
+                "width": "fit-content"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

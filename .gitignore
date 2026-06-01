@@ -1,0 +1,38 @@
+# dependencies (bun install)
+node_modules
+.archive/
+.turbo/
+
+# output
+.next
+out
+dist
+*.tgz
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# dotenv environment variable files
+.env*
+!.env.example
+.claude/
+.codex/
+.agent-context/
+AGENTS.md
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# IntelliJ based IDEs
+.idea
+
+# Finder (MacOS) folder config
+.DS_Store

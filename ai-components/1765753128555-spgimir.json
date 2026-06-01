@@ -1,0 +1,473 @@
+{
+  "id": "1765753128555-spgimir",
+  "type": "Flex",
+  "name": "SearchResultsPage",
+  "parentId": "1765732979424-r9weie9",
+  "props": {},
+  "styles": {},
+  "className": "flex flex-col min-h-screen bg-background p-6",
+  "children": [
+    {
+      "id": "1765753128555-9egz1oe",
+      "type": "Flex",
+      "name": "NavBar",
+      "parentId": "1765753128555-spgimir",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-row items-center justify-between py-4 border-b border-border",
+      "children": [
+        {
+          "id": "1765753128555-zibd8mw",
+          "type": "Image",
+          "name": "Logo",
+          "parentId": "1765753128555-9egz1oe",
+          "props": {
+            "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+            "alt": "Company Logo"
+          },
+          "styles": {},
+          "className": "h-auto w-auto",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-junio3a",
+          "type": "Flex",
+          "name": "NavLinks",
+          "parentId": "1765753128555-9egz1oe",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-row gap-4",
+          "children": [
+            {
+              "id": "1765753128555-en67swz",
+              "type": "Text",
+              "name": "LinkHome",
+              "parentId": "1765753128555-junio3a",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {},
+              "className": "text-sm text-primary cursor-pointer",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753128555-6m7nk5q",
+              "type": "Text",
+              "name": "LinkAbout",
+              "parentId": "1765753128555-junio3a",
+              "props": {
+                "text": "About"
+              },
+              "styles": {},
+              "className": "text-sm text-primary cursor-pointer",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753128555-5oavirj",
+              "type": "Text",
+              "name": "LinkContact",
+              "parentId": "1765753128555-junio3a",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {},
+              "className": "text-sm text-primary cursor-pointer",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-tanw772",
+          "type": "Button",
+          "name": "LoginButton",
+          "parentId": "1765753128555-9egz1oe",
+          "props": {
+            "text": "Login"
+          },
+          "styles": {},
+          "className": "bg-primary text-primary-foreground rounded py-2 px-4",
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765753128555-zdpftdi",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1765753128555-spgimir",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center justify-center text-center py-8",
+      "children": [
+        {
+          "id": "1765753128555-vzyptcu",
+          "type": "Heading",
+          "name": "HeroHeadline",
+          "parentId": "1765753128555-zdpftdi",
+          "props": {
+            "text": "Find What You Need"
+          },
+          "styles": {},
+          "className": "text-4xl font-bold text-foreground mb-4",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-il5lugf",
+          "type": "Text",
+          "name": "HeroSubheadline",
+          "parentId": "1765753128555-zdpftdi",
+          "props": {
+            "text": "Search through millions of items to find exactly what you're looking for."
+          },
+          "styles": {},
+          "className": "text-lg text-muted-foreground mb-4",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-i47bq3u",
+          "type": "Flex",
+          "name": "SearchBar",
+          "parentId": "1765753128555-zdpftdi",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-row w-full max-w-xl mt-4",
+          "children": [
+            {
+              "id": "1765753128555-wwi5t4g",
+              "type": "Input",
+              "name": "SearchInput",
+              "parentId": "1765753128555-i47bq3u",
+              "props": {
+                "placeholder": "Search products, categories..."
+              },
+              "styles": {},
+              "className": "w-full py-2 px-4 border border-input rounded-l-md",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753128555-qg38v3i",
+              "type": "Button",
+              "name": "SearchButton",
+              "parentId": "1765753128555-i47bq3u",
+              "props": {
+                "text": "Search"
+              },
+              "styles": {},
+              "className": "bg-primary text-primary-foreground rounded-r-md py-2 px-4",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765753128555-f5cfsn8",
+      "type": "Flex",
+      "name": "ResultsSection",
+      "parentId": "1765753128555-spgimir",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col mt-8",
+      "children": [
+        {
+          "id": "1765753128555-iaonooc",
+          "type": "Text",
+          "name": "ResultsCount",
+          "parentId": "1765753128555-f5cfsn8",
+          "props": {
+            "text": "Showing 1-10 of 100 results"
+          },
+          "styles": {},
+          "className": "text-sm text-muted-foreground mb-6",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-em23nyo",
+          "type": "Grid",
+          "name": "ResultsGrid",
+          "parentId": "1765753128555-f5cfsn8",
+          "props": {},
+          "styles": {},
+          "className": "grid grid-cols-2 gap-6",
+          "children": [
+            {
+              "id": "1765753128555-mvrz6zm",
+              "type": "Card",
+              "name": "ResultCard1",
+              "parentId": "1765753128555-em23nyo",
+              "props": {},
+              "styles": {},
+              "className": "bg-card p-4 rounded-lg shadow",
+              "children": [
+                {
+                  "id": "1765753128555-l7tlrl0",
+                  "type": "Image",
+                  "name": "ResultImage1",
+                  "parentId": "1765753128555-mvrz6zm",
+                  "props": {
+                    "src": "https://placehold.co/400x300/0f172a/94a3b8?text=Result",
+                    "alt": "Result Image"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto mb-4 rounded-md",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765753128555-bwh4shd",
+                  "type": "Heading",
+                  "name": "ResultTitle1",
+                  "parentId": "1765753128555-mvrz6zm",
+                  "props": {
+                    "text": "Product Title"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold text-foreground mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765753128555-i4nendm",
+                  "type": "Text",
+                  "name": "ResultDescription1",
+                  "parentId": "1765753128555-mvrz6zm",
+                  "props": {
+                    "text": "Brief description of the product that highlights features and specs."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765753128555-2lj49sc",
+                  "type": "Button",
+                  "name": "ResultButton1",
+                  "parentId": "1765753128555-mvrz6zm",
+                  "props": {
+                    "text": "Learn More"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-accent-foreground underline",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765753128555-ly2uhq3",
+              "type": "Card",
+              "name": "ResultCard2",
+              "parentId": "1765753128555-em23nyo",
+              "props": {},
+              "styles": {},
+              "className": "bg-card p-4 rounded-lg shadow",
+              "children": [
+                {
+                  "id": "1765753128555-41j1u76",
+                  "type": "Image",
+                  "name": "ResultImage2",
+                  "parentId": "1765753128555-ly2uhq3",
+                  "props": {
+                    "src": "https://placehold.co/400x300/0f172a/94a3b8?text=Result",
+                    "alt": "Result Image"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto mb-4 rounded-md",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765753128555-gog6aat",
+                  "type": "Heading",
+                  "name": "ResultTitle2",
+                  "parentId": "1765753128555-ly2uhq3",
+                  "props": {
+                    "text": "Product Title"
+                  },
+                  "styles": {},
+                  "className": "text-lg font-semibold text-foreground mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765753128555-k7aboaw",
+                  "type": "Text",
+                  "name": "ResultDescription2",
+                  "parentId": "1765753128555-ly2uhq3",
+                  "props": {
+                    "text": "Brief description of the product that highlights features and specs."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765753128555-llkvhhx",
+                  "type": "Button",
+                  "name": "ResultButton2",
+                  "parentId": "1765753128555-ly2uhq3",
+                  "props": {
+                    "text": "Learn More"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-accent-foreground underline",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765753128555-xywhj5s",
+      "type": "Flex",
+      "name": "Pagination",
+      "parentId": "1765753128555-spgimir",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-row justify-center mt-8",
+      "children": [
+        {
+          "id": "1765753128555-mojqbu6",
+          "type": "Button",
+          "name": "PrevPageButton",
+          "parentId": "1765753128555-xywhj5s",
+          "props": {
+            "text": "Previous"
+          },
+          "styles": {},
+          "className": "text-sm text-primary mr-4",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-y340tx5",
+          "type": "Button",
+          "name": "NextPageButton",
+          "parentId": "1765753128555-xywhj5s",
+          "props": {
+            "text": "Next"
+          },
+          "styles": {},
+          "className": "text-sm text-primary",
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765753128555-zpe6u0g",
+      "type": "Flex",
+      "name": "Footer",
+      "parentId": "1765753128555-spgimir",
+      "props": {},
+      "styles": {},
+      "className": "flex flex-col items-center mt-auto pt-8 border-t border-border",
+      "children": [
+        {
+          "id": "1765753128555-gxe3gib",
+          "type": "Image",
+          "name": "FooterLogo",
+          "parentId": "1765753128555-zpe6u0g",
+          "props": {
+            "src": "https://placehold.co/120x40/transparent/666?text=Logo",
+            "alt": "Company Logo"
+          },
+          "styles": {},
+          "className": "h-auto w-auto mb-4",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-rml5guw",
+          "type": "Flex",
+          "name": "FooterLinks",
+          "parentId": "1765753128555-zpe6u0g",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-row gap-4 mb-4",
+          "children": [
+            {
+              "id": "1765753128555-l4h9uit",
+              "type": "Text",
+              "name": "FooterLinkAbout",
+              "parentId": "1765753128555-rml5guw",
+              "props": {
+                "text": "About Us"
+              },
+              "styles": {},
+              "className": "text-sm text-muted-foreground cursor-pointer",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753128555-xv3a3ut",
+              "type": "Text",
+              "name": "FooterLinkTerms",
+              "parentId": "1765753128555-rml5guw",
+              "props": {
+                "text": "Terms of Use"
+              },
+              "styles": {},
+              "className": "text-sm text-muted-foreground cursor-pointer",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753128555-6egfq26",
+              "type": "Text",
+              "name": "FooterLinkPrivacy",
+              "parentId": "1765753128555-rml5guw",
+              "props": {
+                "text": "Privacy Policy"
+              },
+              "styles": {},
+              "className": "text-sm text-muted-foreground cursor-pointer",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765753128555-mptl4pn",
+          "type": "Text",
+          "name": "Copyright",
+          "parentId": "1765753128555-zpe6u0g",
+          "props": {
+            "text": "© 2023 Company Name. All rights reserved."
+          },
+          "styles": {},
+          "className": "text-xs text-muted-foreground",
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

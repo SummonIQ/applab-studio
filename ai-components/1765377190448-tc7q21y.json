@@ -1,0 +1,484 @@
+{
+  "id": "1765377190448-tc7q21y",
+  "type": "Flex",
+  "name": "AnalyticsDashboard",
+  "parentId": "1764678963495-7uiuoe1",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "1.5rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "borderRadius": "0.5rem",
+    "width": "100%"
+  },
+  "children": [
+    {
+      "id": "1765377190448-z8uhb5r",
+      "type": "Flex",
+      "name": "Header",
+      "parentId": "1765377190448-tc7q21y",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.5rem"
+      },
+      "children": [
+        {
+          "id": "1765377190448-6hjcyzr",
+          "type": "Heading",
+          "name": "DashboardTitle",
+          "parentId": "1765377190448-z8uhb5r",
+          "props": {
+            "text": "Analytics Dashboard"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "bold",
+            "color": "var(--color-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765377190448-0rxhl8a",
+          "type": "Button",
+          "name": "LogoutButton",
+          "parentId": "1765377190448-z8uhb5r",
+          "props": {
+            "text": "Logout"
+          },
+          "styles": {
+            "padding": "0.5rem 1rem",
+            "borderRadius": "0.375rem",
+            "fontSize": "0.875rem",
+            "fontWeight": "500",
+            "backgroundColor": "var(--color-destructive)",
+            "color": "var(--color-primary-foreground)",
+            "border": "none"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377190448-gkjr2df",
+      "type": "Flex",
+      "name": "StatsRow",
+      "parentId": "1765377190448-tc7q21y",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": "1rem",
+        "padding": "1rem"
+      },
+      "children": [
+        {
+          "id": "1765377190448-aemo93e",
+          "type": "Card",
+          "name": "UsersCard",
+          "parentId": "1765377190448-gkjr2df",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "flex": "1"
+          },
+          "children": [
+            {
+              "id": "1765377190448-i0pbw9i",
+              "type": "Icon",
+              "name": "UsersIcon",
+              "parentId": "1765377190448-aemo93e",
+              "props": {},
+              "styles": {
+                "color": "var(--color-primary)",
+                "fontSize": "1.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-gnlukgt",
+              "type": "Text",
+              "name": "UsersTitle",
+              "parentId": "1765377190448-aemo93e",
+              "props": {
+                "text": "Total Users"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "bold",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-10rvqqh",
+              "type": "Text",
+              "name": "UsersValue",
+              "parentId": "1765377190448-aemo93e",
+              "props": {
+                "text": "1,234"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377190448-521zs34",
+          "type": "Card",
+          "name": "SalesCard",
+          "parentId": "1765377190448-gkjr2df",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "flex": "1"
+          },
+          "children": [
+            {
+              "id": "1765377190448-9xw4m93",
+              "type": "Icon",
+              "name": "SalesIcon",
+              "parentId": "1765377190448-521zs34",
+              "props": {},
+              "styles": {
+                "color": "var(--color-primary)",
+                "fontSize": "1.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-3ldft0q",
+              "type": "Text",
+              "name": "SalesTitle",
+              "parentId": "1765377190448-521zs34",
+              "props": {
+                "text": "Total Sales"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "bold",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-v4xw0ho",
+              "type": "Text",
+              "name": "SalesValue",
+              "parentId": "1765377190448-521zs34",
+              "props": {
+                "text": "$56,789"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377190448-8z74f95",
+          "type": "Card",
+          "name": "FeedbackCard",
+          "parentId": "1765377190448-gkjr2df",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "flex": "1"
+          },
+          "children": [
+            {
+              "id": "1765377190448-uckwapq",
+              "type": "Icon",
+              "name": "FeedbackIcon",
+              "parentId": "1765377190448-8z74f95",
+              "props": {},
+              "styles": {
+                "color": "var(--color-primary)",
+                "fontSize": "1.5rem"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-pzqnv0v",
+              "type": "Text",
+              "name": "FeedbackTitle",
+              "parentId": "1765377190448-8z74f95",
+              "props": {
+                "text": "Feedbacks"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "bold",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-dwzzqij",
+              "type": "Text",
+              "name": "FeedbackValue",
+              "parentId": "1765377190448-8z74f95",
+              "props": {
+                "text": "456"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-primary)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765377190448-b6wxgvm",
+      "type": "Grid",
+      "name": "ReportsGrid",
+      "parentId": "1765377190448-tc7q21y",
+      "props": {},
+      "styles": {
+        "display": "grid",
+        "gridTemplateColumns": "repeat(3, 1fr)",
+        "gap": "1rem",
+        "padding": "1rem"
+      },
+      "children": [
+        {
+          "id": "1765377190448-nqpg1xl",
+          "type": "Card",
+          "name": "DailyReport",
+          "parentId": "1765377190448-b6wxgvm",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-muted)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377190448-vlxoyj1",
+              "type": "Heading",
+              "name": "DailyReportTitle",
+              "parentId": "1765377190448-nqpg1xl",
+              "props": {
+                "text": "Daily Overview"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-hvc813q",
+              "type": "Text",
+              "name": "DailyReportDesc",
+              "parentId": "1765377190448-nqpg1xl",
+              "props": {
+                "text": "Insights of daily data"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-imbcu9o",
+              "type": "Button",
+              "name": "ViewDailyReport",
+              "parentId": "1765377190448-nqpg1xl",
+              "props": {
+                "text": "View Report"
+              },
+              "styles": {
+                "padding": "0.5rem 1rem",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377190448-k4vl2bv",
+          "type": "Card",
+          "name": "WeeklyReport",
+          "parentId": "1765377190448-b6wxgvm",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-muted)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377190448-fwened6",
+              "type": "Heading",
+              "name": "WeeklyReportTitle",
+              "parentId": "1765377190448-k4vl2bv",
+              "props": {
+                "text": "Weekly Summary"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-hjv2pq8",
+              "type": "Text",
+              "name": "WeeklyReportDesc",
+              "parentId": "1765377190448-k4vl2bv",
+              "props": {
+                "text": "Overview of the week"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-ihntbss",
+              "type": "Button",
+              "name": "ViewWeeklyReport",
+              "parentId": "1765377190448-k4vl2bv",
+              "props": {
+                "text": "View Report"
+              },
+              "styles": {
+                "padding": "0.5rem 1rem",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765377190448-lug7nlq",
+          "type": "Card",
+          "name": "MonthlyReport",
+          "parentId": "1765377190448-b6wxgvm",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-muted)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1765377190448-7h1npgu",
+              "type": "Heading",
+              "name": "MonthlyReportTitle",
+              "parentId": "1765377190448-lug7nlq",
+              "props": {
+                "text": "Monthly Insights"
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "fontWeight": "600",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-nlwfj55",
+              "type": "Text",
+              "name": "MonthlyReportDesc",
+              "parentId": "1765377190448-lug7nlq",
+              "props": {
+                "text": "Monthly performance report"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765377190448-00tniod",
+              "type": "Button",
+              "name": "ViewMonthlyReport",
+              "parentId": "1765377190448-lug7nlq",
+              "props": {
+                "text": "View Report"
+              },
+              "styles": {
+                "padding": "0.5rem 1rem",
+                "borderRadius": "0.375rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-primary)",
+                "color": "var(--color-primary-foreground)",
+                "border": "none"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

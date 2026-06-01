@@ -1,0 +1,206 @@
+{
+  "id": "1765753597394-99idqla",
+  "type": "Flex",
+  "name": "LoginScreen",
+  "parentId": "1765732979424-r9weie9",
+  "props": {},
+  "styles": {},
+  "className": "flex flex-col justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600",
+  "children": [
+    {
+      "id": "1765753597394-y6pw6fk",
+      "type": "Card",
+      "name": "MainCard",
+      "parentId": "1765753597394-99idqla",
+      "props": {},
+      "styles": {},
+      "className": "bg-card rounded-lg shadow-lg p-8 w-full max-w-md",
+      "children": [
+        {
+          "id": "1765753597394-26j7xyh",
+          "type": "Heading",
+          "name": "WelcomeHeading",
+          "parentId": "1765753597394-y6pw6fk",
+          "props": {
+            "text": "Welcome Back"
+          },
+          "styles": {},
+          "className": "text-3xl font-bold text-center text-foreground mb-6",
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765753597394-nzryh2a",
+          "type": "Form",
+          "name": "LoginForm",
+          "parentId": "1765753597394-y6pw6fk",
+          "props": {},
+          "styles": {},
+          "className": "flex flex-col gap-4",
+          "children": [
+            {
+              "id": "1765753597394-a4e0m5q",
+              "type": "Label",
+              "name": "EmailLabel",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {
+                "text": "Email Address"
+              },
+              "styles": {},
+              "className": "text-sm font-semibold text-muted-foreground",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753597394-oyx11nd",
+              "type": "Input",
+              "name": "EmailInput",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {
+                "placeholder": "Enter your work email"
+              },
+              "styles": {},
+              "className": "w-full border border-input rounded-md p-2 text-base",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753597394-doml071",
+              "type": "Label",
+              "name": "PasswordLabel",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {
+                "text": "Password"
+              },
+              "styles": {},
+              "className": "text-sm font-semibold text-muted-foreground",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753597394-4o1nfcm",
+              "type": "Input",
+              "name": "PasswordInput",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {
+                "placeholder": "Enter your password"
+              },
+              "styles": {},
+              "className": "w-full border border-input rounded-md p-2 text-base",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753597394-cc2jxgu",
+              "type": "Button",
+              "name": "SubmitButton",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {
+                "text": "Sign In"
+              },
+              "styles": {},
+              "className": "w-full bg-primary text-primary-foreground rounded-md py-2 font-medium",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765753597394-rt8xoy4",
+              "type": "Flex",
+              "name": "SocialLoginContainer",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row gap-4 justify-center mt-4",
+              "children": [
+                {
+                  "id": "1765753597394-g9q6jtj",
+                  "type": "Button",
+                  "name": "GoogleLoginButton",
+                  "parentId": "1765753597394-rt8xoy4",
+                  "props": {
+                    "text": "Sign in with Google"
+                  },
+                  "styles": {},
+                  "className": "flex items-center bg-white text-blue-500 border border-input rounded-md px-4 py-2",
+                  "children": [
+                    {
+                      "id": "1765753597394-tpikf54",
+                      "type": "Icon",
+                      "name": "GoogleIcon",
+                      "parentId": "1765753597394-g9q6jtj",
+                      "props": {
+                        "icon": "globe"
+                      },
+                      "styles": {},
+                      "className": "text-xl mr-2",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765753597394-gehjp4q",
+                  "type": "Button",
+                  "name": "FacebookLoginButton",
+                  "parentId": "1765753597394-rt8xoy4",
+                  "props": {
+                    "text": "Sign in with Facebook"
+                  },
+                  "styles": {},
+                  "className": "flex items-center bg-blue-600 text-white rounded-md px-4 py-2",
+                  "children": [
+                    {
+                      "id": "1765753597394-lf7urem",
+                      "type": "Icon",
+                      "name": "FacebookIcon",
+                      "parentId": "1765753597394-gehjp4q",
+                      "props": {
+                        "icon": "globe"
+                      },
+                      "styles": {},
+                      "className": "text-xl mr-2",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765753597394-evtbbhd",
+              "type": "Text",
+              "name": "ForgotPasswordText",
+              "parentId": "1765753597394-nzryh2a",
+              "props": {
+                "text": "Forgot Password?"
+              },
+              "styles": {},
+              "className": "text-sm text-primary mt-4 text-center cursor-pointer",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765753597394-zgc9h2a",
+      "type": "Text",
+      "name": "SignUpPrompt",
+      "parentId": "1765753597394-99idqla",
+      "props": {
+        "text": "Don't have an account? Sign up now"
+      },
+      "styles": {},
+      "className": "text-sm text-secondary-foreground mt-4",
+      "children": [],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

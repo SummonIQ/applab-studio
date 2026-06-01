@@ -1,0 +1,408 @@
+{
+  "id": "1765378596580-1lg9hno",
+  "type": "Flex",
+  "name": "LandingPage",
+  "parentId": "1765378518352-j799htg",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)"
+  },
+  "children": [
+    {
+      "id": "1765378596580-rb44hxd",
+      "type": "Container",
+      "name": "HeroSection",
+      "parentId": "1765378596580-1lg9hno",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": "1rem",
+        "backgroundColor": "var(--color-primary)",
+        "borderRadius": "0.75rem",
+        "width": "100%",
+        "height": "32rem",
+        "animation": "fadeIn 2s ease-in-out"
+      },
+      "children": [
+        {
+          "id": "1765378596580-a0stax0",
+          "type": "Heading",
+          "name": "HeroTitle",
+          "parentId": "1765378596580-rb44hxd",
+          "props": {
+            "text": "Welcome to Our 3D Experience"
+          },
+          "styles": {
+            "fontSize": "2.25rem",
+            "fontWeight": "800",
+            "color": "var(--color-primary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-ed05p46",
+          "type": "Image",
+          "name": "3DImage",
+          "parentId": "1765378596580-rb44hxd",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "3D Graphic"
+          },
+          "styles": {
+            "width": "50%",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-ije29r0",
+          "type": "Text",
+          "name": "HeroSubtitle",
+          "parentId": "1765378596580-rb44hxd",
+          "props": {
+            "text": "Explore the future like never before"
+          },
+          "styles": {
+            "fontSize": "1.25rem",
+            "fontWeight": "500",
+            "color": "var(--color-primary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765378596580-alkd2xx",
+      "type": "Grid",
+      "name": "FeaturesSection",
+      "parentId": "1765378596580-1lg9hno",
+      "props": {},
+      "styles": {
+        "display": "grid",
+        "gridTemplateColumns": "repeat(3, 1fr)",
+        "gap": "1.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1765378596580-mg3rwbp",
+          "type": "Card",
+          "name": "FeatureCard1",
+          "parentId": "1765378596580-alkd2xx",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "padding": "1rem",
+            "textAlign": "center"
+          },
+          "children": [
+            {
+              "id": "1765378596580-6ojclho",
+              "type": "Icon",
+              "name": "FeatureIcon1",
+              "parentId": "1765378596580-mg3rwbp",
+              "props": {
+                "icon": "star"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-accent)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765378596580-jatavgk",
+              "type": "Heading",
+              "name": "FeatureTitle1",
+              "parentId": "1765378596580-mg3rwbp",
+              "props": {
+                "text": "Innovative Design"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "600",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765378596580-zipel9r",
+              "type": "Text",
+              "name": "FeatureDescription1",
+              "parentId": "1765378596580-mg3rwbp",
+              "props": {
+                "text": "Experience our cutting-edge technology"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-8xdtmuc",
+          "type": "Card",
+          "name": "FeatureCard2",
+          "parentId": "1765378596580-alkd2xx",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "padding": "1rem",
+            "textAlign": "center"
+          },
+          "children": [
+            {
+              "id": "1765378596580-2q4je9z",
+              "type": "Icon",
+              "name": "FeatureIcon2",
+              "parentId": "1765378596580-8xdtmuc",
+              "props": {
+                "icon": "lightbulb"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-accent)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765378596580-8tedyst",
+              "type": "Heading",
+              "name": "FeatureTitle2",
+              "parentId": "1765378596580-8xdtmuc",
+              "props": {
+                "text": "Smart Solutions"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "600",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765378596580-ka3qd0o",
+              "type": "Text",
+              "name": "FeatureDescription2",
+              "parentId": "1765378596580-8xdtmuc",
+              "props": {
+                "text": "Solutions designed for efficiency"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-sua3k88",
+          "type": "Card",
+          "name": "FeatureCard3",
+          "parentId": "1765378596580-alkd2xx",
+          "props": {},
+          "styles": {
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem",
+            "padding": "1rem",
+            "textAlign": "center"
+          },
+          "children": [
+            {
+              "id": "1765378596580-zh95xba",
+              "type": "Icon",
+              "name": "FeatureIcon3",
+              "parentId": "1765378596580-sua3k88",
+              "props": {
+                "icon": "rocket"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-accent)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765378596580-cftyow1",
+              "type": "Heading",
+              "name": "FeatureTitle3",
+              "parentId": "1765378596580-sua3k88",
+              "props": {
+                "text": "Fast Performance"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "600",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765378596580-vk873y3",
+              "type": "Text",
+              "name": "FeatureDescription3",
+              "parentId": "1765378596580-sua3k88",
+              "props": {
+                "text": "Speed that sets you apart"
+              },
+              "styles": {
+                "fontSize": "0.875rem",
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765378596580-i7ut4lw",
+      "type": "Flex",
+      "name": "CTASection",
+      "parentId": "1765378596580-1lg9hno",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "gap": "1rem",
+        "padding": "1.5rem",
+        "backgroundColor": "var(--color-secondary)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1765378596580-c2oj0yq",
+          "type": "Text",
+          "name": "CTAText",
+          "parentId": "1765378596580-i7ut4lw",
+          "props": {
+            "text": "Join our community today!"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "bold",
+            "color": "var(--color-secondary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-ynft8sb",
+          "type": "Button",
+          "name": "JoinNowButton",
+          "parentId": "1765378596580-i7ut4lw",
+          "props": {
+            "text": "Get Started"
+          },
+          "styles": {
+            "padding": "0.75rem 1.5rem",
+            "borderRadius": "0.375rem",
+            "fontSize": "1rem",
+            "fontWeight": "600",
+            "backgroundColor": "var(--color-accent)",
+            "color": "var(--color-accent-foreground)",
+            "border": "none"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765378596580-1w656lu",
+      "type": "Footer",
+      "name": "FooterSection",
+      "parentId": "1765378596580-1lg9hno",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "justifyContent": "space-around",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-muted)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1765378596580-lil2icv",
+          "type": "Text",
+          "name": "FooterItem1",
+          "parentId": "1765378596580-1w656lu",
+          "props": {
+            "text": "Privacy Policy"
+          },
+          "styles": {
+            "fontSize": "0.875rem",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-ritcdcz",
+          "type": "Text",
+          "name": "FooterItem2",
+          "parentId": "1765378596580-1w656lu",
+          "props": {
+            "text": "Terms of Service"
+          },
+          "styles": {
+            "fontSize": "0.875rem",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1765378596580-dkvd1iu",
+          "type": "Text",
+          "name": "FooterItem3",
+          "parentId": "1765378596580-1w656lu",
+          "props": {
+            "text": "Contact Us"
+          },
+          "styles": {
+            "fontSize": "0.875rem",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

@@ -1,0 +1,3050 @@
+{
+  "id": "1765804579607-k8azdgg",
+  "type": "Page",
+  "name": "AnimatedHeroLandingPage",
+  "parentId": "1765782386328-cmieqpg",
+  "props": {},
+  "styles": {},
+  "className": "min-h-screen bg-background text-foreground flex flex-col",
+  "children": [
+    {
+      "id": "1765804579608-pd2l6m4",
+      "type": "Flex",
+      "name": "TopHeaderBar",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full border-b border-border bg-background/80 backdrop-blur flex justify-center",
+      "children": [
+        {
+          "id": "1765804579608-g0b72gf",
+          "type": "Flex",
+          "name": "HeaderContent",
+          "parentId": "1765804579608-pd2l6m4",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-3 flex flex-row items-center justify-between gap-4",
+          "children": [
+            {
+              "id": "1765804579608-ru3yev1",
+              "type": "Flex",
+              "name": "LogoGroup",
+              "parentId": "1765804579608-g0b72gf",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-center gap-3",
+              "children": [
+                {
+                  "id": "1765804579608-vsk1p5e",
+                  "type": "Image",
+                  "name": "BrandLogo",
+                  "parentId": "1765804579608-ru3yev1",
+                  "props": {
+                    "src": "https://placehold.co/120x40/transparent/666?text=Nova",
+                    "alt": "Nova UI brand logo"
+                  },
+                  "styles": {},
+                  "className": "w-auto h-8",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-py6f8mk",
+                  "type": "Badge",
+                  "name": "BetaBadge",
+                  "parentId": "1765804579608-ru3yev1",
+                  "props": {
+                    "text": "Beta",
+                    "badgeVariant": "secondary"
+                  },
+                  "styles": {},
+                  "className": "rounded-md",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579608-nyqnhah",
+              "type": "Flex",
+              "name": "NavLinks",
+              "parentId": "1765804579608-g0b72gf",
+              "props": {},
+              "styles": {},
+              "className": "hidden md:flex flex-row items-center gap-4",
+              "children": [
+                {
+                  "id": "1765804579608-ee4f1ng",
+                  "type": "Button",
+                  "name": "FeaturesLink",
+                  "parentId": "1765804579608-nyqnhah",
+                  "props": {
+                    "text": "Features",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-grexrw8",
+                  "type": "Button",
+                  "name": "PricingLink",
+                  "parentId": "1765804579608-nyqnhah",
+                  "props": {
+                    "text": "Pricing",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-2q7yko6",
+                  "type": "Button",
+                  "name": "CustomersLink",
+                  "parentId": "1765804579608-nyqnhah",
+                  "props": {
+                    "text": "Customers",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-o6tiux8",
+                  "type": "Button",
+                  "name": "DocsLink",
+                  "parentId": "1765804579608-nyqnhah",
+                  "props": {
+                    "text": "Docs",
+                    "variant": "link",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground hover:text-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579608-cne88sm",
+              "type": "Flex",
+              "name": "HeaderActions",
+              "parentId": "1765804579608-g0b72gf",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-center gap-3",
+              "children": [
+                {
+                  "id": "1765804579608-6rg2enf",
+                  "type": "Flex",
+                  "name": "ThemeToggle",
+                  "parentId": "1765804579608-cne88sm",
+                  "props": {},
+                  "styles": {},
+                  "className": "hidden sm:flex flex-row items-center gap-2",
+                  "children": [
+                    {
+                      "id": "1765804579608-4pvlddg",
+                      "type": "Label",
+                      "name": "ThemeLabel",
+                      "parentId": "1765804579608-6rg2enf",
+                      "props": {
+                        "text": "Dark mode"
+                      },
+                      "styles": {},
+                      "className": "text-xs text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-8hnyu3r",
+                      "type": "Switch",
+                      "name": "ThemeSwitch",
+                      "parentId": "1765804579608-6rg2enf",
+                      "props": {},
+                      "styles": {},
+                      "className": "",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-qcd5kzg",
+                  "type": "Button",
+                  "name": "SignInButton",
+                  "parentId": "1765804579608-cne88sm",
+                  "props": {
+                    "text": "Sign in",
+                    "variant": "ghost",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "text-sm",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-g23l0ko",
+                  "type": "Button",
+                  "name": "GetStartedButton",
+                  "parentId": "1765804579608-cne88sm",
+                  "props": {
+                    "text": "Get Started",
+                    "variant": "default",
+                    "size": "sm"
+                  },
+                  "styles": {},
+                  "className": "bg-primary text-primary-foreground rounded-md px-4",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579608-jc3qd5b",
+      "type": "Stack",
+      "name": "HeroSection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "relative w-full flex justify-center overflow-hidden",
+      "children": [
+        {
+          "id": "1765804579608-ggadvke",
+          "type": "Flex",
+          "name": "HeroBackgroundAnimated",
+          "parentId": "1765804579608-jc3qd5b",
+          "props": {},
+          "styles": {},
+          "className": "pointer-events-none absolute inset-0 -z-10",
+          "children": [
+            {
+              "id": "1765804579608-vgmzmxs",
+              "type": "Card",
+              "name": "GradientBackdrop",
+              "parentId": "1765804579608-ggadvke",
+              "props": {},
+              "styles": {},
+              "className": "absolute inset-0 bg-gradient-to-b from-primary/15 via-secondary/10 to-background",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765804579608-yt9leof",
+              "type": "Card",
+              "name": "AuroraOrbLeft",
+              "parentId": "1765804579608-ggadvke",
+              "props": {},
+              "styles": {},
+              "className": "absolute -top-16 -left-16 w-72 h-72 rounded-full bg-primary/30 blur-3xl animate-pulse",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765804579608-bzo0oex",
+              "type": "Card",
+              "name": "AuroraOrbRight",
+              "parentId": "1765804579608-ggadvke",
+              "props": {},
+              "styles": {},
+              "className": "absolute top-10 -right-20 w-80 h-80 rounded-full bg-accent/30 blur-3xl animate-pulse",
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1765804579608-ef638jz",
+              "type": "Card",
+              "name": "AuroraOrbBottom",
+              "parentId": "1765804579608-ggadvke",
+              "props": {},
+              "styles": {},
+              "className": "absolute -bottom-16 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-secondary/25 blur-3xl animate-pulse",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1765804579608-e8fnb3f",
+          "type": "Flex",
+          "name": "HeroContainer",
+          "parentId": "1765804579608-jc3qd5b",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-16 md:py-20",
+          "children": [
+            {
+              "id": "1765804579608-1xc2cyq",
+              "type": "Grid",
+              "name": "HeroGrid",
+              "parentId": "1765804579608-e8fnb3f",
+              "props": {},
+              "styles": {},
+              "className": "grid grid-cols-1 md:grid-cols-2 gap-10 items-center",
+              "children": [
+                {
+                  "id": "1765804579608-n2q7gi7",
+                  "type": "Flex",
+                  "name": "HeroCopy",
+                  "parentId": "1765804579608-1xc2cyq",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-5",
+                  "children": [
+                    {
+                      "id": "1765804579608-9yz947r",
+                      "type": "Badge",
+                      "name": "HeroEyebrow",
+                      "parentId": "1765804579608-n2q7gi7",
+                      "props": {
+                        "text": "Interactive hero with animated background",
+                        "badgeVariant": "outline"
+                      },
+                      "styles": {},
+                      "className": "w-fit rounded-md",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-ej8rqsv",
+                      "type": "Heading",
+                      "name": "HeroTitle",
+                      "parentId": "1765804579608-n2q7gi7",
+                      "props": {
+                        "level": 1,
+                        "text": "Captivate visitors with motion that feels effortless"
+                      },
+                      "styles": {},
+                      "className": "text-4xl font-semibold leading-tight",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-igmu8q4",
+                      "type": "Text",
+                      "name": "HeroSubtitle",
+                      "parentId": "1765804579608-n2q7gi7",
+                      "props": {
+                        "text": "Design a stunning, modern hero section featuring subtle animated gradients, floating orbs, and delightful micro-interactions—no heavy code required."
+                      },
+                      "styles": {},
+                      "className": "text-base text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-7u3bpha",
+                      "type": "Flex",
+                      "name": "HeroCTAGroup",
+                      "parentId": "1765804579608-n2q7gi7",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-row items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765804579608-daqq6a5",
+                          "type": "Button",
+                          "name": "PrimaryCTA",
+                          "parentId": "1765804579608-7u3bpha",
+                          "props": {
+                            "text": "Get Started Free",
+                            "variant": "default",
+                            "size": "lg"
+                          },
+                          "styles": {},
+                          "className": "bg-primary text-primary-foreground rounded-md px-5 shadow-md",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-nwvqq75",
+                          "type": "Button",
+                          "name": "SecondaryCTADemo",
+                          "parentId": "1765804579608-7u3bpha",
+                          "props": {
+                            "text": "Watch Demo",
+                            "variant": "secondary",
+                            "size": "lg"
+                          },
+                          "styles": {},
+                          "className": "rounded-md px-5",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-jmsxgci",
+                      "type": "Form",
+                      "name": "EmailCaptureForm",
+                      "parentId": "1765804579608-n2q7gi7",
+                      "props": {},
+                      "styles": {},
+                      "className": "mt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765804579608-cptfwh8",
+                          "type": "Label",
+                          "name": "EmailLabel",
+                          "parentId": "1765804579608-jmsxgci",
+                          "props": {
+                            "text": "Join the waitlist"
+                          },
+                          "styles": {},
+                          "className": "text-xs text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-iwlsq8g",
+                          "type": "Input",
+                          "name": "EmailInput",
+                          "parentId": "1765804579608-jmsxgci",
+                          "props": {
+                            "placeholder": "Enter your work email",
+                            "type": "email",
+                            "required": true
+                          },
+                          "styles": {},
+                          "className": "w-full sm:w-1/2 border border-input rounded-md px-3 py-2",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-2pfzljw",
+                          "type": "Button",
+                          "name": "JoinWaitlistButton",
+                          "parentId": "1765804579608-jmsxgci",
+                          "props": {
+                            "text": "Join Waitlist",
+                            "variant": "default",
+                            "size": "default"
+                          },
+                          "styles": {},
+                          "className": "w-full sm:w-auto bg-primary text-primary-foreground rounded-md px-4",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-geb68zu",
+                      "type": "Flex",
+                      "name": "HeroSocialProof",
+                      "parentId": "1765804579608-n2q7gi7",
+                      "props": {},
+                      "styles": {},
+                      "className": "mt-1 flex flex-row items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765804579608-4j4ep2v",
+                          "type": "Avatar",
+                          "name": "AvatarUser1",
+                          "parentId": "1765804579608-geb68zu",
+                          "props": {
+                            "src": "https://placehold.co/100x100/6366f1/ffffff?text=AL",
+                            "alt": "Alex Lee avatar"
+                          },
+                          "styles": {},
+                          "className": "w-8 h-8 rounded-full",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-vqf41rd",
+                          "type": "Avatar",
+                          "name": "AvatarUser2",
+                          "parentId": "1765804579608-geb68zu",
+                          "props": {
+                            "src": "https://placehold.co/100x100/22c55e/ffffff?text=RM",
+                            "alt": "Rina Malik avatar"
+                          },
+                          "styles": {},
+                          "className": "w-8 h-8 rounded-full -ml-3 ring-2 ring-background",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-2jbu29u",
+                          "type": "Avatar",
+                          "name": "AvatarUser3",
+                          "parentId": "1765804579608-geb68zu",
+                          "props": {
+                            "src": "https://placehold.co/100x100/f59e0b/ffffff?text=TS",
+                            "alt": "Tom Sandoval avatar"
+                          },
+                          "styles": {},
+                          "className": "w-8 h-8 rounded-full -ml-3 ring-2 ring-background",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-s5546nv",
+                          "type": "Flex",
+                          "name": "RatingGroup",
+                          "parentId": "1765804579608-geb68zu",
+                          "props": {},
+                          "styles": {},
+                          "className": "flex flex-row items-center gap-1",
+                          "children": [
+                            {
+                              "id": "1765804579608-60bnlei",
+                              "type": "Icon",
+                              "name": "StarIcon1",
+                              "parentId": "1765804579608-s5546nv",
+                              "props": {
+                                "icon": "star"
+                              },
+                              "styles": {},
+                              "className": "text-primary",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579608-1dvnw6t",
+                              "type": "Icon",
+                              "name": "StarIcon2",
+                              "parentId": "1765804579608-s5546nv",
+                              "props": {
+                                "icon": "star"
+                              },
+                              "styles": {},
+                              "className": "text-primary",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579608-lx81rvz",
+                              "type": "Icon",
+                              "name": "StarIcon3",
+                              "parentId": "1765804579608-s5546nv",
+                              "props": {
+                                "icon": "star"
+                              },
+                              "styles": {},
+                              "className": "text-primary",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579608-f4sl4w9",
+                              "type": "Icon",
+                              "name": "StarIcon4",
+                              "parentId": "1765804579608-s5546nv",
+                              "props": {
+                                "icon": "star"
+                              },
+                              "styles": {},
+                              "className": "text-primary",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579608-0mht9sg",
+                              "type": "Icon",
+                              "name": "StarIcon5",
+                              "parentId": "1765804579608-s5546nv",
+                              "props": {
+                                "icon": "star"
+                              },
+                              "styles": {},
+                              "className": "text-primary",
+                              "children": [],
+                              "events": {}
+                            }
+                          ],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-peqpvja",
+                          "type": "Text",
+                          "name": "TrustText",
+                          "parentId": "1765804579608-geb68zu",
+                          "props": {
+                            "text": "Loved by 10,000+ teams • 4.9/5 average rating"
+                          },
+                          "styles": {},
+                          "className": "text-sm text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-6cflfi3",
+                  "type": "Card",
+                  "name": "HeroVisualCard",
+                  "parentId": "1765804579608-1xc2cyq",
+                  "props": {},
+                  "styles": {},
+                  "className": "relative bg-card rounded-xl border border-border shadow-md overflow-hidden",
+                  "children": [
+                    {
+                      "id": "1765804579608-15pbo80",
+                      "type": "Image",
+                      "name": "HeroPreviewImage",
+                      "parentId": "1765804579608-6cflfi3",
+                      "props": {
+                        "src": "https://placehold.co/800x500/1a1a2e/eaeaea?text=Animated+Hero+Preview",
+                        "alt": "Preview of animated hero section with gradients and orbs"
+                      },
+                      "styles": {},
+                      "className": "w-full h-auto",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-lc7muum",
+                      "type": "Skeleton",
+                      "name": "HeroImageSkeleton",
+                      "parentId": "1765804579608-6cflfi3",
+                      "props": {},
+                      "styles": {},
+                      "className": "absolute inset-0 opacity-0",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-o73xyrq",
+                      "type": "Badge",
+                      "name": "LivePreviewBadge",
+                      "parentId": "1765804579608-6cflfi3",
+                      "props": {
+                        "text": "Live Preview",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "absolute top-3 left-3",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579608-cr89jm1",
+              "type": "Grid",
+              "name": "HeroStatsRow",
+              "parentId": "1765804579608-e8fnb3f",
+              "props": {},
+              "styles": {},
+              "className": "mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4",
+              "children": [
+                {
+                  "id": "1765804579608-mj2e0y7",
+                  "type": "Card",
+                  "name": "StatCardReliability",
+                  "parentId": "1765804579608-cr89jm1",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765804579608-u274x07",
+                      "type": "Icon",
+                      "name": "ShieldIcon",
+                      "parentId": "1765804579608-mj2e0y7",
+                      "props": {
+                        "icon": "shield"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-9m4g6e1",
+                      "type": "Flex",
+                      "name": "StatContentReliability",
+                      "parentId": "1765804579608-mj2e0y7",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-col",
+                      "children": [
+                        {
+                          "id": "1765804579608-pjrd9n9",
+                          "type": "Text",
+                          "name": "StatLabelReliability",
+                          "parentId": "1765804579608-9m4g6e1",
+                          "props": {
+                            "text": "Uptime"
+                          },
+                          "styles": {},
+                          "className": "text-sm text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-p2nmah2",
+                          "type": "Heading",
+                          "name": "StatValueReliability",
+                          "parentId": "1765804579608-9m4g6e1",
+                          "props": {
+                            "level": 3,
+                            "text": "99.9%"
+                          },
+                          "styles": {},
+                          "className": "text-xl font-semibold",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-fek73mk",
+                  "type": "Card",
+                  "name": "StatCardSpeed",
+                  "parentId": "1765804579608-cr89jm1",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765804579608-v62bhn3",
+                      "type": "Icon",
+                      "name": "ZapIcon",
+                      "parentId": "1765804579608-fek73mk",
+                      "props": {
+                        "icon": "zap"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-tei59as",
+                      "type": "Flex",
+                      "name": "StatContentSpeed",
+                      "parentId": "1765804579608-fek73mk",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-col",
+                      "children": [
+                        {
+                          "id": "1765804579608-5yk8nu0",
+                          "type": "Text",
+                          "name": "StatLabelSpeed",
+                          "parentId": "1765804579608-tei59as",
+                          "props": {
+                            "text": "Faster Time-to-First-Draw"
+                          },
+                          "styles": {},
+                          "className": "text-sm text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-5x1jz3f",
+                          "type": "Heading",
+                          "name": "StatValueSpeed",
+                          "parentId": "1765804579608-tei59as",
+                          "props": {
+                            "level": 3,
+                            "text": "50% faster"
+                          },
+                          "styles": {},
+                          "className": "text-xl font-semibold",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579608-u3169l9",
+                  "type": "Card",
+                  "name": "StatCardTeams",
+                  "parentId": "1765804579608-cr89jm1",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765804579608-t3069wk",
+                      "type": "Icon",
+                      "name": "UsersIcon",
+                      "parentId": "1765804579608-u3169l9",
+                      "props": {
+                        "icon": "user"
+                      },
+                      "styles": {},
+                      "className": "text-primary",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579608-3m4om7f",
+                      "type": "Flex",
+                      "name": "StatContentTeams",
+                      "parentId": "1765804579608-u3169l9",
+                      "props": {},
+                      "styles": {},
+                      "className": "flex flex-col",
+                      "children": [
+                        {
+                          "id": "1765804579608-7uf97a9",
+                          "type": "Text",
+                          "name": "StatLabelTeams",
+                          "parentId": "1765804579608-3m4om7f",
+                          "props": {
+                            "text": "Creative teams"
+                          },
+                          "styles": {},
+                          "className": "text-sm text-muted-foreground",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579608-q582byo",
+                          "type": "Heading",
+                          "name": "StatValueTeams",
+                          "parentId": "1765804579608-3m4om7f",
+                          "props": {
+                            "level": 3,
+                            "text": "10,000+"
+                          },
+                          "styles": {},
+                          "className": "text-xl font-semibold",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-7mfehdp",
+      "type": "Flex",
+      "name": "TrustedBySection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-j0q8p00",
+          "type": "Card",
+          "name": "TrustedByCard",
+          "parentId": "1765804579609-7mfehdp",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl mx-auto my-6 px-4 py-4 bg-card rounded-lg border border-border shadow-sm",
+          "children": [
+            {
+              "id": "1765804579609-fy8h4jp",
+              "type": "Flex",
+              "name": "TrustedByContent",
+              "parentId": "1765804579609-j0q8p00",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col gap-3",
+              "children": [
+                {
+                  "id": "1765804579609-6milm6p",
+                  "type": "Text",
+                  "name": "TrustedByLabel",
+                  "parentId": "1765804579609-fy8h4jp",
+                  "props": {
+                    "text": "Trusted by product-forward teams"
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-u845u3q",
+                  "type": "Flex",
+                  "name": "LogoRow",
+                  "parentId": "1765804579609-fy8h4jp",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row flex-wrap items-center gap-6",
+                  "children": [
+                    {
+                      "id": "1765804579609-7vco57d",
+                      "type": "Image",
+                      "name": "LogoA",
+                      "parentId": "1765804579609-u845u3q",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Stripe",
+                        "alt": "Stripe logo"
+                      },
+                      "styles": {},
+                      "className": "h-6 w-auto opacity-70",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-9eqho1n",
+                      "type": "Image",
+                      "name": "LogoB",
+                      "parentId": "1765804579609-u845u3q",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Notion",
+                        "alt": "Notion logo"
+                      },
+                      "styles": {},
+                      "className": "h-6 w-auto opacity-70",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-x8ub6ee",
+                      "type": "Image",
+                      "name": "LogoC",
+                      "parentId": "1765804579609-u845u3q",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Shopify",
+                        "alt": "Shopify logo"
+                      },
+                      "styles": {},
+                      "className": "h-6 w-auto opacity-70",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-fftkeue",
+                      "type": "Image",
+                      "name": "LogoD",
+                      "parentId": "1765804579609-u845u3q",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Figma",
+                        "alt": "Figma logo"
+                      },
+                      "styles": {},
+                      "className": "h-6 w-auto opacity-70",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-x3yr0gs",
+                      "type": "Image",
+                      "name": "LogoE",
+                      "parentId": "1765804579609-u845u3q",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Airbnb",
+                        "alt": "Airbnb logo"
+                      },
+                      "styles": {},
+                      "className": "h-6 w-auto opacity-70",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-r0s1e65",
+                      "type": "Image",
+                      "name": "LogoF",
+                      "parentId": "1765804579609-u845u3q",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Intercom",
+                        "alt": "Intercom logo"
+                      },
+                      "styles": {},
+                      "className": "h-6 w-auto opacity-70",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-qhm81pk",
+      "type": "Flex",
+      "name": "FeaturesSection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-a5yxsg7",
+          "type": "Flex",
+          "name": "FeaturesContainer",
+          "parentId": "1765804579609-qhm81pk",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-10 flex flex-col gap-6",
+          "children": [
+            {
+              "id": "1765804579609-t51h9c4",
+              "type": "Flex",
+              "name": "FeaturesHeader",
+              "parentId": "1765804579609-a5yxsg7",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col gap-2",
+              "children": [
+                {
+                  "id": "1765804579609-oy418ko",
+                  "type": "Heading",
+                  "name": "FeaturesTitle",
+                  "parentId": "1765804579609-t51h9c4",
+                  "props": {
+                    "level": 2,
+                    "text": "Design once, captivate everywhere"
+                  },
+                  "styles": {},
+                  "className": "text-3xl font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-3ya3uoz",
+                  "type": "Text",
+                  "name": "FeaturesSubtitle",
+                  "parentId": "1765804579609-t51h9c4",
+                  "props": {
+                    "text": "Bring your hero to life with production-ready animations and clean, accessible UI building blocks."
+                  },
+                  "styles": {},
+                  "className": "text-base text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-zp1mum3",
+              "type": "Grid",
+              "name": "FeaturesGrid",
+              "parentId": "1765804579609-a5yxsg7",
+              "props": {},
+              "styles": {},
+              "className": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
+              "children": [
+                {
+                  "id": "1765804579609-d0ygmwh",
+                  "type": "Card",
+                  "name": "FeatureCardAnimations",
+                  "parentId": "1765804579609-zp1mum3",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm hover:shadow-md transition",
+                  "children": [
+                    {
+                      "id": "1765804579609-iu73yvx",
+                      "type": "Icon",
+                      "name": "FeatureIconZap",
+                      "parentId": "1765804579609-d0ygmwh",
+                      "props": {
+                        "icon": "zap"
+                      },
+                      "styles": {},
+                      "className": "text-primary mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-45jhcbp",
+                      "type": "Heading",
+                      "name": "FeatureTitleAnimations",
+                      "parentId": "1765804579609-d0ygmwh",
+                      "props": {
+                        "level": 4,
+                        "text": "Subtle motion primitives"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-ak47zrf",
+                      "type": "Text",
+                      "name": "FeatureDescAnimations",
+                      "parentId": "1765804579609-d0ygmwh",
+                      "props": {
+                        "text": "Gradient auras, floating orbs, and reveal transitions crafted to delight without distracting."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground mt-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-2fapnt2",
+                      "type": "Badge",
+                      "name": "FeatureBadgeAnimations",
+                      "parentId": "1765804579609-d0ygmwh",
+                      "props": {
+                        "text": "No JS heavy libs",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "mt-3 w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-uo49tl1",
+                      "type": "Button",
+                      "name": "FeatureLearnMoreAnimations",
+                      "parentId": "1765804579609-d0ygmwh",
+                      "props": {
+                        "text": "Learn more",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "mt-2 text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-l7vz2j3",
+                  "type": "Card",
+                  "name": "FeatureCardAccessibility",
+                  "parentId": "1765804579609-zp1mum3",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm hover:shadow-md transition",
+                  "children": [
+                    {
+                      "id": "1765804579609-wcqr2kt",
+                      "type": "Icon",
+                      "name": "FeatureIconShield",
+                      "parentId": "1765804579609-l7vz2j3",
+                      "props": {
+                        "icon": "shield"
+                      },
+                      "styles": {},
+                      "className": "text-primary mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-yafbhwi",
+                      "type": "Heading",
+                      "name": "FeatureTitleAccessibility",
+                      "parentId": "1765804579609-l7vz2j3",
+                      "props": {
+                        "level": 4,
+                        "text": "Accessible by default"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-1pewl9r",
+                      "type": "Text",
+                      "name": "FeatureDescAccessibility",
+                      "parentId": "1765804579609-l7vz2j3",
+                      "props": {
+                        "text": "Semantic structure, contrast-aware palettes, and keyboard-first interactions baked in."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground mt-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-h73cg7h",
+                      "type": "Badge",
+                      "name": "FeatureBadgeWCAG",
+                      "parentId": "1765804579609-l7vz2j3",
+                      "props": {
+                        "text": "WCAG AA",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "mt-3 w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-21dkju4",
+                      "type": "Button",
+                      "name": "FeatureLearnMoreAccessibility",
+                      "parentId": "1765804579609-l7vz2j3",
+                      "props": {
+                        "text": "Explore accessibility",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "mt-2 text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-19ts31v",
+                  "type": "Card",
+                  "name": "FeatureCardPerformance",
+                  "parentId": "1765804579609-zp1mum3",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm hover:shadow-md transition",
+                  "children": [
+                    {
+                      "id": "1765804579609-6ujntrw",
+                      "type": "Icon",
+                      "name": "FeatureIconTrending",
+                      "parentId": "1765804579609-19ts31v",
+                      "props": {
+                        "icon": "trending-up"
+                      },
+                      "styles": {},
+                      "className": "text-primary mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-iwcctro",
+                      "type": "Heading",
+                      "name": "FeatureTitlePerformance",
+                      "parentId": "1765804579609-19ts31v",
+                      "props": {
+                        "level": 4,
+                        "text": "Performance tuned"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-mwresjp",
+                      "type": "Text",
+                      "name": "FeatureDescPerformance",
+                      "parentId": "1765804579609-19ts31v",
+                      "props": {
+                        "text": "Lean CSS animations, GPU-accelerated transforms, and minimal reflows for buttery smoothness."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground mt-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-6mr2ll6",
+                      "type": "Badge",
+                      "name": "FeatureBadgeLightweight",
+                      "parentId": "1765804579609-19ts31v",
+                      "props": {
+                        "text": "<5KB motion",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "mt-3 w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-wiy0oq1",
+                      "type": "Button",
+                      "name": "FeatureLearnMorePerformance",
+                      "parentId": "1765804579609-19ts31v",
+                      "props": {
+                        "text": "See benchmarks",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "mt-2 text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-otrzjye",
+                  "type": "Card",
+                  "name": "FeatureCardCustomization",
+                  "parentId": "1765804579609-zp1mum3",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm hover:shadow-md transition",
+                  "children": [
+                    {
+                      "id": "1765804579609-jkd9yv3",
+                      "type": "Icon",
+                      "name": "FeatureIconSettings",
+                      "parentId": "1765804579609-otrzjye",
+                      "props": {
+                        "icon": "settings"
+                      },
+                      "styles": {},
+                      "className": "text-primary mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-ta4jfhf",
+                      "type": "Heading",
+                      "name": "FeatureTitleCustomization",
+                      "parentId": "1765804579609-otrzjye",
+                      "props": {
+                        "level": 4,
+                        "text": "Effortless customization"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-rvrhr3o",
+                      "type": "Text",
+                      "name": "FeatureDescCustomization",
+                      "parentId": "1765804579609-otrzjye",
+                      "props": {
+                        "text": "Tailwind-first tokens and presets so your hero matches your brand in minutes."
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground mt-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-usxbb3h",
+                      "type": "Badge",
+                      "name": "FeatureBadgeTokens",
+                      "parentId": "1765804579609-otrzjye",
+                      "props": {
+                        "text": "Design tokens",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "mt-3 w-fit",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-a2d8r5o",
+                      "type": "Button",
+                      "name": "FeatureLearnMoreCustomization",
+                      "parentId": "1765804579609-otrzjye",
+                      "props": {
+                        "text": "Customize theme",
+                        "variant": "link",
+                        "size": "sm"
+                      },
+                      "styles": {},
+                      "className": "mt-2 text-primary",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-vlo5v2s",
+      "type": "Flex",
+      "name": "DemoSection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-z03jlh2",
+          "type": "Card",
+          "name": "DemoCard",
+          "parentId": "1765804579609-vlo5v2s",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-10 bg-card rounded-lg border border-border shadow-md",
+          "children": [
+            {
+              "id": "1765804579609-zh0w8p8",
+              "type": "Flex",
+              "name": "DemoHeader",
+              "parentId": "1765804579609-z03jlh2",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-4",
+              "children": [
+                {
+                  "id": "1765804579609-1qodf91",
+                  "type": "Heading",
+                  "name": "DemoTitle",
+                  "parentId": "1765804579609-zh0w8p8",
+                  "props": {
+                    "level": 2,
+                    "text": "See it in action"
+                  },
+                  "styles": {},
+                  "className": "text-3xl font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-8k1gtyd",
+                  "type": "Text",
+                  "name": "DemoSubtitle",
+                  "parentId": "1765804579609-zh0w8p8",
+                  "props": {
+                    "text": "A 60-second walkthrough of the animated hero setup and customization."
+                  },
+                  "styles": {},
+                  "className": "text-base text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-ley3uim",
+              "type": "Card",
+              "name": "DemoPreview",
+              "parentId": "1765804579609-z03jlh2",
+              "props": {},
+              "styles": {},
+              "className": "relative overflow-hidden rounded-md border border-border",
+              "children": [
+                {
+                  "id": "1765804579609-cb8zi0m",
+                  "type": "Image",
+                  "name": "DemoImage",
+                  "parentId": "1765804579609-ley3uim",
+                  "props": {
+                    "src": "https://placehold.co/800x450/0f172a/94a3b8?text=Click+to+Watch+Demo",
+                    "alt": "Demo video preview"
+                  },
+                  "styles": {},
+                  "className": "w-full h-auto",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-it5io6y",
+                  "type": "Button",
+                  "name": "PlayDemoButton",
+                  "parentId": "1765804579609-ley3uim",
+                  "props": {
+                    "text": "Play",
+                    "variant": "secondary",
+                    "size": "lg"
+                  },
+                  "styles": {},
+                  "className": "absolute inset-0 m-auto h-12 w-28 bg-primary text-primary-foreground rounded-full shadow-md flex items-center justify-center",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-irz1cvu",
+              "type": "Dialog",
+              "name": "DemoDialog",
+              "parentId": "1765804579609-z03jlh2",
+              "props": {},
+              "styles": {},
+              "className": "",
+              "children": [
+                {
+                  "id": "1765804579609-9t8msm9",
+                  "type": "Heading",
+                  "name": "DialogTitle",
+                  "parentId": "1765804579609-irz1cvu",
+                  "props": {
+                    "level": 3,
+                    "text": "Animated Hero Demo"
+                  },
+                  "styles": {},
+                  "className": "text-2xl font-semibold mb-2",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-syq8zwt",
+                  "type": "Text",
+                  "name": "DialogDescription",
+                  "parentId": "1765804579609-irz1cvu",
+                  "props": {
+                    "text": "This short demo highlights animated gradients, motion timing, and quick configuration."
+                  },
+                  "styles": {},
+                  "className": "text-sm text-muted-foreground mb-4",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-278mxle",
+                  "type": "Image",
+                  "name": "DialogVideoPlaceholder",
+                  "parentId": "1765804579609-irz1cvu",
+                  "props": {
+                    "src": "https://placehold.co/800x450/1a1a2e/eaeaea?text=Demo+Playback",
+                    "alt": "Demo playback frame"
+                  },
+                  "styles": {},
+                  "className": "w-full rounded-md",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-wgt4id1",
+                  "type": "Button",
+                  "name": "CloseDemoDialog",
+                  "parentId": "1765804579609-irz1cvu",
+                  "props": {
+                    "text": "Close",
+                    "variant": "secondary",
+                    "size": "default"
+                  },
+                  "styles": {},
+                  "className": "mt-4 rounded-md",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-yswr8jx",
+      "type": "Flex",
+      "name": "TestimonialsSection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-yoxr8xa",
+          "type": "Flex",
+          "name": "TestimonialsContainer",
+          "parentId": "1765804579609-yswr8jx",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-10 flex flex-col gap-6",
+          "children": [
+            {
+              "id": "1765804579609-3vuzui1",
+              "type": "Flex",
+              "name": "TestimonialsHeader",
+              "parentId": "1765804579609-yoxr8xa",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col gap-2",
+              "children": [
+                {
+                  "id": "1765804579609-5p4u06d",
+                  "type": "Heading",
+                  "name": "TestimonialsTitle",
+                  "parentId": "1765804579609-3vuzui1",
+                  "props": {
+                    "level": 2,
+                    "text": "What teams are saying"
+                  },
+                  "styles": {},
+                  "className": "text-3xl font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-2cindbs",
+                  "type": "Text",
+                  "name": "TestimonialsSubtitle",
+                  "parentId": "1765804579609-3vuzui1",
+                  "props": {
+                    "text": "Authentic stories from designers and developers building delightful landing pages."
+                  },
+                  "styles": {},
+                  "className": "text-base text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-eku4n69",
+              "type": "Grid",
+              "name": "TestimonialsGrid",
+              "parentId": "1765804579609-yoxr8xa",
+              "props": {},
+              "styles": {},
+              "className": "grid grid-cols-1 md:grid-cols-3 gap-4",
+              "children": [
+                {
+                  "id": "1765804579609-mlsci61",
+                  "type": "Card",
+                  "name": "TestimonialCard1",
+                  "parentId": "1765804579609-eku4n69",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm",
+                  "children": [
+                    {
+                      "id": "1765804579609-ciczfh4",
+                      "type": "Badge",
+                      "name": "VerifiedBadge1",
+                      "parentId": "1765804579609-mlsci61",
+                      "props": {
+                        "text": "Verified Customer",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "w-fit mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-s8xpiti",
+                      "type": "Text",
+                      "name": "Quote1",
+                      "parentId": "1765804579609-mlsci61",
+                      "props": {
+                        "text": "“The animated hero instantly elevated our brand. Setup was quick, the motion feels premium, and performance stayed snappy.”"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-5xj6o7q",
+                      "type": "Flex",
+                      "name": "AuthorRow1",
+                      "parentId": "1765804579609-mlsci61",
+                      "props": {},
+                      "styles": {},
+                      "className": "mt-3 flex flex-row items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765804579609-167qafi",
+                          "type": "Avatar",
+                          "name": "AuthorAvatar1",
+                          "parentId": "1765804579609-5xj6o7q",
+                          "props": {
+                            "src": "https://placehold.co/100x100/6366f1/ffffff?text=JD",
+                            "alt": "Jordan Diaz"
+                          },
+                          "styles": {},
+                          "className": "w-8 h-8 rounded-full",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-p02krx5",
+                          "type": "Flex",
+                          "name": "AuthorMeta1",
+                          "parentId": "1765804579609-5xj6o7q",
+                          "props": {},
+                          "styles": {},
+                          "className": "flex flex-col",
+                          "children": [
+                            {
+                              "id": "1765804579609-j8l1lxc",
+                              "type": "Text",
+                              "name": "AuthorName1",
+                              "parentId": "1765804579609-p02krx5",
+                              "props": {
+                                "text": "Jordan Diaz"
+                              },
+                              "styles": {},
+                              "className": "text-sm font-medium",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579609-tuj7v15",
+                              "type": "Text",
+                              "name": "AuthorTitle1",
+                              "parentId": "1765804579609-p02krx5",
+                              "props": {
+                                "text": "Design Lead, Northwind"
+                              },
+                              "styles": {},
+                              "className": "text-xs text-muted-foreground",
+                              "children": [],
+                              "events": {}
+                            }
+                          ],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-drbtoly",
+                  "type": "Card",
+                  "name": "TestimonialCard2",
+                  "parentId": "1765804579609-eku4n69",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm",
+                  "children": [
+                    {
+                      "id": "1765804579609-7i6efdm",
+                      "type": "Badge",
+                      "name": "VerifiedBadge2",
+                      "parentId": "1765804579609-drbtoly",
+                      "props": {
+                        "text": "Verified Customer",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "w-fit mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-b0ywokx",
+                      "type": "Text",
+                      "name": "Quote2",
+                      "parentId": "1765804579609-drbtoly",
+                      "props": {
+                        "text": "“We shipped a modern landing page in a day. The hero’s animated background is subtle yet memorable.”"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-v6yoliw",
+                      "type": "Flex",
+                      "name": "AuthorRow2",
+                      "parentId": "1765804579609-drbtoly",
+                      "props": {},
+                      "styles": {},
+                      "className": "mt-3 flex flex-row items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765804579609-qtgxw2p",
+                          "type": "Avatar",
+                          "name": "AuthorAvatar2",
+                          "parentId": "1765804579609-v6yoliw",
+                          "props": {
+                            "src": "https://placehold.co/100x100/22c55e/ffffff?text=MS",
+                            "alt": "Maya Singh"
+                          },
+                          "styles": {},
+                          "className": "w-8 h-8 rounded-full",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-tc6wt0w",
+                          "type": "Flex",
+                          "name": "AuthorMeta2",
+                          "parentId": "1765804579609-v6yoliw",
+                          "props": {},
+                          "styles": {},
+                          "className": "flex flex-col",
+                          "children": [
+                            {
+                              "id": "1765804579609-2uiac17",
+                              "type": "Text",
+                              "name": "AuthorName2",
+                              "parentId": "1765804579609-tc6wt0w",
+                              "props": {
+                                "text": "Maya Singh"
+                              },
+                              "styles": {},
+                              "className": "text-sm font-medium",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579609-cja6ry8",
+                              "type": "Text",
+                              "name": "AuthorTitle2",
+                              "parentId": "1765804579609-tc6wt0w",
+                              "props": {
+                                "text": "Front-end Engineer, Contoso"
+                              },
+                              "styles": {},
+                              "className": "text-xs text-muted-foreground",
+                              "children": [],
+                              "events": {}
+                            }
+                          ],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-k074hia",
+                  "type": "Card",
+                  "name": "TestimonialCard3",
+                  "parentId": "1765804579609-eku4n69",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-4 shadow-sm",
+                  "children": [
+                    {
+                      "id": "1765804579609-n7fvh6c",
+                      "type": "Badge",
+                      "name": "VerifiedBadge3",
+                      "parentId": "1765804579609-k074hia",
+                      "props": {
+                        "text": "Verified Customer",
+                        "badgeVariant": "secondary"
+                      },
+                      "styles": {},
+                      "className": "w-fit mb-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-2nucjhs",
+                      "type": "Text",
+                      "name": "Quote3",
+                      "parentId": "1765804579609-k074hia",
+                      "props": {
+                        "text": "“The visual polish is next-level. It’s the perfect balance of modern and elegant.”"
+                      },
+                      "styles": {},
+                      "className": "text-sm",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-0lnjlc2",
+                      "type": "Flex",
+                      "name": "AuthorRow3",
+                      "parentId": "1765804579609-k074hia",
+                      "props": {},
+                      "styles": {},
+                      "className": "mt-3 flex flex-row items-center gap-3",
+                      "children": [
+                        {
+                          "id": "1765804579609-nolt0z1",
+                          "type": "Avatar",
+                          "name": "AuthorAvatar3",
+                          "parentId": "1765804579609-0lnjlc2",
+                          "props": {
+                            "src": "https://placehold.co/100x100/f59e0b/ffffff?text=AS",
+                            "alt": "Arman Shah"
+                          },
+                          "styles": {},
+                          "className": "w-8 h-8 rounded-full",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-9hu5glb",
+                          "type": "Flex",
+                          "name": "AuthorMeta3",
+                          "parentId": "1765804579609-0lnjlc2",
+                          "props": {},
+                          "styles": {},
+                          "className": "flex flex-col",
+                          "children": [
+                            {
+                              "id": "1765804579609-osu9rg6",
+                              "type": "Text",
+                              "name": "AuthorName3",
+                              "parentId": "1765804579609-9hu5glb",
+                              "props": {
+                                "text": "Arman Shah"
+                              },
+                              "styles": {},
+                              "className": "text-sm font-medium",
+                              "children": [],
+                              "events": {}
+                            },
+                            {
+                              "id": "1765804579609-zek1v1r",
+                              "type": "Text",
+                              "name": "AuthorTitle3",
+                              "parentId": "1765804579609-9hu5glb",
+                              "props": {
+                                "text": "Founder, PixelHub"
+                              },
+                              "styles": {},
+                              "className": "text-xs text-muted-foreground",
+                              "children": [],
+                              "events": {}
+                            }
+                          ],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-citfdxq",
+      "type": "Flex",
+      "name": "PricingSection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-8isrdoy",
+          "type": "Flex",
+          "name": "PricingContainer",
+          "parentId": "1765804579609-citfdxq",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-10 flex flex-col gap-6",
+          "children": [
+            {
+              "id": "1765804579609-elnrdgm",
+              "type": "Flex",
+              "name": "PricingHeader",
+              "parentId": "1765804579609-8isrdoy",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col gap-2",
+              "children": [
+                {
+                  "id": "1765804579609-f5qydh5",
+                  "type": "Heading",
+                  "name": "PricingTitle",
+                  "parentId": "1765804579609-elnrdgm",
+                  "props": {
+                    "level": 2,
+                    "text": "Straightforward pricing"
+                  },
+                  "styles": {},
+                  "className": "text-3xl font-semibold",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-6nb9frn",
+                  "type": "Text",
+                  "name": "PricingSubtitle",
+                  "parentId": "1765804579609-elnrdgm",
+                  "props": {
+                    "text": "Pick a plan that fits your team and start shipping beautiful experiences today."
+                  },
+                  "styles": {},
+                  "className": "text-base text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-vfeyqsl",
+              "type": "Grid",
+              "name": "PricingGrid",
+              "parentId": "1765804579609-8isrdoy",
+              "props": {},
+              "styles": {},
+              "className": "grid grid-cols-1 md:grid-cols-3 gap-4",
+              "children": [
+                {
+                  "id": "1765804579609-mkokzg5",
+                  "type": "Card",
+                  "name": "PricingStarter",
+                  "parentId": "1765804579609-vfeyqsl",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-5 shadow-sm flex flex-col",
+                  "children": [
+                    {
+                      "id": "1765804579609-v2pqdud",
+                      "type": "Heading",
+                      "name": "StarterName",
+                      "parentId": "1765804579609-mkokzg5",
+                      "props": {
+                        "level": 4,
+                        "text": "Starter"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold mb-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-r9yn3yu",
+                      "type": "Heading",
+                      "name": "StarterPrice",
+                      "parentId": "1765804579609-mkokzg5",
+                      "props": {
+                        "level": 3,
+                        "text": "$0"
+                      },
+                      "styles": {},
+                      "className": "text-2xl font-semibold mb-3",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-ncn54yd",
+                      "type": "List",
+                      "name": "StarterFeatures",
+                      "parentId": "1765804579609-mkokzg5",
+                      "props": {},
+                      "styles": {},
+                      "className": "space-y-2 mb-4",
+                      "children": [
+                        {
+                          "id": "1765804579609-qn38p71",
+                          "type": "Text",
+                          "name": "StarterFeature1",
+                          "parentId": "1765804579609-ncn54yd",
+                          "props": {
+                            "text": "Animated hero presets"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-mt3ed0v",
+                          "type": "Text",
+                          "name": "StarterFeature2",
+                          "parentId": "1765804579609-ncn54yd",
+                          "props": {
+                            "text": "Basic customization"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-1o3mo0o",
+                          "type": "Text",
+                          "name": "StarterFeature3",
+                          "parentId": "1765804579609-ncn54yd",
+                          "props": {
+                            "text": "Community support"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-tm3cmuy",
+                      "type": "Button",
+                      "name": "StarterCTA",
+                      "parentId": "1765804579609-mkokzg5",
+                      "props": {
+                        "text": "Start for Free",
+                        "variant": "default",
+                        "size": "default"
+                      },
+                      "styles": {},
+                      "className": "mt-auto bg-primary text-primary-foreground rounded-md",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-go9pkh1",
+                  "type": "Card",
+                  "name": "PricingPro",
+                  "parentId": "1765804579609-vfeyqsl",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-primary p-5 shadow-md flex flex-col relative",
+                  "children": [
+                    {
+                      "id": "1765804579609-kdq7r3h",
+                      "type": "Badge",
+                      "name": "ProPopularBadge",
+                      "parentId": "1765804579609-go9pkh1",
+                      "props": {
+                        "text": "Most Popular",
+                        "badgeVariant": "default"
+                      },
+                      "styles": {},
+                      "className": "absolute -top-3 left-5",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-jjn9f9y",
+                      "type": "Heading",
+                      "name": "ProName",
+                      "parentId": "1765804579609-go9pkh1",
+                      "props": {
+                        "level": 4,
+                        "text": "Pro"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold mb-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-ofdjyb7",
+                      "type": "Heading",
+                      "name": "ProPrice",
+                      "parentId": "1765804579609-go9pkh1",
+                      "props": {
+                        "level": 3,
+                        "text": "$18"
+                      },
+                      "styles": {},
+                      "className": "text-2xl font-semibold mb-3",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-l193fqx",
+                      "type": "List",
+                      "name": "ProFeatures",
+                      "parentId": "1765804579609-go9pkh1",
+                      "props": {},
+                      "styles": {},
+                      "className": "space-y-2 mb-4",
+                      "children": [
+                        {
+                          "id": "1765804579609-vegjt0f",
+                          "type": "Text",
+                          "name": "ProFeature1",
+                          "parentId": "1765804579609-l193fqx",
+                          "props": {
+                            "text": "All Starter features"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-ewe637m",
+                          "type": "Text",
+                          "name": "ProFeature2",
+                          "parentId": "1765804579609-l193fqx",
+                          "props": {
+                            "text": "Advanced motion controls"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-wi9pvp8",
+                          "type": "Text",
+                          "name": "ProFeature3",
+                          "parentId": "1765804579609-l193fqx",
+                          "props": {
+                            "text": "Brand tokens & theming"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-a14lfeo",
+                          "type": "Text",
+                          "name": "ProFeature4",
+                          "parentId": "1765804579609-l193fqx",
+                          "props": {
+                            "text": "Email support"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-qz1ntwc",
+                      "type": "Button",
+                      "name": "ProCTA",
+                      "parentId": "1765804579609-go9pkh1",
+                      "props": {
+                        "text": "Choose Pro",
+                        "variant": "default",
+                        "size": "default"
+                      },
+                      "styles": {},
+                      "className": "mt-auto bg-primary text-primary-foreground rounded-md",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-0365tus",
+                  "type": "Card",
+                  "name": "PricingEnterprise",
+                  "parentId": "1765804579609-vfeyqsl",
+                  "props": {},
+                  "styles": {},
+                  "className": "bg-card rounded-lg border border-border p-5 shadow-sm flex flex-col",
+                  "children": [
+                    {
+                      "id": "1765804579609-nodyz7h",
+                      "type": "Heading",
+                      "name": "EnterpriseName",
+                      "parentId": "1765804579609-0365tus",
+                      "props": {
+                        "level": 4,
+                        "text": "Enterprise"
+                      },
+                      "styles": {},
+                      "className": "text-xl font-semibold mb-1",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-jto5f5q",
+                      "type": "Heading",
+                      "name": "EnterprisePrice",
+                      "parentId": "1765804579609-0365tus",
+                      "props": {
+                        "level": 3,
+                        "text": "Custom"
+                      },
+                      "styles": {},
+                      "className": "text-2xl font-semibold mb-3",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-b93d0zs",
+                      "type": "List",
+                      "name": "EnterpriseFeatures",
+                      "parentId": "1765804579609-0365tus",
+                      "props": {},
+                      "styles": {},
+                      "className": "space-y-2 mb-4",
+                      "children": [
+                        {
+                          "id": "1765804579609-r4tj2fx",
+                          "type": "Text",
+                          "name": "EnterpriseFeature1",
+                          "parentId": "1765804579609-b93d0zs",
+                          "props": {
+                            "text": "Design review & onboarding"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-j3w1iyb",
+                          "type": "Text",
+                          "name": "EnterpriseFeature2",
+                          "parentId": "1765804579609-b93d0zs",
+                          "props": {
+                            "text": "SLA & SSO support"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-x9xidt8",
+                          "type": "Text",
+                          "name": "EnterpriseFeature3",
+                          "parentId": "1765804579609-b93d0zs",
+                          "props": {
+                            "text": "Dedicated solutions engineer"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        },
+                        {
+                          "id": "1765804579609-xzkk8zp",
+                          "type": "Text",
+                          "name": "EnterpriseFeature4",
+                          "parentId": "1765804579609-b93d0zs",
+                          "props": {
+                            "text": "Unlimited seats"
+                          },
+                          "styles": {},
+                          "className": "text-sm",
+                          "children": [],
+                          "events": {}
+                        }
+                      ],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-zih4ylg",
+                      "type": "Button",
+                      "name": "EnterpriseCTA",
+                      "parentId": "1765804579609-0365tus",
+                      "props": {
+                        "text": "Contact Sales",
+                        "variant": "secondary",
+                        "size": "default"
+                      },
+                      "styles": {},
+                      "className": "mt-auto rounded-md",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-fphyhdk",
+      "type": "Flex",
+      "name": "SecondaryCTASection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-41t1fx3",
+          "type": "Card",
+          "name": "SecondaryCTACard",
+          "parentId": "1765804579609-fphyhdk",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl mx-auto px-4 py-10 rounded-lg border border-border shadow-md bg-gradient-to-r from-primary/10 to-accent/10",
+          "children": [
+            {
+              "id": "1765804579609-b9lw2mx",
+              "type": "Grid",
+              "name": "SecondaryCTAGrid",
+              "parentId": "1765804579609-41t1fx3",
+              "props": {},
+              "styles": {},
+              "className": "grid grid-cols-1 md:grid-cols-2 gap-6 items-center",
+              "children": [
+                {
+                  "id": "1765804579609-an6z7s4",
+                  "type": "Flex",
+                  "name": "SecondaryCTAText",
+                  "parentId": "1765804579609-b9lw2mx",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-2",
+                  "children": [
+                    {
+                      "id": "1765804579609-0o7yfg2",
+                      "type": "Heading",
+                      "name": "SecondaryCTATitle",
+                      "parentId": "1765804579609-an6z7s4",
+                      "props": {
+                        "level": 2,
+                        "text": "Ready to wow your audience?"
+                      },
+                      "styles": {},
+                      "className": "text-3xl font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-ak7l625",
+                      "type": "Text",
+                      "name": "SecondaryCTASubtitle",
+                      "parentId": "1765804579609-an6z7s4",
+                      "props": {
+                        "text": "Start free and publish your animated hero today. Upgrade any time."
+                      },
+                      "styles": {},
+                      "className": "text-base text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-oetad33",
+                  "type": "Form",
+                  "name": "SecondaryCTAForm",
+                  "parentId": "1765804579609-b9lw2mx",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col sm:flex-row items-stretch sm:items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765804579609-5dox2qi",
+                      "type": "Input",
+                      "name": "SecondaryCTAEmail",
+                      "parentId": "1765804579609-oetad33",
+                      "props": {
+                        "placeholder": "you@company.com",
+                        "type": "email",
+                        "required": true
+                      },
+                      "styles": {},
+                      "className": "w-full border border-input rounded-md px-3 py-2",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-pghehym",
+                      "type": "Button",
+                      "name": "SecondaryCTASubmit",
+                      "parentId": "1765804579609-oetad33",
+                      "props": {
+                        "text": "Get Started",
+                        "variant": "default",
+                        "size": "lg"
+                      },
+                      "styles": {},
+                      "className": "w-full sm:w-auto bg-primary text-primary-foreground rounded-md px-5",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-3hqyipl",
+              "type": "Text",
+              "name": "PrivacyNote",
+              "parentId": "1765804579609-41t1fx3",
+              "props": {
+                "text": "No spam. Unsubscribe any time."
+              },
+              "styles": {},
+              "className": "mt-3 text-xs text-muted-foreground",
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-yislwb6",
+      "type": "Divider",
+      "name": "FooterDivider",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full border-t border-border mt-8",
+      "children": [],
+      "events": {}
+    },
+    {
+      "id": "1765804579609-zy1wkg9",
+      "type": "Flex",
+      "name": "FooterSection",
+      "parentId": "1765804579607-k8azdgg",
+      "props": {},
+      "styles": {},
+      "className": "w-full flex justify-center",
+      "children": [
+        {
+          "id": "1765804579609-6v30m4v",
+          "type": "Flex",
+          "name": "FooterContainer",
+          "parentId": "1765804579609-zy1wkg9",
+          "props": {},
+          "styles": {},
+          "className": "w-full max-w-6xl px-4 py-10 flex flex-col gap-8",
+          "children": [
+            {
+              "id": "1765804579609-rwibiy6",
+              "type": "Flex",
+              "name": "FooterTop",
+              "parentId": "1765804579609-6v30m4v",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-row items-center justify-between",
+              "children": [
+                {
+                  "id": "1765804579609-gns9tnu",
+                  "type": "Flex",
+                  "name": "FooterBrand",
+                  "parentId": "1765804579609-rwibiy6",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765804579609-47nqtjz",
+                      "type": "Image",
+                      "name": "FooterLogo",
+                      "parentId": "1765804579609-gns9tnu",
+                      "props": {
+                        "src": "https://placehold.co/120x40/transparent/666?text=Nova",
+                        "alt": "Nova UI logo"
+                      },
+                      "styles": {},
+                      "className": "h-8 w-auto",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-bj6f4fb",
+                      "type": "Text",
+                      "name": "FooterTagline",
+                      "parentId": "1765804579609-gns9tnu",
+                      "props": {
+                        "text": "Build delightful experiences"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-51gsc7b",
+                  "type": "Flex",
+                  "name": "FooterSocial",
+                  "parentId": "1765804579609-rwibiy6",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-3",
+                  "children": [
+                    {
+                      "id": "1765804579609-lsp0zt7",
+                      "type": "Icon",
+                      "name": "SocialTwitter",
+                      "parentId": "1765804579609-51gsc7b",
+                      "props": {
+                        "icon": "globe"
+                      },
+                      "styles": {},
+                      "className": "text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-0zrkmoc",
+                      "type": "Icon",
+                      "name": "SocialMail",
+                      "parentId": "1765804579609-51gsc7b",
+                      "props": {
+                        "icon": "mail"
+                      },
+                      "styles": {},
+                      "className": "text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-v1epec3",
+                      "type": "Icon",
+                      "name": "SocialPhone",
+                      "parentId": "1765804579609-51gsc7b",
+                      "props": {
+                        "icon": "phone"
+                      },
+                      "styles": {},
+                      "className": "text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-g645ts2",
+              "type": "Grid",
+              "name": "FooterLinksGrid",
+              "parentId": "1765804579609-6v30m4v",
+              "props": {},
+              "styles": {},
+              "className": "grid grid-cols-2 md:grid-cols-4 gap-6",
+              "children": [
+                {
+                  "id": "1765804579609-0heeyx4",
+                  "type": "Flex",
+                  "name": "FooterColProduct",
+                  "parentId": "1765804579609-g645ts2",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-2",
+                  "children": [
+                    {
+                      "id": "1765804579609-53wnaed",
+                      "type": "Text",
+                      "name": "FooterColProductTitle",
+                      "parentId": "1765804579609-0heeyx4",
+                      "props": {
+                        "text": "Product"
+                      },
+                      "styles": {},
+                      "className": "text-sm font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-o66vhqs",
+                      "type": "Text",
+                      "name": "FooterProductLink1",
+                      "parentId": "1765804579609-0heeyx4",
+                      "props": {
+                        "text": "Overview"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-k63yryd",
+                      "type": "Text",
+                      "name": "FooterProductLink2",
+                      "parentId": "1765804579609-0heeyx4",
+                      "props": {
+                        "text": "Features"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-h2le8rd",
+                      "type": "Text",
+                      "name": "FooterProductLink3",
+                      "parentId": "1765804579609-0heeyx4",
+                      "props": {
+                        "text": "Roadmap"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-838qh9t",
+                      "type": "Text",
+                      "name": "FooterProductLink4",
+                      "parentId": "1765804579609-0heeyx4",
+                      "props": {
+                        "text": "Changelog"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-694dcn5",
+                  "type": "Flex",
+                  "name": "FooterColCompany",
+                  "parentId": "1765804579609-g645ts2",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-2",
+                  "children": [
+                    {
+                      "id": "1765804579609-4ezi03m",
+                      "type": "Text",
+                      "name": "FooterColCompanyTitle",
+                      "parentId": "1765804579609-694dcn5",
+                      "props": {
+                        "text": "Company"
+                      },
+                      "styles": {},
+                      "className": "text-sm font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-hzdrk29",
+                      "type": "Text",
+                      "name": "FooterCompanyLink1",
+                      "parentId": "1765804579609-694dcn5",
+                      "props": {
+                        "text": "About"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-f8jtubn",
+                      "type": "Text",
+                      "name": "FooterCompanyLink2",
+                      "parentId": "1765804579609-694dcn5",
+                      "props": {
+                        "text": "Careers"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-xaxdwlv",
+                      "type": "Text",
+                      "name": "FooterCompanyLink3",
+                      "parentId": "1765804579609-694dcn5",
+                      "props": {
+                        "text": "Press"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-nfan3k6",
+                      "type": "Text",
+                      "name": "FooterCompanyLink4",
+                      "parentId": "1765804579609-694dcn5",
+                      "props": {
+                        "text": "Contact"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-s3dta1d",
+                  "type": "Flex",
+                  "name": "FooterColResources",
+                  "parentId": "1765804579609-g645ts2",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-2",
+                  "children": [
+                    {
+                      "id": "1765804579609-yitte5f",
+                      "type": "Text",
+                      "name": "FooterColResourcesTitle",
+                      "parentId": "1765804579609-s3dta1d",
+                      "props": {
+                        "text": "Resources"
+                      },
+                      "styles": {},
+                      "className": "text-sm font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-086ezsm",
+                      "type": "Text",
+                      "name": "FooterResourcesLink1",
+                      "parentId": "1765804579609-s3dta1d",
+                      "props": {
+                        "text": "Docs"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-iur58s1",
+                      "type": "Text",
+                      "name": "FooterResourcesLink2",
+                      "parentId": "1765804579609-s3dta1d",
+                      "props": {
+                        "text": "Guides"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-a3m1upk",
+                      "type": "Text",
+                      "name": "FooterResourcesLink3",
+                      "parentId": "1765804579609-s3dta1d",
+                      "props": {
+                        "text": "Templates"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-zjltvui",
+                      "type": "Text",
+                      "name": "FooterResourcesLink4",
+                      "parentId": "1765804579609-s3dta1d",
+                      "props": {
+                        "text": "API"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-jgl23q7",
+                  "type": "Flex",
+                  "name": "FooterColLegal",
+                  "parentId": "1765804579609-g645ts2",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-col gap-2",
+                  "children": [
+                    {
+                      "id": "1765804579609-nmuvp3a",
+                      "type": "Text",
+                      "name": "FooterColLegalTitle",
+                      "parentId": "1765804579609-jgl23q7",
+                      "props": {
+                        "text": "Legal"
+                      },
+                      "styles": {},
+                      "className": "text-sm font-semibold",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-vu6754n",
+                      "type": "Text",
+                      "name": "FooterLegalLink1",
+                      "parentId": "1765804579609-jgl23q7",
+                      "props": {
+                        "text": "Privacy"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-mpn2yby",
+                      "type": "Text",
+                      "name": "FooterLegalLink2",
+                      "parentId": "1765804579609-jgl23q7",
+                      "props": {
+                        "text": "Terms"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-muq7s4k",
+                      "type": "Text",
+                      "name": "FooterLegalLink3",
+                      "parentId": "1765804579609-jgl23q7",
+                      "props": {
+                        "text": "Security"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-48k6mi1",
+                      "type": "Text",
+                      "name": "FooterLegalLink4",
+                      "parentId": "1765804579609-jgl23q7",
+                      "props": {
+                        "text": "DPA"
+                      },
+                      "styles": {},
+                      "className": "text-sm text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1765804579609-q4jt16x",
+              "type": "Flex",
+              "name": "FooterBottom",
+              "parentId": "1765804579609-6v30m4v",
+              "props": {},
+              "styles": {},
+              "className": "flex flex-col md:flex-row items-center justify-between gap-3",
+              "children": [
+                {
+                  "id": "1765804579609-ajjfywt",
+                  "type": "Text",
+                  "name": "Copyright",
+                  "parentId": "1765804579609-q4jt16x",
+                  "props": {
+                    "text": "© 2025 Nova UI. All rights reserved."
+                  },
+                  "styles": {},
+                  "className": "text-xs text-muted-foreground",
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1765804579609-yjhhfyq",
+                  "type": "Flex",
+                  "name": "FooterSmallLinks",
+                  "parentId": "1765804579609-q4jt16x",
+                  "props": {},
+                  "styles": {},
+                  "className": "flex flex-row items-center gap-4",
+                  "children": [
+                    {
+                      "id": "1765804579609-168oory",
+                      "type": "Text",
+                      "name": "FooterSmallLink1",
+                      "parentId": "1765804579609-yjhhfyq",
+                      "props": {
+                        "text": "Status"
+                      },
+                      "styles": {},
+                      "className": "text-xs text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    },
+                    {
+                      "id": "1765804579609-zifrqal",
+                      "type": "Text",
+                      "name": "FooterSmallLink2",
+                      "parentId": "1765804579609-yjhhfyq",
+                      "props": {
+                        "text": "Cookie Settings"
+                      },
+                      "styles": {},
+                      "className": "text-xs text-muted-foreground hover:text-foreground",
+                      "children": [],
+                      "events": {}
+                    }
+                  ],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

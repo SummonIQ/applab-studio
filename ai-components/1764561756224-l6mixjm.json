@@ -1,0 +1,521 @@
+{
+  "id": "1764561756224-l6mixjm",
+  "type": "Flex",
+  "name": "RodeoClownLandingPage",
+  "parentId": "1764561363352-66d3s6a",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "borderRadius": "0.5rem",
+    "width": "100%"
+  },
+  "children": [
+    {
+      "id": "1764561756224-ehkpdzn",
+      "type": "Flex",
+      "name": "HeaderSection",
+      "parentId": "1764561756224-l6mixjm",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "backgroundColor": "var(--color-card)",
+        "padding": "1rem",
+        "borderRadius": "0.5rem",
+        "gap": "1rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764561756224-feonr2y",
+          "type": "Image",
+          "name": "LogoImage",
+          "parentId": "1764561756224-ehkpdzn",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Community College Logo"
+          },
+          "styles": {
+            "width": "20rem",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561756224-q2h3qi9",
+          "type": "Flex",
+          "name": "NavLinks",
+          "parentId": "1764561756224-ehkpdzn",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764561756224-h6hhlex",
+              "type": "Text",
+              "name": "HomeLink",
+              "parentId": "1764561756224-q2h3qi9",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-lsta1wj",
+              "type": "Text",
+              "name": "AboutLink",
+              "parentId": "1764561756224-q2h3qi9",
+              "props": {
+                "text": "About Us"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-aa5ismh",
+              "type": "Text",
+              "name": "ContactLink",
+              "parentId": "1764561756224-q2h3qi9",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561756224-spag0gt",
+      "type": "Flex",
+      "name": "HeroSection",
+      "parentId": "1764561756224-l6mixjm",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "2rem",
+        "padding": "1.5rem",
+        "backgroundColor": "var(--color-primary)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764561756224-jpahljk",
+          "type": "Image",
+          "name": "HeroImage",
+          "parentId": "1764561756224-spag0gt",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Winking Cowboy Hat"
+          },
+          "styles": {
+            "width": "32rem",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561756224-ekkit5n",
+          "type": "Flex",
+          "name": "HeroTextContainer",
+          "parentId": "1764561756224-spag0gt",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764561756224-mq7fgbk",
+              "type": "Heading",
+              "name": "HeroTitle",
+              "parentId": "1764561756224-ekkit5n",
+              "props": {
+                "text": "Join Our Rodeo Clown Community"
+              },
+              "styles": {
+                "fontSize": "2.25rem",
+                "color": "var(--color-primary-foreground)",
+                "fontWeight": "bold"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-czxfpe9",
+              "type": "Text",
+              "name": "HeroDescription",
+              "parentId": "1764561756224-ekkit5n",
+              "props": {
+                "text": "Where education meets fun and excitement. Why be a regular student when you can be a rodeo clown!"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "color": "var(--color-primary-foreground)",
+                "fontWeight": "normal"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561756224-l8or1rl",
+      "type": "Grid",
+      "name": "ProgramsSection",
+      "parentId": "1764561756224-l6mixjm",
+      "props": {},
+      "styles": {
+        "gridTemplateColumns": "repeat(2, 1fr)",
+        "gap": "1.5rem",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764561756224-mitihcw",
+          "type": "Card",
+          "name": "ProgramCard1",
+          "parentId": "1764561756224-l8or1rl",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-secondary)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561756224-1fnykh2",
+              "type": "Heading",
+              "name": "ProgramTitle1",
+              "parentId": "1764561756224-mitihcw",
+              "props": {
+                "text": "Basic Clownery 101"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-secondary-foreground)",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-6ycbnjh",
+              "type": "Text",
+              "name": "ProgramDescription1",
+              "parentId": "1764561756224-mitihcw",
+              "props": {
+                "text": "Learn the essentials of being a top-notch rodeo clown. Juggling included!"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764561756224-3vq6o37",
+          "type": "Card",
+          "name": "ProgramCard2",
+          "parentId": "1764561756224-l8or1rl",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-secondary)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561756224-5nws9ic",
+              "type": "Heading",
+              "name": "ProgramTitle2",
+              "parentId": "1764561756224-3vq6o37",
+              "props": {
+                "text": "Advanced Clown Strategies"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "color": "var(--color-secondary-foreground)",
+                "fontWeight": "600"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-vywu30m",
+              "type": "Text",
+              "name": "ProgramDescription2",
+              "parentId": "1764561756224-3vq6o37",
+              "props": {
+                "text": "Take your skills to the next level with advanced techniques in comedic rodeo performace."
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-secondary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561756224-14vep30",
+      "type": "Flex",
+      "name": "StudentTestimonialSection",
+      "parentId": "1764561756224-l6mixjm",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1rem",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-muted)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764561756224-9dyfj6p",
+          "type": "Heading",
+          "name": "TestimonialTitle",
+          "parentId": "1764561756224-14vep30",
+          "props": {
+            "text": "What Our Students Say"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "color": "var(--color-muted-foreground)",
+            "fontWeight": "600"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561756224-ac53del",
+          "type": "Flex",
+          "name": "TestimonialCard",
+          "parentId": "1764561756224-14vep30",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "1rem",
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561756224-mytfbal",
+              "type": "Avatar",
+              "name": "StudentAvatar",
+              "parentId": "1764561756224-ac53del",
+              "props": {
+                "src": "https://placehold.co/100x100",
+                "alt": "Student Avatar"
+              },
+              "styles": {
+                "width": "5rem",
+                "height": "5rem",
+                "borderRadius": "9999px"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-l9yhiqq",
+              "type": "Flex",
+              "name": "TestimonialText",
+              "parentId": "1764561756224-ac53del",
+              "props": {},
+              "styles": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764561756224-9yjd6ai",
+                  "type": "Text",
+                  "name": "StudentName",
+                  "parentId": "1764561756224-l9yhiqq",
+                  "props": {
+                    "text": "Cowboy Joe"
+                  },
+                  "styles": {
+                    "fontSize": "1.125rem",
+                    "color": "var(--color-card-foreground)",
+                    "fontWeight": "bold"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764561756224-ck6egul",
+                  "type": "Text",
+                  "name": "StudentComment",
+                  "parentId": "1764561756224-l9yhiqq",
+                  "props": {
+                    "text": "Joining the Clown College was the best decision! It's all fun and games until the bull charges, then it's even more fun!"
+                  },
+                  "styles": {
+                    "fontSize": "1rem",
+                    "color": "var(--color-card-foreground)",
+                    "fontWeight": "normal"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561756224-v7lnco2",
+      "type": "Flex",
+      "name": "FooterSection",
+      "parentId": "1764561756224-l6mixjm",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-muted)",
+        "borderRadius": "0.5rem",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764561756224-4tcoq2p",
+          "type": "Text",
+          "name": "FooterText",
+          "parentId": "1764561756224-v7lnco2",
+          "props": {
+            "text": "© 2023 Rodeo Clown Community College"
+          },
+          "styles": {
+            "fontSize": "0.875rem",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561756224-lsaqpkg",
+          "type": "Flex",
+          "name": "SocialLinks",
+          "parentId": "1764561756224-v7lnco2",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764561756224-906p2dx",
+              "type": "Icon",
+              "name": "TwitterIcon",
+              "parentId": "1764561756224-lsaqpkg",
+              "props": {
+                "icon": "twitter"
+              },
+              "styles": {
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-a6fgc1k",
+              "type": "Icon",
+              "name": "FacebookIcon",
+              "parentId": "1764561756224-lsaqpkg",
+              "props": {
+                "icon": "facebook"
+              },
+              "styles": {
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561756224-hfcswwa",
+              "type": "Icon",
+              "name": "InstagramIcon",
+              "parentId": "1764561756224-lsaqpkg",
+              "props": {
+                "icon": "instagram"
+              },
+              "styles": {
+                "color": "var(--color-muted-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

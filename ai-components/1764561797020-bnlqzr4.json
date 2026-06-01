@@ -1,0 +1,384 @@
+{
+  "id": "1764561797020-bnlqzr4",
+  "type": "Flex",
+  "name": "EcommerceDashboard",
+  "parentId": "1764561363352-66d3s6a",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)"
+  },
+  "children": [
+    {
+      "id": "1764561797020-qncu4rs",
+      "type": "Flex",
+      "name": "HeaderSection",
+      "parentId": "1764561797020-bnlqzr4",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-card)",
+        "borderRadius": "0.5rem"
+      },
+      "children": [
+        {
+          "id": "1764561797020-54t062l",
+          "type": "Heading",
+          "name": "DashboardTitle",
+          "parentId": "1764561797020-qncu4rs",
+          "props": {
+            "text": "E-commerce Dashboard"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "600",
+            "color": "var(--color-card-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561797020-eepqmbi",
+          "type": "Menu",
+          "name": "UserMenu",
+          "parentId": "1764561797020-qncu4rs",
+          "props": {},
+          "styles": {},
+          "children": [
+            {
+              "id": "1764561797020-t8ulagl",
+              "type": "Avatar",
+              "name": "UserAvatar",
+              "parentId": "1764561797020-eepqmbi",
+              "props": {},
+              "styles": {},
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-qsmn8rr",
+              "type": "Text",
+              "name": "UserName",
+              "parentId": "1764561797020-eepqmbi",
+              "props": {
+                "text": "John Doe"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561797020-bryscmm",
+      "type": "Grid",
+      "name": "StatsSection",
+      "parentId": "1764561797020-bnlqzr4",
+      "props": {},
+      "styles": {
+        "gridTemplateColumns": "repeat(3, 1fr)",
+        "gap": "1.5rem"
+      },
+      "children": [
+        {
+          "id": "1764561797020-qabtjkk",
+          "type": "Card",
+          "name": "SalesCard",
+          "parentId": "1764561797020-bryscmm",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561797020-uqvwlvk",
+              "type": "Icon",
+              "name": "SalesIcon",
+              "parentId": "1764561797020-qabtjkk",
+              "props": {},
+              "styles": {},
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-rrl5gd4",
+              "type": "Text",
+              "name": "SalesText",
+              "parentId": "1764561797020-qabtjkk",
+              "props": {
+                "text": "Total Sales"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "500",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-zdpz0h3",
+              "type": "Text",
+              "name": "SalesValue",
+              "parentId": "1764561797020-qabtjkk",
+              "props": {
+                "text": "$54,000"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "fontWeight": "bold",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764561797020-39ks3jv",
+          "type": "Card",
+          "name": "VisitorsCard",
+          "parentId": "1764561797020-bryscmm",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561797020-nslcyln",
+              "type": "Icon",
+              "name": "VisitorsIcon",
+              "parentId": "1764561797020-39ks3jv",
+              "props": {},
+              "styles": {},
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-nf6cbaj",
+              "type": "Text",
+              "name": "VisitorsText",
+              "parentId": "1764561797020-39ks3jv",
+              "props": {
+                "text": "Total Visitors"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "500",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-dso32wu",
+              "type": "Text",
+              "name": "VisitorsValue",
+              "parentId": "1764561797020-39ks3jv",
+              "props": {
+                "text": "8,200"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "fontWeight": "bold",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764561797020-mp6c636",
+          "type": "Card",
+          "name": "ConversionCard",
+          "parentId": "1764561797020-bryscmm",
+          "props": {},
+          "styles": {
+            "padding": "1rem",
+            "backgroundColor": "var(--color-card)",
+            "borderRadius": "0.5rem"
+          },
+          "children": [
+            {
+              "id": "1764561797020-xrys1vn",
+              "type": "Icon",
+              "name": "ConversionIcon",
+              "parentId": "1764561797020-mp6c636",
+              "props": {},
+              "styles": {},
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-o9h86py",
+              "type": "Text",
+              "name": "ConversionText",
+              "parentId": "1764561797020-mp6c636",
+              "props": {
+                "text": "Conversion Rate"
+              },
+              "styles": {
+                "fontSize": "1.125rem",
+                "fontWeight": "500",
+                "color": "var(--color-card-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-gp6cl8c",
+              "type": "Text",
+              "name": "ConversionValue",
+              "parentId": "1764561797020-mp6c636",
+              "props": {
+                "text": "4.5%"
+              },
+              "styles": {
+                "fontSize": "1.5rem",
+                "fontWeight": "bold",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561797020-t1tmbpe",
+      "type": "Flex",
+      "name": "ProductsSection",
+      "parentId": "1764561797020-bnlqzr4",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "backgroundColor": "var(--color-background)",
+        "borderRadius": "0.5rem",
+        "padding": "1rem"
+      },
+      "children": [
+        {
+          "id": "1764561797020-idou21o",
+          "type": "Heading",
+          "name": "ProductsHeading",
+          "parentId": "1764561797020-t1tmbpe",
+          "props": {
+            "text": "Top Products"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "600",
+            "color": "var(--color-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764561797020-wko3ghn",
+          "type": "Table",
+          "name": "ProductTable",
+          "parentId": "1764561797020-t1tmbpe",
+          "props": {},
+          "styles": {
+            "width": "100%"
+          },
+          "children": [
+            {
+              "id": "1764561797020-z18gayz",
+              "type": "Text",
+              "name": "ProductName",
+              "parentId": "1764561797020-wko3ghn",
+              "props": {
+                "text": "Product 1"
+              },
+              "styles": {
+                "padding": "0.5rem",
+                "borderColor": "var(--color-border)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764561797020-mn31ky3",
+              "type": "Text",
+              "name": "ProductSales",
+              "parentId": "1764561797020-wko3ghn",
+              "props": {
+                "text": "$1,200"
+              },
+              "styles": {
+                "padding": "0.5rem",
+                "borderColor": "var(--color-border)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764561797020-8603885",
+      "type": "Flex",
+      "name": "JumpingHatFooter",
+      "parentId": "1764561797020-bnlqzr4",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-accent)",
+        "borderRadius": "9999px"
+      },
+      "children": [
+        {
+          "id": "1764561797020-3xo46lz",
+          "type": "Image",
+          "name": "JumpingHatImage",
+          "parentId": "1764561797020-8603885",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Jumping Hat"
+          },
+          "styles": {
+            "width": "50%",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

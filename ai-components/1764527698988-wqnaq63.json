@@ -1,0 +1,577 @@
+{
+  "id": "1764527698988-wqnaq63",
+  "type": "Flex",
+  "name": "VeterinaryClinicLandingPage",
+  "parentId": "1763740744744-mj3fp8s",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "var(--color-background)",
+    "width": "100%"
+  },
+  "children": [
+    {
+      "id": "1764527698988-0m7g1zf",
+      "type": "Flex",
+      "name": "HeaderSection",
+      "parentId": "1764527698988-wqnaq63",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "width": "100%",
+        "padding": "1rem",
+        "backgroundColor": "var(--color-card)"
+      },
+      "children": [
+        {
+          "id": "1764527698988-gcwqjma",
+          "type": "Image",
+          "name": "ClinicLogo",
+          "parentId": "1764527698988-0m7g1zf",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Clinic Logo"
+          },
+          "styles": {
+            "width": "5rem",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527698988-o62u6v9",
+          "type": "Menu",
+          "name": "NavigationMenu",
+          "parentId": "1764527698988-0m7g1zf",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764527698988-g173fvi",
+              "type": "Text",
+              "name": "HomeLink",
+              "parentId": "1764527698988-o62u6v9",
+              "props": {
+                "text": "Home"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527698988-yr1lx9m",
+              "type": "Text",
+              "name": "ServicesLink",
+              "parentId": "1764527698988-o62u6v9",
+              "props": {
+                "text": "Services"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527698988-m693g4f",
+              "type": "Text",
+              "name": "ContactLink",
+              "parentId": "1764527698988-o62u6v9",
+              "props": {
+                "text": "Contact"
+              },
+              "styles": {
+                "fontSize": "1rem",
+                "color": "var(--color-foreground)"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527698988-5a3ixls",
+      "type": "Grid",
+      "name": "HeroSection",
+      "parentId": "1764527698988-wqnaq63",
+      "props": {},
+      "styles": {
+        "display": "grid",
+        "gridTemplateColumns": "1fr 1fr",
+        "gap": "2rem",
+        "alignItems": "center",
+        "width": "100%",
+        "backgroundColor": "var(--color-primary)"
+      },
+      "children": [
+        {
+          "id": "1764527698988-l5dmd4f",
+          "type": "Flex",
+          "name": "HeroTextContainer",
+          "parentId": "1764527698988-5a3ixls",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem",
+            "padding": "2rem"
+          },
+          "children": [
+            {
+              "id": "1764527698988-47py3z9",
+              "type": "Heading",
+              "name": "HeroTitle",
+              "parentId": "1764527698988-l5dmd4f",
+              "props": {
+                "text": "Welcome to Our Veterinary Clinic"
+              },
+              "styles": {
+                "fontSize": "2.25rem",
+                "fontWeight": "800",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527698988-mo4jsdt",
+              "type": "Text",
+              "name": "HeroSubtitle",
+              "parentId": "1764527698988-l5dmd4f",
+              "props": {
+                "text": "Caring for your pets with compassion and expertise."
+              },
+              "styles": {
+                "fontSize": "1.25rem",
+                "color": "var(--color-primary-foreground)"
+              },
+              "children": [],
+              "events": {}
+            },
+            {
+              "id": "1764527698988-b0f7uny",
+              "type": "Button",
+              "name": "HeroButton",
+              "parentId": "1764527698988-l5dmd4f",
+              "props": {
+                "text": "Book an Appointment"
+              },
+              "styles": {
+                "padding": "1rem",
+                "borderRadius": "0.5rem",
+                "fontSize": "1rem",
+                "fontWeight": "500",
+                "backgroundColor": "var(--color-secondary)",
+                "color": "var(--color-secondary-foreground)",
+                "border": "none"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764527698989-0wrqhem",
+          "type": "Image",
+          "name": "HeroImage",
+          "parentId": "1764527698988-5a3ixls",
+          "props": {
+            "src": "https://placehold.co/400x300",
+            "alt": "Happy pets at clinic"
+          },
+          "styles": {
+            "width": "100%",
+            "borderRadius": "0.5rem"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527698989-boc51fy",
+      "type": "Flex",
+      "name": "ServicesSection",
+      "parentId": "1764527698988-wqnaq63",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "100%",
+        "alignItems": "center",
+        "gap": "2rem",
+        "padding": "2rem",
+        "backgroundColor": "var(--color-card)"
+      },
+      "children": [
+        {
+          "id": "1764527698989-s1s2xrz",
+          "type": "Heading",
+          "name": "ServicesTitle",
+          "parentId": "1764527698989-boc51fy",
+          "props": {
+            "text": "Our Services"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "600",
+            "color": "var(--color-card-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527698989-419susn",
+          "type": "Grid",
+          "name": "ServicesGrid",
+          "parentId": "1764527698989-boc51fy",
+          "props": {},
+          "styles": {
+            "display": "grid",
+            "gridTemplateColumns": "repeat(3, 1fr)",
+            "gap": "1.5rem"
+          },
+          "children": [
+            {
+              "id": "1764527698989-rpstjcn",
+              "type": "Card",
+              "name": "ServiceCard1",
+              "parentId": "1764527698989-419susn",
+              "props": {},
+              "styles": {
+                "padding": "1.5rem",
+                "backgroundColor": "var(--color-accent)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764527698989-6odlcy0",
+                  "type": "Icon",
+                  "name": "ServiceIcon1",
+                  "parentId": "1764527698989-rpstjcn",
+                  "props": {
+                    "iconType": "stethoscope"
+                  },
+                  "styles": {
+                    "fontSize": "2rem",
+                    "color": "var(--color-accent-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764527698989-0zf75uk",
+                  "type": "Text",
+                  "name": "ServiceTitle1",
+                  "parentId": "1764527698989-rpstjcn",
+                  "props": {
+                    "text": "General Check-ups"
+                  },
+                  "styles": {
+                    "fontSize": "1.25rem",
+                    "fontWeight": "bold",
+                    "color": "var(--color-accent-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1764527698989-n4wbzbe",
+              "type": "Card",
+              "name": "ServiceCard2",
+              "parentId": "1764527698989-419susn",
+              "props": {},
+              "styles": {
+                "padding": "1.5rem",
+                "backgroundColor": "var(--color-accent)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764527698989-cyblmv8",
+                  "type": "Icon",
+                  "name": "ServiceIcon2",
+                  "parentId": "1764527698989-n4wbzbe",
+                  "props": {
+                    "iconType": "heart"
+                  },
+                  "styles": {
+                    "fontSize": "2rem",
+                    "color": "var(--color-accent-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764527698989-2ts1ran",
+                  "type": "Text",
+                  "name": "ServiceTitle2",
+                  "parentId": "1764527698989-n4wbzbe",
+                  "props": {
+                    "text": "Specialized Surgeries"
+                  },
+                  "styles": {
+                    "fontSize": "1.25rem",
+                    "fontWeight": "bold",
+                    "color": "var(--color-accent-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1764527698989-lq6wx07",
+              "type": "Card",
+              "name": "ServiceCard3",
+              "parentId": "1764527698989-419susn",
+              "props": {},
+              "styles": {
+                "padding": "1.5rem",
+                "backgroundColor": "var(--color-accent)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764527698989-foxmyfj",
+                  "type": "Icon",
+                  "name": "ServiceIcon3",
+                  "parentId": "1764527698989-lq6wx07",
+                  "props": {
+                    "iconType": "paw"
+                  },
+                  "styles": {
+                    "fontSize": "2rem",
+                    "color": "var(--color-accent-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764527698989-eg22aq4",
+                  "type": "Text",
+                  "name": "ServiceTitle3",
+                  "parentId": "1764527698989-lq6wx07",
+                  "props": {
+                    "text": "Dental Care"
+                  },
+                  "styles": {
+                    "fontSize": "1.25rem",
+                    "fontWeight": "bold",
+                    "color": "var(--color-accent-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527698989-o0u3a73",
+      "type": "Flex",
+      "name": "TestimonialsSection",
+      "parentId": "1764527698988-wqnaq63",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "2rem",
+        "padding": "2rem",
+        "width": "100%",
+        "backgroundColor": "var(--color-muted)"
+      },
+      "children": [
+        {
+          "id": "1764527698989-ta6zd83",
+          "type": "Heading",
+          "name": "TestimonialsTitle",
+          "parentId": "1764527698989-o0u3a73",
+          "props": {
+            "text": "What Our Clients Say"
+          },
+          "styles": {
+            "fontSize": "1.875rem",
+            "fontWeight": "600",
+            "color": "var(--color-muted-foreground)"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764527698989-75aijpn",
+          "type": "Grid",
+          "name": "TestimonialsGrid",
+          "parentId": "1764527698989-o0u3a73",
+          "props": {},
+          "styles": {
+            "display": "grid",
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "gap": "1.5rem"
+          },
+          "children": [
+            {
+              "id": "1764527698989-ke5pmpx",
+              "type": "Card",
+              "name": "TestimonialCard1",
+              "parentId": "1764527698989-75aijpn",
+              "props": {},
+              "styles": {
+                "padding": "1.5rem",
+                "backgroundColor": "var(--color-background)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764527698989-dzndqz2",
+                  "type": "Text",
+                  "name": "TestimonialText1",
+                  "parentId": "1764527698989-ke5pmpx",
+                  "props": {
+                    "text": "The best care my pet has ever received!"
+                  },
+                  "styles": {
+                    "fontSize": "1rem",
+                    "fontWeight": "normal",
+                    "color": "var(--color-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764527698989-x4qd9rd",
+                  "type": "Text",
+                  "name": "ClientName1",
+                  "parentId": "1764527698989-ke5pmpx",
+                  "props": {
+                    "text": "- Anna Smith"
+                  },
+                  "styles": {
+                    "fontSize": "0.875rem",
+                    "color": "var(--color-muted-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1764527698989-mlksnsr",
+              "type": "Card",
+              "name": "TestimonialCard2",
+              "parentId": "1764527698989-75aijpn",
+              "props": {},
+              "styles": {
+                "padding": "1.5rem",
+                "backgroundColor": "var(--color-background)",
+                "borderRadius": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764527698989-ccnsso4",
+                  "type": "Text",
+                  "name": "TestimonialText2",
+                  "parentId": "1764527698989-mlksnsr",
+                  "props": {
+                    "text": "Friendly staff and excellent service."
+                  },
+                  "styles": {
+                    "fontSize": "1rem",
+                    "fontWeight": "normal",
+                    "color": "var(--color-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764527698989-xydekx5",
+                  "type": "Text",
+                  "name": "ClientName2",
+                  "parentId": "1764527698989-mlksnsr",
+                  "props": {
+                    "text": "- John Doe"
+                  },
+                  "styles": {
+                    "fontSize": "0.875rem",
+                    "color": "var(--color-muted-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    },
+    {
+      "id": "1764527698989-ugnobb9",
+      "type": "Footer",
+      "name": "FooterSection",
+      "parentId": "1764527698988-wqnaq63",
+      "props": {},
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "padding": "2rem",
+        "gap": "1rem",
+        "backgroundColor": "var(--color-secondary)",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "1764527698989-pcan92g",
+          "type": "Text",
+          "name": "FooterText",
+          "parentId": "1764527698989-ugnobb9",
+          "props": {
+            "text": "© 2023 Veterinary Clinic. All Rights Reserved."
+          },
+          "styles": {
+            "fontSize": "0.75rem",
+            "color": "var(--color-secondary-foreground)"
+          },
+          "children": [],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}

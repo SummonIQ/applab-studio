@@ -1,0 +1,288 @@
+{
+  "id": "1764487926816-or8kxtq",
+  "type": "Flex",
+  "name": "LoginScreen",
+  "parentId": "1763740744744-mj3fp8s",
+  "props": {},
+  "styles": {
+    "display": "flex",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "gap": "2rem",
+    "padding": "2rem",
+    "backgroundColor": "hsl(var(--background))",
+    "width": "100vw",
+    "height": "100vh"
+  },
+  "children": [
+    {
+      "id": "1764487926816-t74ov5j",
+      "type": "Card",
+      "name": "LoginCard",
+      "parentId": "1764487926816-or8kxtq",
+      "props": {},
+      "styles": {
+        "padding": "2rem",
+        "borderRadius": "0.5rem",
+        "backgroundColor": "hsl(var(--card))",
+        "width": "100%",
+        "maxWidth": "400px",
+        "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.1)"
+      },
+      "children": [
+        {
+          "id": "1764487926816-zjeemyt",
+          "type": "Heading",
+          "name": "LoginTitle",
+          "parentId": "1764487926816-t74ov5j",
+          "props": {
+            "text": "Welcome Back!"
+          },
+          "styles": {
+            "fontSize": "1.5rem",
+            "fontWeight": "600",
+            "marginBottom": "1rem"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764487926816-f4p82nd",
+          "type": "Form",
+          "name": "LoginForm",
+          "parentId": "1764487926816-t74ov5j",
+          "props": {},
+          "styles": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764487926816-bupn38r",
+              "type": "Flex",
+              "name": "EmailField",
+              "parentId": "1764487926816-f4p82nd",
+              "props": {},
+              "styles": {
+                "flexDirection": "column",
+                "gap": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764487926816-51pq1ez",
+                  "type": "Label",
+                  "name": "EmailLabel",
+                  "parentId": "1764487926816-bupn38r",
+                  "props": {
+                    "text": "Email"
+                  },
+                  "styles": {},
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764487926816-88r0tuk",
+                  "type": "Input",
+                  "name": "EmailInput",
+                  "parentId": "1764487926816-bupn38r",
+                  "props": {
+                    "type": "email",
+                    "placeholder": "Enter your email"
+                  },
+                  "styles": {
+                    "width": "100%",
+                    "padding": "0.75rem",
+                    "border": "1px solid hsl(var(--muted))",
+                    "borderRadius": "0.25rem",
+                    "fontSize": "0.875rem",
+                    "backgroundColor": "var(--color-background)",
+                    "color": "var(--color-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1764487926816-s3smxzl",
+              "type": "Flex",
+              "name": "PasswordField",
+              "parentId": "1764487926816-f4p82nd",
+              "props": {},
+              "styles": {
+                "flexDirection": "column",
+                "gap": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764487926816-k4jbyri",
+                  "type": "Label",
+                  "name": "PasswordLabel",
+                  "parentId": "1764487926816-s3smxzl",
+                  "props": {
+                    "text": "Password"
+                  },
+                  "styles": {},
+                  "children": [],
+                  "events": {}
+                },
+                {
+                  "id": "1764487926816-t9jvbqr",
+                  "type": "Input",
+                  "name": "PasswordInput",
+                  "parentId": "1764487926816-s3smxzl",
+                  "props": {
+                    "type": "password",
+                    "placeholder": "Enter your password"
+                  },
+                  "styles": {
+                    "width": "100%",
+                    "padding": "0.75rem",
+                    "border": "1px solid hsl(var(--muted))",
+                    "borderRadius": "0.25rem",
+                    "fontSize": "0.875rem",
+                    "backgroundColor": "var(--color-background)",
+                    "color": "var(--color-foreground)"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1764487926816-84u8qdz",
+              "type": "Button",
+              "name": "SubmitButton",
+              "parentId": "1764487926816-f4p82nd",
+              "props": {
+                "text": "Sign In"
+              },
+              "styles": {
+                "padding": "0.75rem",
+                "borderRadius": "0.25rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "600",
+                "backgroundColor": "hsl(var(--primary))",
+                "color": "white",
+                "border": "none",
+                "cursor": "pointer"
+              },
+              "children": [],
+              "events": {}
+            }
+          ],
+          "events": {}
+        },
+        {
+          "id": "1764487926816-qhdx9c5",
+          "type": "Divider",
+          "name": "Divider",
+          "parentId": "1764487926816-t74ov5j",
+          "props": {},
+          "styles": {
+            "margin": "2rem 0",
+            "borderBottom": "1px solid hsl(var(--muted))"
+          },
+          "children": [],
+          "events": {}
+        },
+        {
+          "id": "1764487926816-md1h670",
+          "type": "Flex",
+          "name": "SocialLoginContainer",
+          "parentId": "1764487926816-t74ov5j",
+          "props": {},
+          "styles": {
+            "flexDirection": "column",
+            "gap": "1rem"
+          },
+          "children": [
+            {
+              "id": "1764487926816-npqifuf",
+              "type": "Button",
+              "name": "GoogleLoginButton",
+              "parentId": "1764487926816-md1h670",
+              "props": {
+                "text": "Sign in with Google"
+              },
+              "styles": {
+                "padding": "0.75rem",
+                "borderRadius": "0.25rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "white",
+                "color": "hsl(var(--primary))",
+                "border": "1px solid hsl(var(--primary))",
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "gap": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764487926816-wcffuby",
+                  "type": "Icon",
+                  "name": "GoogleIcon",
+                  "parentId": "1764487926816-npqifuf",
+                  "props": {},
+                  "styles": {
+                    "width": "1rem",
+                    "height": "1rem"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            },
+            {
+              "id": "1764487926816-79gnvvg",
+              "type": "Button",
+              "name": "FacebookLoginButton",
+              "parentId": "1764487926816-md1h670",
+              "props": {
+                "text": "Sign in with Facebook"
+              },
+              "styles": {
+                "padding": "0.75rem",
+                "borderRadius": "0.25rem",
+                "fontSize": "0.875rem",
+                "fontWeight": "500",
+                "backgroundColor": "hsl(var(--primary))",
+                "color": "white",
+                "border": "none",
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "gap": "0.5rem"
+              },
+              "children": [
+                {
+                  "id": "1764487926816-ydugf50",
+                  "type": "Icon",
+                  "name": "FacebookIcon",
+                  "parentId": "1764487926816-79gnvvg",
+                  "props": {},
+                  "styles": {
+                    "width": "1rem",
+                    "height": "1rem"
+                  },
+                  "children": [],
+                  "events": {}
+                }
+              ],
+              "events": {}
+            }
+          ],
+          "events": {}
+        }
+      ],
+      "events": {}
+    }
+  ],
+  "events": {}
+}
